@@ -1,5 +1,6 @@
 import os
 import json
+import pandas as pd
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
 
@@ -45,30 +46,44 @@ class ItemManager:
             self.optimal_craft_costs[item.name] = item.get_optimal_craft_cost()
 
         for item in self.optimal_craft_costs:
-            cheapest_cost, best_action = self.optimal_craft_costs[item]
+            cheapest_price, total_time, best_action = self.optimal_craft_costs[item]
             market_price = self.item_price_manager.get_market_price_for_item(item)
-            print('{:15} || Lowest Cost to Buy/Craft: {:5} || Course of Action: {:12} || Price on Market: {:10} || Profit: {:8}'.format(item, cheapest_cost, best_action, market_price, market_price-cheapest_cost))
+            print('{:15} || Lowest Cost to Buy/Craft: {:5} || Course of Action: {:12} || Price on Market: {:10} || Profit: {:8}'.format(item, cheapest_price, best_action, market_price, market_price-cheapest_price))
 
     def print_highest_profits(self):
-        print("Highest Profits (Sorted by Flat Value)")
         profits = []
         for item in self.optimal_craft_costs:
-            cheapest_cost, best_action = self.optimal_craft_costs[item]
+            cheapest_price, total_time, best_action = self.optimal_craft_costs[item]
             market_price = self.item_price_manager.get_market_price_for_item(item)
-            profit = market_price - cheapest_cost
-            profit_ratio = float(profit) / float(cheapest_cost) 
-            profits.append((item, profit, profit_ratio))
-        
-        profits.sort(key=lambda x: x[1], reverse=True)
-        for profit in profits:
-            print("{}: {:15} Silver profit {:15.2f} Profit Ratio".format(profit[0], profit[1], profit[2]))
-        print('-'*120)
-        print("Highest Profits (Sorted by Profit Ratio)")
+            profit = market_price - cheapest_price
+            profit_ratio = float(profit) / float(cheapest_price) 
+            profit_per_sec = 0 if total_time == 0 else profit/total_time
+            profits.append((item, profit, profit_ratio, total_time, profit_per_sec))
 
-        profits.sort(key=lambda x: x[2], reverse=True)
-        for profit in profits:
-            print("{}: {:15} Silver profit {:15.2f} Profit Ratio".format(profit[0], profit[1], profit[2]))
+        profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Sec"])
+        profits_dataframe.to_csv(r'.\Profit\profit_values.csv', index=False)
+        print('Profits data written to ' + r'.\Profit\profit_values.csv')
         
+        # print("Highest Profits (Sorted by Flat Value)")
+        # profits.sort(key=lambda x: x[1], reverse=True)
+        # for profit in profits:
+        #     print("{} {:15} Silver profit {:15.2f} Profit Ratio {:15.2f} Sec to Craft {:15.2f} Profit/Sec".format(profit[0], profit[1], profit[2], profit[3], profit[4]))
+        # print('-'*120)
+
+        # print("Highest Profits (Sorted by Profit Ratio)")
+        # profits.sort(key=lambda x: x[2], reverse=True)
+        # for profit in profits:
+        #     print("{} {:15} Silver profit {:15.2f} Profit Ratio {:15.2f} Sec to Craft {:15.2f} Profit/Sec".format(profit[0], profit[1], profit[2], profit[3], profit[4]))
+        # print('-'*120)
+        
+        # print("Highest Profits (Sorted by Profit/Sec)")        
+        # profits.sort(key=lambda x: x[4], reverse=True)
+        # for profit in profits:
+        #     print("{} {:15} Silver profit {:15.2f} Profit Ratio {:15.2f} Sec to Craft {:15.2f} Profit/Sec".format(profit[0], profit[1], profit[2], profit[3], profit[4]))
+        # print('-'*120)
+
+        return profits_dataframe
+
     def save_profits(self):
         print("Saving profits into csv file...")
         print("Saved profits into csv file")
