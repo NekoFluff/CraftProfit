@@ -1,0 +1,10 @@
+{
+    "Name": "Item 6",
+    "Recipes": [
+        {
+            "Item 4": 1,
+            "Item 5": 1
+        }
+    ]
+    
+}

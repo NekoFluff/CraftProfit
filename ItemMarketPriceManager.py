@@ -3,14 +3,15 @@ import os
 from datetime import datetime
 
 
-class ItemPriceManager:
+class ItemMarketPriceManager:
     __instance = None
-    market_prices = {}
+    market_prices = {}  # Market prices for the item
+    hand_crafted_prices = {}
 
     def __new__(cls):
-        if ItemPriceManager.__instance is None:
-            ItemPriceManager.__instance = object.__new__(cls)
-        return ItemPriceManager.__instance
+        if ItemMarketPriceManager.__instance is None:
+            ItemMarketPriceManager.__instance = object.__new__(cls)
+        return ItemMarketPriceManager.__instance
 
     def load_market_prices(self):
         try:
@@ -33,9 +34,10 @@ class ItemPriceManager:
             'Quantity:': int(count), 
             'Last Updated': datetime.now().__str__()
         }
-        print(self.market_prices[item_name])
 
     def get_market_price_for_item(self, item_name: str) -> int:
         if item_name not in self.market_prices:
             self.ask_user_for_market_price(item_name)
         return self.market_prices[item_name]['Market Price']
+
+    
