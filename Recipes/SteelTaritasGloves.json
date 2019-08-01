@@ -1,0 +1,13 @@
+{    
+    "Name": "Steel Taritas Gloves",
+    "Recipes": [
+        {
+            "Steel": 5,
+            "Fine Hard Hide": 5,
+            "Black Stone Powder": 10,
+            "Mud Crystal": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

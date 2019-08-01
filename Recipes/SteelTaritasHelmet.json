@@ -1,0 +1,13 @@
+{    
+    "Name": "Steel Taritas Helmet",
+    "Recipes": [
+        {
+            "Steel": 6,
+            "Fine Hard Hide": 1,
+            "Black Stone Powder": 10,
+            "Mud Crystal": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

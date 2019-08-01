@@ -1,0 +1,11 @@
+{
+    "Name": "White Cedar Plank",
+    "Recipes": [
+        {
+            "White Cedar Timber": 5
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+    
+}

@@ -1,0 +1,13 @@
+{
+    "Name": "Clear Liquid Regeant",
+    "Recipes": [
+        {
+            "Salt": 1,
+            "Sunrise Herb": 1,
+            "Purified Water": 1,
+            "Weeds": 1
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

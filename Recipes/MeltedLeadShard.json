@@ -1,0 +1,10 @@
+{
+    "Name": "Melted Lead Shard",
+    "Recipes": [
+        {
+            "Lead Ore": 5
+        }
+    ],
+    "Time to Produce": 9,
+    "Quantity Produced": 2.5
+}

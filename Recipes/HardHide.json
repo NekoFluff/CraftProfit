@@ -1,0 +1,16 @@
+{
+    "Name": "Hard Hide",
+    "Recipes": [
+        {
+            "Worm Hide": 5
+        },
+        {
+            "Lizard Hide": 5
+        },
+        {
+            "Yak Hide": 5
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

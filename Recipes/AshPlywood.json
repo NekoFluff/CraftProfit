@@ -1,0 +1,10 @@
+{
+    "Name": "Ash Plywood",
+    "Recipes": [
+        {
+            "Ash Plank": 10
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

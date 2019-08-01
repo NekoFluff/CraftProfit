@@ -34,6 +34,7 @@ class ItemMarketPriceManager:
             'Quantity:': int(count), 
             'Last Updated': datetime.now().__str__()
         }
+        self.save_market_prices()
 
     def get_market_price_for_item(self, item_name: str) -> int:
         if item_name not in self.market_prices:

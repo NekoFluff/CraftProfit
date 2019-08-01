@@ -1,0 +1,11 @@
+{
+    "Name": "Sturdy Pine Plywood",
+    "Recipes": [
+        {
+            "Pine Plywood": 10,
+            "Plywood Hardener": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

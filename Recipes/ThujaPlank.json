@@ -1,0 +1,11 @@
+{
+    "Name": "Thuja Plank",
+    "Recipes": [
+        {
+            "Thuja Timber": 5
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+    
+}

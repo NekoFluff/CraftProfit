@@ -1,0 +1,13 @@
+{    
+    "Name": "Steel Taritas Armor",
+    "Recipes": [
+        {
+            "Steel": 14,
+            "Fine Hard Hide": 3,
+            "Black Stone Powder": 10,
+            "Mud Crystal": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

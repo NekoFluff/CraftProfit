@@ -1,0 +1,13 @@
+{    
+    "Name": "Gem Polisher",
+    "Recipes": [
+        {
+            "Pure Powder Reagent": 1,
+            "Processed Coal": 4,
+            "Purified Water": 6,
+            "Trace of Origin": 2
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

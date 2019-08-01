@@ -1,0 +1,13 @@
+{
+    "Name": "Metal Solvent",
+    "Recipes": [
+        {
+            "Clear Liquid Regeant": 1,
+            "Rough Stone": 4,
+            "Melted Iron Shard": 3,
+            "Trace of Savagery": 2
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

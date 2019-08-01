@@ -1,0 +1,13 @@
+{    
+    "Name": "Steel Taritas Shoes",
+    "Recipes": [
+        {
+            "Steel": 8,
+            "Fine Hard Hide": 2,
+            "Black Stone Powder": 10,
+            "Mud Crystal": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

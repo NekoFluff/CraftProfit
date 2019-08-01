@@ -1,0 +1,11 @@
+{
+    "Name": "Black Stone Powder",
+    "Recipes": [
+        {
+            "Rough Stone": 2
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+    
+}

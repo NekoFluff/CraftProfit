@@ -1,0 +1,11 @@
+{
+    "Name": "Pure Zinc Crystal",
+    "Recipes": [
+        {
+            "Zinc Ingot": 3,
+            "Metal Solvent": 2
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

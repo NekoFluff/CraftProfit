@@ -1,0 +1,11 @@
+{    
+    "Name": "Forest Emerald",
+    "Recipes": [
+        {
+            "Resplendent Emerald": 7,
+            "Gem Polisher": 3
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}
