@@ -19,7 +19,6 @@ def prompt_user_for_desired_item():
 
 if __name__ == "__main__":
     print("Testing ItemManager using all available recipes.")
-    item_manager.item_price_manager.load_market_prices()
     item_manager.calculate_market_craft_costs()
     print('-'*120)
     item_manager.calculate_hand_craft_costs()

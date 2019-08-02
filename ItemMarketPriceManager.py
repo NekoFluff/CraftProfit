@@ -13,6 +13,9 @@ class ItemMarketPriceManager:
             ItemMarketPriceManager.__instance = object.__new__(cls)
         return ItemMarketPriceManager.__instance
 
+    def __init__(self):
+        self.load_market_prices()
+
     def load_market_prices(self):
         try:
             with open('Market_Prices/market_prices.json', 'r') as json_file:
@@ -36,9 +39,12 @@ class ItemMarketPriceManager:
         }
         self.save_market_prices()
 
-    def get_market_price_for_item(self, item_name: str) -> int:
+    def get_market_price_for_item(self, item_name: str, ask_user=True) -> int:
         if item_name not in self.market_prices:
-            self.ask_user_for_market_price(item_name)
+            if ask_user:
+                self.ask_user_for_market_price(item_name)
+            else:
+                raise Exception('There is no market price for {}'.format(item_name))
         return self.market_prices[item_name]['Market Price']
-
+    
     

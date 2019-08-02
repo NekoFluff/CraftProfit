@@ -7,8 +7,10 @@ class Item:
     hand_craft_cost = None
     hand_craft_time = None
     optimal_craft_cost = None
-    optimal_craft_time = 0
+    optimal_craft_time = None
     optimal_craft_action = "Market Buy"
+
+    include_in_output = True
 
     time_to_produce = 0.0
     quantity_produced = 1.0
@@ -107,9 +109,9 @@ class Item:
             total_price += quantity * lowest_cost
             if best_action != "Market Buy":
                 total_time += quantity * time_cost# Time cost for each ingredient crafted
-            if (self.name == "Pure Iron Crystal"):
+            # if (self.name == "Pure Iron Crystal"):
                 # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, lowest_cost, quantity, quantity * lowest_cost, total_price))
-                print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, time_cost, quantity, quantity * time_cost, total_time))
+                # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, time_cost, quantity, quantity * time_cost, total_time))
         
         market_price = self.item_price_manager.get_market_price_for_item(self.name)
         total_price = total_price / self.quantity_produced # Division to get price per item
