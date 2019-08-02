@@ -104,4 +104,4 @@ class ShoppingCart:
                     print('Error. Invalid optimal craft action.', ingredient, optimal_item_action)
         
     def clear_cart(self):
-        self.cart = []
+        self.cart.clear()
