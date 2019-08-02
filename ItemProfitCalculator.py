@@ -110,8 +110,8 @@ class ItemProfitCalculator():
                 total_time += item.time_to_produce # How much time in seconds to produce this item
             # if (item.name == "Ship License: Fishing Boat"):
                 # exit(1)
-            
-        total_time /= item.quantity_produced
+            total_time /= item.quantity_produced
+
         self.optimal_craft[item.name]['Cost'] = total_price
         self.optimal_craft[item.name]['Time'] = total_time
         self.optimal_craft[item.name]['Action'] = best_action
@@ -146,10 +146,6 @@ class ItemProfitCalculator():
 
         elif self.item_included_in_output[item.name] == False:
             included = False
-
-        # If the ingredients aren't included suppose to be included, then don't include this recipe
-        elif not self.update_is_item_included_in_output(item):
-            included = False
         else:
             recipe = item.get_optimal_recipe()
             if recipe is not None:
@@ -158,6 +154,7 @@ class ItemProfitCalculator():
                         included = False
 
         self.filter_applied[item.name] = True
+        self.item_included_in_output[item.name] = included
         return included
 
     def update_is_item_included_in_output(self, item: Item):
