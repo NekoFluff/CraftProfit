@@ -1,3 +1,4 @@
+import json
 from collections import defaultdict
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
@@ -17,9 +18,12 @@ class ItemProfitCalculator():
         return ItemProfitCalculator.__instance
 
     def __init__(self):
+        self.read_filter_ingredients_json()
+        self.read_other_filters()
         self.item_price_manager = ItemMarketPriceManager()
 
     def get_market_craft_cost_for_item(self, item: Item) -> (int, float):
+        self.update_is_item_included_in_output(item)
         market_craft_item = self.market_craft[item.name]
 
         if 'Cost' in market_craft_item:
@@ -44,6 +48,7 @@ class ItemProfitCalculator():
         return total_cost, total_time
 
     def get_hand_craft_cost_for_item(self, item: Item) -> (int, float):
+        self.update_is_item_included_in_output(item)
         hand_craft_item = self.hand_craft[item.name]
 
         if 'Cost' in hand_craft_item:
@@ -70,6 +75,8 @@ class ItemProfitCalculator():
         return total_cost, total_time
 
     def get_optimal_craft_cost_for_item(self, item: Item) -> (int, float, str):
+        self.update_is_item_included_in_output(item)
+
         optimal_craft_item = self.optimal_craft[item.name]
 
         if 'Cost' in optimal_craft_item:
@@ -117,4 +124,36 @@ class ItemProfitCalculator():
         if "Action" in self.optimal_craft[item.name]:
             action = self.optimal_craft[item.name]['Action']
         return action
+    
+    def read_filter_ingredients_json(self):
+        self.filter_ingredients = []
+        with open(r'Filters\FilterIngredients.json') as json_file:
+            self.filter_ingredients_json = json.load(json_file)
+            if self.filter_ingredients_json['Enabled']:
+                self.filter_ingredients = self.filter_ingredients_json['Ingredients']
+
+        for ingredient in self.filter_ingredients:
+            self.item_included_in_output[ingredient] = False
+
+
+    def update_is_item_included_in_output(self, item: Item):
+        # If one of the ingredients is in the filter_ingredients list, then skip
+        recipe = item.get_optimal_recipe()
+        if recipe != None:
+            for (ingredient, _) in recipe.get_ingredients():
+
+                if not self.item_included_in_output[ingredient] and self.filter_ingredients_json['Recursive']:
+                    self.item_included_in_output[item.name] = False
+                    return
+
+                if ingredient in self.filter_ingredients:
+                    self.item_included_in_output[item.name] = False
+                    return
+
+
+    def read_other_filters(self):
+        with open(r'Filters\OtherFilters.json') as json_file:
+            other_filters_json = json.load(json_file)
+            self.skip_recipes_with_higher_profit_per_second_recipes = other_filters_json["Skip Recipes That Use Higher Profit Per Second Recipes"]
+
             

@@ -1,6 +1,8 @@
 {
     "Enabled": true,
+    "Recursive": true,
     "Ingredients": [
-        "Rough Stone"
+        "Rough Stone",
+        "Log"
     ]
 }

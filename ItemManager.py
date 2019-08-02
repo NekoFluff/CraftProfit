@@ -33,6 +33,9 @@ class ItemManager:
 
         profits = []
         for item in self.market_craft_costs:
+            if not self.item_profit_calculator.item_included_in_output[item]:
+                continue
+
             market_craft_cost = self.market_craft_costs[item][0]
             market_craft_time = self.market_craft_costs[item][1]
             market_price = self.item_price_manager.get_market_price_for_item(item)
@@ -54,18 +57,21 @@ class ItemManager:
             self.hand_craft_costs[item.name] = self.item_profit_calculator.get_hand_craft_cost_for_item(item)
 
         profits = []
-        for item in self.hand_craft_costs:
-            hand_craft_cost = self.hand_craft_costs[item][0]
-            hand_craft_time = self.hand_craft_costs[item][1]
-            market_price = self.item_price_manager.get_market_price_for_item(item)
-            print('{:25} || Cost to Craft by Hand: {:15} || Price on Market: {:10} || Profit: {:8}'.format(item, hand_craft_cost, market_price, market_price-hand_craft_cost))
+        for item_name in self.hand_craft_costs:
+            if not self.item_profit_calculator.item_included_in_output[item_name]:
+                continue
+            
+            hand_craft_cost = self.hand_craft_costs[item_name][0]
+            hand_craft_time = self.hand_craft_costs[item_name][1]
+            market_price = self.item_price_manager.get_market_price_for_item(item_name)
+            print('{:25} || Cost to Craft by Hand: {:15} || Price on Market: {:10} || Profit: {:8}'.format(item_name, hand_craft_cost, market_price, market_price-hand_craft_cost))
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT)- hand_craft_cost
             profit_ratio = float(profit) / float(hand_craft_cost) 
             profit_per_sec = 0 if hand_craft_time == 0 else profit/hand_craft_time
             profit_per_hour = profit_per_sec * 3600
-            profits.append((item, market_price, hand_craft_cost, profit, profit_ratio, hand_craft_time, profit_per_hour))
+            profits.append((item_name, market_price, hand_craft_cost, profit, profit_ratio, hand_craft_time, profit_per_hour))
 
         profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Market Price", "Hand Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
         profits_dataframe.to_csv(r'.\Profit\hand_craft_profit_values.csv', index=False)
@@ -77,6 +83,9 @@ class ItemManager:
             
         profits = []
         for item in self.optimal_craft_costs:
+            if not self.item_profit_calculator.item_included_in_output[item]:
+                continue
+
             cheapest_price, total_time, best_action = self.optimal_craft_costs[item]
             market_price = self.item_price_manager.get_market_price_for_item(item)
 
