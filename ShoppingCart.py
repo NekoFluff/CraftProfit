@@ -2,6 +2,7 @@ import math
 from RecipeList import RecipeList
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
+from ItemProfitCalculator import ItemProfitCalculator
 
 POST_TAX_PERCENT = 0.845
 
@@ -11,6 +12,7 @@ class ShoppingCart:
 
     def __init__(self, item_manager):
         self.item_manager = item_manager
+        self.item_profit_calculator = ItemProfitCalculator()
 
     def add_recipe_to_cart(self, recipe: RecipeList):
         self.cart.append(recipe)
@@ -88,18 +90,18 @@ class ShoppingCart:
                 num_ingredient_needed = max(quantity_per_ingredient, math.ceil(num_ingredient_needed/item.quantity_produced))
                 # num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
                 
-
-                if (ingredient_item.optimal_craft_action == "Market Buy"):
+                optimal_item_action = self.item_profit_calculator.get_optimal_action_for_item(ingredient_item)
+                if (optimal_item_action == "Market Buy"):
                     #  Add to shopping cart
                     #  How many of item X you want to make * ingredients needed per item X / quantity produced of item X
                     #  print("Added ingredient/quantity pair: {}, {}".format(ingredient, num_ingredient_needed))
                     new_recipe.add_ingredient(ingredient, num_ingredient_needed)
-                elif (ingredient_item.optimal_craft_action == "Craft"):
+                elif (optimal_item_action == "Craft"):
                     #  Recursive call to find item needed to craft this item
                     new_recipe.add_ingredient(ingredient + ' [You Craft]', num_ingredient_needed)
                     self.add_item_to_cart(ingredient_item, num_ingredient_needed)
                 else:
-                    print('Error. Invalid optimal craft action.', ingredient, ingredient_item.optimal_craft_action)
+                    print('Error. Invalid optimal craft action.', ingredient, optimal_item_action)
         
     def clear_cart(self):
         self.cart = []

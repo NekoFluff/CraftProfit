@@ -2,16 +2,6 @@ from RecipeList import RecipeList
 
 
 class Item:
-    market_craft_cost = None
-    market_craft_time = None
-    hand_craft_cost = None
-    hand_craft_time = None
-    optimal_craft_cost = None
-    optimal_craft_time = None
-    optimal_craft_action = "Market Buy"
-
-    include_in_output = True
-
     time_to_produce = 0.0
     quantity_produced = 1.0
 

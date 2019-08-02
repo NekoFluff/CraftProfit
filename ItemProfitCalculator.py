@@ -1,13 +1,14 @@
+from collections import defaultdict
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
 
 
 class ItemProfitCalculator():
-    market_craft = {}
-    hand_craft = {}
-    optimal_craft = {}
-    item_included_in_output = {}
-    
+    market_craft = defaultdict(lambda: {})
+    hand_craft = defaultdict(lambda: {})
+    optimal_craft = defaultdict(lambda: {})
+    item_included_in_output = defaultdict(lambda: True)
+
     __instance = None
 
     def __new__(cls):
@@ -18,17 +19,16 @@ class ItemProfitCalculator():
     def __init__(self):
         self.item_price_manager = ItemMarketPriceManager()
 
-
     def get_market_craft_cost_for_item(self, item: Item) -> (int, float):
+        market_craft_item = self.market_craft[item.name]
 
-        if item.market_craft_cost != None:
-            return item.market_craft_cost,  market_craft_time
+        if 'Cost' in market_craft_item:
+            return market_craft_item['Cost'],  market_craft_item['Time']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market. 
         elif len(item.recipes) == 0: 
             return self.item_price_manager.get_market_price_for_item(item.name), 0.0
 
         recipe = item.recipes[0]
-
         total_cost = 0
         total_time = 0.0
 
@@ -39,20 +39,23 @@ class ItemProfitCalculator():
         total_time += item.time_to_produce # How much time in seconds to produce this item
         total_time /= item.quantity_produced
 
-        item.market_craft_cost = total_cost
+        self.market_craft[item.name]['Cost'] = total_cost
+        self.market_craft[item.name]['Time'] = total_time
         return total_cost, total_time
 
     def get_hand_craft_cost_for_item(self, item: Item) -> (int, float):
-        if item.hand_craft_cost != None:
-            return item.hand_craft_cost, item.hand_craft_time
+        hand_craft_item = self.hand_craft[item.name]
+
+        if 'Cost' in hand_craft_item:
+            return hand_craft_item['Cost'], hand_craft_item['Time']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market. 
         elif len(item.recipes) == 0: 
             return self.item_price_manager.get_market_price_for_item(item.name), 0.0
 
         recipe = item.recipes[0]
-
         total_cost = 0
         total_time = 0.0
+
         for (ingredient, quantity) in recipe.get_ingredients():
             subcost, subtime = self.get_hand_craft_cost_for_item(item.item_manager.items[ingredient])
             total_cost += quantity * subcost
@@ -62,19 +65,20 @@ class ItemProfitCalculator():
         total_time += item.time_to_produce # How much time in seconds to produce this item
         total_time /= item.quantity_produced
 
-        item.hand_craft_cost = total_cost
-        item.hand_craft_time = total_time
+        self.hand_craft[item.name]['Cost'] = total_cost
+        self.hand_craft[item.name]['Time'] = total_time
         return total_cost, total_time
 
     def get_optimal_craft_cost_for_item(self, item: Item) -> (int, float, str):
-        if item.optimal_craft_cost != None:
-            return item.optimal_craft_cost, item.optimal_craft_time, item.optimal_craft_action
+        optimal_craft_item = self.optimal_craft[item.name]
+
+        if 'Cost' in optimal_craft_item:
+            return optimal_craft_item['Cost'], optimal_craft_item['Time'], optimal_craft_item['Action']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market. 
         elif len(item.recipes) == 0: 
             return self.item_price_manager.get_market_price_for_item(item.name), 0, "Market Buy"
 
         recipe = item.recipes[0]
-
         total_price = 0
         total_time = 0.0
         best_action = "Market Buy"
@@ -102,7 +106,15 @@ class ItemProfitCalculator():
             # exit(1)
         
         total_time /= item.quantity_produced
-        item.optimal_craft_cost = total_price
-        item.optimal_craft_time = total_time
-        item.optimal_craft_action = best_action
+        self.optimal_craft[item.name]['Cost'] = total_price
+        self.optimal_craft[item.name]['Time'] = total_time
+        self.optimal_craft[item.name]['Action'] = best_action
         return total_price, total_time, best_action
+
+    def get_optimal_action_for_item(self, item):
+        action = "Market Buy"
+        print(item.name, self.optimal_craft[item.name])
+        if "Action" in self.optimal_craft[item.name]:
+            action = self.optimal_craft[item.name]['Action']
+        return action
+            
