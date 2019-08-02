@@ -29,5 +29,6 @@ if __name__ == "__main__":
     item_manager.item_price_manager.save_market_prices()
 
     #---------------
-    prompt_user_for_desired_item()
+    while True:
+        prompt_user_for_desired_item()
     

@@ -38,7 +38,7 @@ class ShoppingCart:
                 print("{:35} x {:8} {:10} Silver".format(ingredient, quantity, price))
 
             shopping_cart_total += ingredient_price
-            print('{:57}  Total'.format(ingredient_price))
+            print('{:57}  Ingredient Total'.format(ingredient_price))
             print()
 
         recipe_item = self.item_manager.items[self.cart[0].end_product]
@@ -52,10 +52,14 @@ class ShoppingCart:
         market_price_total = market_price_total * POST_TAX_PERCENT
         print("{:57}  Market Sell Price (After Tax)".format(market_price_total))
         print("{:57}  Profit".format(market_price_total - shopping_cart_total))
-        print("{:57}  Profit (Per Item)".format(market_price * POST_TAX_PERCENT - shopping_cart_total/self.cart[0].end_product_count))
         print("{:57.2f}  Profit Margin".format((market_price_total - shopping_cart_total)/shopping_cart_total))
+        
+        print("{:57}  Market Sell Price (Per Item)".format(market_price))
+        print("{:57}  Market Sell Price (Per Item, After Tax)".format(market_price * POST_TAX_PERCENT))
+        print("{:57}  Silver Spent (Per Item)".format(shopping_cart_total/self.cart[0].end_product_count))
+        print("{:57}  Profit (Per Item)".format(market_price * POST_TAX_PERCENT - shopping_cart_total/self.cart[0].end_product_count))
+        
         print()
-
 
         print("{:57.2f}  Total Craft Time (Seconds)".format(time_to_craft))
         print("{:57.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
@@ -63,6 +67,12 @@ class ShoppingCart:
         print("{:57.2f}  Profit (Silver/Hour)".format((market_price_total - shopping_cart_total)/(time_to_craft/60/60)))
 
         print('-'*120)
+
+        count = int(input('How many did you actually make?\t'))
+        print("{:57.2f}  Actual Profit".format(count*market_price - shopping_cart_total))
+        print("{:57.2f}  Actual Profit Margin".format((count*market_price - shopping_cart_total)/(shopping_cart_total)))
+        print("{:57.2f}  Actual Profit (Silver/Hour)".format((count*market_price - shopping_cart_total)/(time_to_craft/60/60)))
+
 
     def add_item_to_cart(self, item: Item, shopping_cart_quantity: int):
         recipe = item.get_optimal_recipe()
@@ -74,8 +84,8 @@ class ShoppingCart:
                 ingredient_item = item.item_manager.items[ingredient]
                 num_ingredient_needed = math.ceil(int(shopping_cart_quantity) * int(quantity_per_ingredient))
                 
-                num_ingredient_needed = max(quantity_per_ingredient, int(num_ingredient_needed/item.quantity_produced))
-                num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
+                num_ingredient_needed = max(quantity_per_ingredient, math.ceil(num_ingredient_needed/item.quantity_produced))
+                # num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
                 
 
                 if (ingredient_item.optimal_craft_action == "Market Buy"):
