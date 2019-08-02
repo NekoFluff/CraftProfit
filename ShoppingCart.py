@@ -75,7 +75,7 @@ class ShoppingCart:
                 num_ingredient_needed = math.ceil(int(shopping_cart_quantity) * int(quantity_per_ingredient))
                 
                 num_ingredient_needed = max(quantity_per_ingredient, int(num_ingredient_needed/item.quantity_produced))
-                # num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
+                num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
                 
 
                 if (ingredient_item.optimal_craft_action == "Market Buy"):

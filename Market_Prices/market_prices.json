@@ -601,7 +601,7 @@
     },
     "Weeds": {
         "Last Updated": "2019-07-31 22:58:45.329030",
-        "Market Price": 2620,
+        "Market Price": 3720,
         "Quantity:": 136
     },
     "White Cedar Plank": {
@@ -618,6 +618,11 @@
         "Last Updated": "2019-07-31 22:27:04.050579",
         "Market Price": 920,
         "Quantity:": 0
+    },
+    "Wild Grass": {
+        "Last Updated": "2019-08-01 22:05:05.923598",
+        "Market Price": 3130,
+        "Quantity:": 10209
     },
     "Worm Hide": {
         "Last Updated": "2019-08-01 00:54:08.068069",
