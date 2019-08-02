@@ -1,0 +1,11 @@
+{
+    "Name": "Bronze Ingot",
+    "Recipes": [
+        {
+            "Melted Copper Shard": 5,
+            "Melted Tin Shard": 5
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

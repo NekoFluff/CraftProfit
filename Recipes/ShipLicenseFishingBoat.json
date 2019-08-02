@@ -1,0 +1,16 @@
+{
+    "Name": "Ship License: Fishing Boat",
+    "Recipes": [
+        {
+            "Usable Scantling": 25,
+            "Birch Plywood": 50,
+            "Bronze Ingot": 25,
+            "Pine Sap": 30,
+            "Black Stone Powder": 30,
+            "Flax Fabric": 16
+        }
+    ],
+    "Time to Produce": 90000,
+    "Quantity Produced": 1
+    
+}

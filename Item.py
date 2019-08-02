@@ -59,8 +59,9 @@ class Item:
             total_cost += quantity * self.item_price_manager.get_market_price_for_item(ingredient)
             
         total_cost = total_cost / self.quantity_produced # Division to get price per item
-        total_time += self.time_to_produce / self.quantity_produced # How much time in seconds to produce this item
-        
+        total_time += self.time_to_produce # How much time in seconds to produce this item
+        total_time /= self.quantity_produced
+
         self.market_craft_cost = total_cost
         return total_cost, total_time
 
@@ -80,8 +81,10 @@ class Item:
             total_cost += quantity * subcost
             total_time += quantity * subtime
 
-        total_cost = total_cost / self.quantity_produced # Division to get price per item
-        total_time += self.time_to_produce / self.quantity_produced # How much time in seconds to produce this item
+        total_cost /= self.quantity_produced # Division to get price per item
+        total_time += self.time_to_produce # How much time in seconds to produce this item
+        total_time /= self.quantity_produced
+
         self.hand_craft_cost = total_cost
         self.hand_craft_time = total_time
         return total_cost, total_time
@@ -102,10 +105,12 @@ class Item:
             lowest_cost, time_cost, best_action = self.item_manager.items[ingredient].get_optimal_craft_cost()
             # Compute the total minimum cost
             total_price += quantity * lowest_cost
-            
             if best_action != "Market Buy":
-                total_time += quantity * time_cost # Time cost for each ingredient crafted
-
+                total_time += quantity * time_cost# Time cost for each ingredient crafted
+            if (self.name == "Pure Iron Crystal"):
+                # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, lowest_cost, quantity, quantity * lowest_cost, total_price))
+                print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, time_cost, quantity, quantity * time_cost, total_time))
+        
         market_price = self.item_price_manager.get_market_price_for_item(self.name)
         total_price = total_price / self.quantity_produced # Division to get price per item
 
@@ -115,8 +120,11 @@ class Item:
             total_time = 0
         else:
             best_action = "Craft"
-            total_time += self.time_to_produce / self.quantity_produced # How much time in seconds to produce this item
-
+            total_time += self.time_to_produce # How much time in seconds to produce this item
+        # if (self.name == "Ship License: Fishing Boat"):
+            # exit(1)
+        
+        total_time /= self.quantity_produced
         self.optimal_craft_cost = total_price
         self.optimal_craft_time = total_time
         self.optimal_craft_action = best_action

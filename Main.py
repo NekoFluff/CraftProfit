@@ -13,7 +13,7 @@ def prompt_user_for_desired_item():
     else:
         quantity = int(input('How many would you like to craft?\t'))
         item = item_manager.items[desired_item]
-        shopping_cart = ShoppingCart()
+        shopping_cart = ShoppingCart(item_manager)
         shopping_cart.add_item_to_cart(item=item, shopping_cart_quantity=quantity)
         shopping_cart.print_shopping_cart()
 

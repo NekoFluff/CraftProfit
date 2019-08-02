@@ -64,6 +64,11 @@
         "Market Price": 3270,
         "Quantity:": 541
     },
+    "Bronze Ingot": {
+        "Last Updated": "2019-08-01 19:00:26.437881",
+        "Market Price": 12100,
+        "Quantity:": 28066
+    },
     "Cedar Plank": {
         "Last Updated": "2019-07-31 22:32:53.160897",
         "Market Price": 2730,
@@ -149,6 +154,21 @@
         "Market Price": 1230,
         "Quantity:": 27292
     },
+    "Flax": {
+        "Last Updated": "2019-08-01 20:20:35.626873",
+        "Market Price": 1300,
+        "Quantity:": 59000
+    },
+    "Flax Fabric": {
+        "Last Updated": "2019-08-01 20:21:08.138926",
+        "Market Price": 10200,
+        "Quantity:": 1941889
+    },
+    "Flax Thread": {
+        "Last Updated": "2019-08-01 20:20:51.180244",
+        "Market Price": 2320,
+        "Quantity:": 32423
+    },
     "Forest Emerald": {
         "Last Updated": "2019-08-01 00:33:29.941394",
         "Market Price": 313000,
@@ -218,6 +238,11 @@
         "Last Updated": "2019-08-01 00:54:16.758835",
         "Market Price": 7850,
         "Quantity:": 2502
+    },
+    "Log": {
+        "Last Updated": "2019-08-01 20:29:28.167041",
+        "Market Price": 7550,
+        "Quantity:": 0
     },
     "Loopy Tree Plank": {
         "Last Updated": "2019-07-31 22:33:24.152227",
@@ -329,6 +354,11 @@
         "Market Price": 13700,
         "Quantity:": 19022
     },
+    "Pine Sap": {
+        "Last Updated": "2019-08-01 20:29:43.119111",
+        "Market Price": 4930,
+        "Quantity:": 28656
+    },
     "Pine Timber": {
         "Last Updated": "2019-07-31 22:26:46.590873",
         "Market Price": 650,
@@ -403,6 +433,11 @@
         "Last Updated": "2019-08-01 01:11:05.260446",
         "Market Price": 20,
         "Quantity:": 999999999
+    },
+    "Ship License: Fishing Boat": {
+        "Last Updated": "2019-08-01 20:30:22.269397",
+        "Market Price": 6000000,
+        "Quantity:": 0
     },
     "Silver Azalea": {
         "Last Updated": "2019-07-31 22:58:19.618097",
@@ -553,6 +588,11 @@
         "Last Updated": "2019-07-31 22:58:02.967613",
         "Market Price": 15400,
         "Quantity:": 713
+    },
+    "Usable Scantling": {
+        "Last Updated": "2019-08-01 20:30:01.235631",
+        "Market Price": 25200,
+        "Quantity:": 0
     },
     "Vanadium Ore": {
         "Last Updated": "2019-08-01 00:33:10.151417",

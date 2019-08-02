@@ -33,7 +33,7 @@ class ItemManager:
             market_craft_cost = self.market_craft_costs[item][0]
             market_craft_time = self.market_craft_costs[item][1]
             market_price = self.item_price_manager.get_market_price_for_item(item)
-            print('{:15} || Cost to Craft using Market bought materials: {:5} || Price on Market: {:10} || Profit: {:8}'.format(item, market_craft_cost, market_price, market_price-market_craft_cost))
+            print('{:25} || Cost to Craft using Market bought materials: {:15} || Price on Market: {:10} || Profit: {:8}'.format(item, market_craft_cost, market_price, market_price-market_craft_cost))
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT)- market_craft_cost
@@ -55,7 +55,7 @@ class ItemManager:
             hand_craft_cost = self.hand_craft_costs[item][0]
             hand_craft_time = self.hand_craft_costs[item][1]
             market_price = self.item_price_manager.get_market_price_for_item(item)
-            print('{:15} || Cost to Craft by Hand: {:5} || Price on Market: {:10} || Profit: {:8}'.format(item, hand_craft_cost, market_price, market_price-hand_craft_cost))
+            print('{:25} || Cost to Craft by Hand: {:15} || Price on Market: {:10} || Profit: {:8}'.format(item, hand_craft_cost, market_price, market_price-hand_craft_cost))
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT)- hand_craft_cost
@@ -86,7 +86,7 @@ class ItemManager:
 
         profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Course of Action", "Market Price", "Cheapest Buy/Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
         profits_dataframe.to_csv(r'.\Profit\optimal_profit_values.csv', index=False)
-        print('Profits data written to ' + r'.\Profit\profit_values.csv')
+        print('Profits data written to ' + r'.\Profit\optimal_profit_values.csv')
 
 if __name__ == "__main__":
     print("Testing ItemManager using all available recipes.")
