@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
+from ItemProfitCalculator import ItemProfitCalculator
 
 POST_TAX_PERCENT = 0.845
 
@@ -16,6 +17,8 @@ class ItemManager:
 
     def __init__(self):
         self.item_price_manager = ItemMarketPriceManager()
+        self.item_profit_calculator = ItemProfitCalculator()
+
         for filename in os.listdir('Recipes'):
             path = 'Recipes/' + filename
             print(path)
@@ -26,7 +29,7 @@ class ItemManager:
 
     def calculate_market_craft_costs(self):
         for item in self.items.values():
-            self.market_craft_costs[item.name] = item.get_market_craft_cost()
+            self.market_craft_costs[item.name] = self.item_profit_calculator.get_market_craft_cost_for_item(item)
 
         profits = []
         for item in self.market_craft_costs:
@@ -48,7 +51,7 @@ class ItemManager:
 
     def calculate_hand_craft_costs(self):
         for item in self.items.values():
-            self.hand_craft_costs[item.name] = item.get_hand_craft_cost()
+            self.hand_craft_costs[item.name] = self.item_profit_calculator.get_hand_craft_cost_for_item(item)
 
         profits = []
         for item in self.hand_craft_costs:
@@ -70,7 +73,7 @@ class ItemManager:
 
     def calculate_optimal_craft_costs(self):
         for item in self.items.values():
-            self.optimal_craft_costs[item.name] = item.get_optimal_craft_cost()
+            self.optimal_craft_costs[item.name] = self.item_profit_calculator.get_optimal_craft_cost_for_item(item)
             
         profits = []
         for item in self.optimal_craft_costs:
