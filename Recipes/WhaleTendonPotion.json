@@ -1,0 +1,13 @@
+{
+    "Name": "Whale Tendon Potion",
+    "Recipes": [
+        {
+            "Blue Whale Tendon": 1,
+            "HP Potion (Medium)": 3,
+            "MP Potion (Medium)": 3,
+            "Purified Water": 8
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

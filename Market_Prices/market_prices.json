@@ -24,6 +24,11 @@
         "Market Price": 9250,
         "Quantity:": 25547
     },
+    "Ash Sap": {
+        "Last Updated": "2019-08-02 19:01:40.102557",
+        "Market Price": 2740,
+        "Quantity:": 17352
+    },
     "Ash Timber": {
         "Last Updated": "2019-07-31 22:01:07.790969",
         "Market Price": 320,
@@ -53,6 +58,11 @@
         "Last Updated": "2019-07-31 22:57:17.259899",
         "Market Price": 3850,
         "Quantity:": 138349
+    },
+    "Blue Whale Tendon": {
+        "Last Updated": "2019-08-02 18:47:44.508596",
+        "Market Price": 4940000,
+        "Quantity:": 387
     },
     "Bottle of River Water": {
         "Last Updated": "2019-07-31 22:57:30.639289",
@@ -85,14 +95,14 @@
         "Quantity:": 29720
     },
     "Clear Liquid Reagent": {
-        "Last Updated": "2019-08-01 01:11:49.068264",
-        "Market Price": 4740,
-        "Quantity:": 75650
-    },
-    "Clear Liquid Regeant": {
         "Last Updated": "2019-08-01 01:05:19.187786",
         "Market Price": 4740,
         "Quantity:": 75115
+    },
+    "Clown's Blood": {
+        "Last Updated": "2019-08-02 19:02:39.915681",
+        "Market Price": 14300,
+        "Quantity:": 9775
     },
     "Coal": {
         "Last Updated": "2019-08-01 00:29:39.576091",
@@ -125,9 +135,9 @@
         "Quantity:": 103894
     },
     "Emerald": {
-        "Last Updated": "2019-08-01 00:32:20.220332",
-        "Market Price": 112000,
-        "Quantity:": 314
+        "Last Updated": "2019-08-02 19:06:46.443251",
+        "Market Price": 115000,
+        "Quantity:": 1657
     },
     "Fine Hard Hide": {
         "Last Updated": "2019-08-01 00:54:37.449157",
@@ -178,6 +188,16 @@
         "Last Updated": "2019-08-01 00:30:27.027398",
         "Market Price": 87500,
         "Quantity:": 4122
+    },
+    "HP Potion (Medium)": {
+        "Last Updated": "2019-08-02 18:48:49.932589",
+        "Market Price": 120,
+        "Quantity:": 203498
+    },
+    "HP Potion (Small)": {
+        "Last Updated": "2019-08-02 18:48:04.158922",
+        "Market Price": 80,
+        "Quantity:": 999999999
     },
     "Hard Hide": {
         "Last Updated": "2019-08-01 00:53:57.998044",
@@ -258,6 +278,16 @@
         "Last Updated": "2019-07-31 22:26:10.480091",
         "Market Price": 448,
         "Quantity:": 1386
+    },
+    "MP Potion (Medium)": {
+        "Last Updated": "2019-08-02 18:49:23.599983",
+        "Market Price": 120,
+        "Quantity:": 186
+    },
+    "MP Potion (Small)": {
+        "Last Updated": "2019-08-02 18:49:19.501902",
+        "Market Price": 48,
+        "Quantity:": 250
     },
     "Maple Plank": {
         "Last Updated": "2019-07-31 22:33:37.409614",
@@ -374,6 +404,11 @@
         "Market Price": 85000,
         "Quantity:": 61
     },
+    "Powder of Darkness": {
+        "Last Updated": "2019-08-02 19:02:15.150138",
+        "Market Price": 1870,
+        "Quantity:": 7505095
+    },
     "Processed Coal": {
         "Last Updated": "2019-08-01 00:30:50.749537",
         "Market Price": 2140,
@@ -415,9 +450,9 @@
         "Quantity:": 29
     },
     "Rough Emerald": {
-        "Last Updated": "2019-08-01 00:29:57.237600",
-        "Market Price": 39800,
-        "Quantity:": 120
+        "Last Updated": "2019-08-02 19:08:06.516920",
+        "Market Price": 40000,
+        "Quantity:": 1
     },
     "Rough Mud Crystal": {
         "Last Updated": "2019-08-01 00:54:26.698287",
@@ -443,6 +478,11 @@
         "Last Updated": "2019-07-31 22:58:19.618097",
         "Market Price": 224,
         "Quantity:": 28274
+    },
+    "Spirit's Leaf": {
+        "Last Updated": "2019-08-02 19:02:29.650421",
+        "Market Price": 2250,
+        "Quantity:": 3840846
     },
     "Steel": {
         "Last Updated": "2019-08-01 00:40:47.673397",
@@ -604,6 +644,16 @@
         "Market Price": 3720,
         "Quantity:": 136
     },
+    "Whale Tendon Elixir": {
+        "Last Updated": "2019-08-02 19:03:00.029864",
+        "Market Price": 1590000,
+        "Quantity:": 42
+    },
+    "Whale Tendon Potion": {
+        "Last Updated": "2019-08-02 18:49:42.608683",
+        "Market Price": 381000,
+        "Quantity:": 0
+    },
     "White Cedar Plank": {
         "Last Updated": "2019-07-31 22:34:27.890677",
         "Market Price": 2860,
@@ -623,6 +673,11 @@
         "Last Updated": "2019-08-01 22:05:05.923598",
         "Market Price": 3130,
         "Quantity:": 10209
+    },
+    "Wolf Blood": {
+        "Last Updated": "2019-08-02 19:01:48.730638",
+        "Market Price": 8500,
+        "Quantity:": 0
     },
     "Worm Hide": {
         "Last Updated": "2019-08-01 00:54:08.068069",

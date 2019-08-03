@@ -1,11 +1,11 @@
 {
-    "Name": "Metal Solvent",
+    "Name": "Clown's Blood",
     "Recipes": [
         {
             "Clear Liquid Reagent": 1,
-            "Rough Stone": 4,
-            "Melted Iron Shard": 3,
-            "Trace of Savagery": 2
+            "Wolf Blood": 2,
+            "Powder of Darkness": 1,
+            "Spirit's Leaf": 1
         }
     ],
     "Time to Produce": 6,

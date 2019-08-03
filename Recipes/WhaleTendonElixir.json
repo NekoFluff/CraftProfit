@@ -1,0 +1,14 @@
+{
+    "Name": "Whale Tendon Elixir",
+    "Recipes": [
+        {
+            "Blue Whale Tendon": 1,
+            "Clown's Blood": 1,
+            "Ash Sap": 12,
+            "Purified Water": 5,
+            "Clear Liquid Reagent": 2
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}
