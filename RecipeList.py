@@ -22,3 +22,11 @@ class RecipeList:
         for (ingredient, quantity) in self.get_ingredients():
             print(ingredient, quantity)
         print()
+    
+    def to_dict(self):
+        result = {}
+
+        for (ingredient, quantity) in self.get_ingredients():
+            result[ingredient] = quantity
+
+        return result

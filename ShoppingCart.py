@@ -71,11 +71,15 @@ class ShoppingCart:
         print('-'*120)
 
         count = int(input('How many did you actually make?\t'))
+        market_price = int(input('How much are you selling it for?\t'))
         print("{:57.2f}  Actual Profit (After Tax)".format(count*market_price*POST_TAX_PERCENT - shopping_cart_total))
         print("{:57.2f}  Actual Profit Margin".format((count*market_price*POST_TAX_PERCENT - shopping_cart_total)/(shopping_cart_total)))
         print("{:57.2f}  Actual Profit (Silver/Hour)".format((count*market_price*POST_TAX_PERCENT - shopping_cart_total)/(time_to_craft/60/60)))
-        print("{:57.2f}  Actual Craft Ratio (Generally/Expected 2.5 Craft Ratio)".format(count/(self.cart[0].end_product_count/recipe_item.quantity_produced)))
-
+        craft_ratio = count/(self.cart[0].end_product_count/recipe_item.quantity_produced)
+        print("{:57.2f}  Actual Craft Ratio (Generally/Expected 2.5 Craft Ratio)".format(craft_ratio))
+        self.item_price_manager.update_item_market_price(recipe_item.name, market_price)
+        recipe_item.update_quantity_produced(craft_ratio)
+        
 
     def add_item_to_cart(self, item: Item, shopping_cart_quantity: int):
         recipe = item.get_optimal_recipe()

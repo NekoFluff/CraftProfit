@@ -14,6 +14,10 @@
         "Market Price": 1090,
         "Quantity:": 48
     },
+    "Apprentice's Alchemy Box": {
+        "Last Updated": "2019-08-02 22:57:46.259669",
+        "Market Price": 200000
+    },
     "Ash Plank": {
         "Last Updated": "2019-07-31 22:01:29.232645",
         "Market Price": 1150,
@@ -33,6 +37,10 @@
         "Last Updated": "2019-07-31 22:01:07.790969",
         "Market Price": 320,
         "Quantity:": 63585
+    },
+    "Beer": {
+        "Last Updated": "2019-08-02 22:59:39.016632",
+        "Market Price": 1970
     },
     "Birch Plank": {
         "Last Updated": "2019-07-31 22:32:42.058577",
@@ -235,9 +243,8 @@
         "Quantity:": 1
     },
     "Item 5": {
-        "Last Updated": "2019-07-31 14:09:06.833358",
-        "Market Price": 23,
-        "Quantity:": 1
+        "Last Updated": "2019-08-02 23:25:27.706279",
+        "Market Price": 77777777
     },
     "Item 6": {
         "Last Updated": "2019-07-31 14:09:19.562326",
@@ -253,6 +260,10 @@
         "Last Updated": "2019-08-01 00:31:31.269203",
         "Market Price": 367,
         "Quantity:": 84668
+    },
+    "Leavening Agent": {
+        "Last Updated": "2019-08-02 22:59:12.997542",
+        "Market Price": 20
     },
     "Lizard Hide": {
         "Last Updated": "2019-08-01 00:54:16.758835",
@@ -334,6 +345,10 @@
         "Market Price": 96000,
         "Quantity:": 160
     },
+    "Mineral Water": {
+        "Last Updated": "2019-08-02 22:59:30.105439",
+        "Market Price": 30
+    },
     "Moss Tree Plank": {
         "Last Updated": "2019-07-31 22:33:52.751331",
         "Market Price": 1700,
@@ -400,9 +415,8 @@
         "Quantity:": 2747
     },
     "Plywood Hardener": {
-        "Last Updated": "2019-07-31 22:58:58.759493",
-        "Market Price": 85000,
-        "Quantity:": 61
+        "Last Updated": "2019-08-02 21:14:47.160374",
+        "Market Price": 71500
     },
     "Powder of Darkness": {
         "Last Updated": "2019-08-02 19:02:15.150138",
@@ -625,9 +639,9 @@
         "Quantity:": 1893
     },
     "Trace of the Earth": {
-        "Last Updated": "2019-07-31 22:58:02.967613",
-        "Market Price": 15400,
-        "Quantity:": 713
+        "Last Updated": "2019-08-02 19:48:18.850322",
+        "Market Price": 17000,
+        "Quantity:": 1000
     },
     "Usable Scantling": {
         "Last Updated": "2019-08-01 20:30:01.235631",
@@ -653,6 +667,10 @@
         "Last Updated": "2019-08-02 18:49:42.608683",
         "Market Price": 381000,
         "Quantity:": 0
+    },
+    "Wheat": {
+        "Last Updated": "2019-08-02 22:58:50.487340",
+        "Market Price": 400
     },
     "White Cedar Plank": {
         "Last Updated": "2019-07-31 22:34:27.890677",

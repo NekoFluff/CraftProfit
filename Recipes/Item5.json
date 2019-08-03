@@ -1,5 +1,6 @@
 {
     "Name": "Item 5",
+    "Quantity Produced": 10000000000.0,
     "Recipes": [
         {
             "Item 1": 2,
@@ -7,7 +8,5 @@
             "Item 3": 6
         }
     ],
-    "Time to Produce": 6,
-    "Quantity Produced": 1
-    
+    "Time to Produce": 6.0
 }

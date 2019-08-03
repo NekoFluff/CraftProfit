@@ -1,0 +1,13 @@
+{
+    "Name": "Beer",
+    "Recipes": [
+        {
+            "Wheat": 5,
+            "Sugar": 1,
+            "Leavening Agent": 2,
+            "Mineral Water": 6
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5
+}

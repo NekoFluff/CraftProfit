@@ -39,6 +39,25 @@ class Item:
         else:
             return None
 
+    def update_quantity_produced(self, crafting_ratio: float):
+        self.quantity_produced = crafting_ratio
+        self.save_json()
+
+    def save_json(self):
+        import re
+        file_name = re.sub(r'\W+', '', self.name)
+        import json
+        with open('Recipes/{}.json'.format(file_name), 'w') as json_file:
+            json.dump(self.to_dict(), json_file, indent=4, sort_keys=True)
+
+    def to_dict(self) -> {}:
+        result = {}
+        result['Name'] = self.name
+        result['Recipes'] = [recipe.to_dict() for recipe in self.recipes]
+        result['Time to Produce'] = self.time_to_produce
+        result['Quantity Produced'] = self.quantity_produced
+
+        return result
 
 if __name__ == "__main__":
     print("Running test using Item4.")
