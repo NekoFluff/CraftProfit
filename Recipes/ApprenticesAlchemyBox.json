@@ -1,11 +1,11 @@
 {
     "Name": "Apprentice's Alchemy Box",
+    "Quantity Produced": 1.2,
     "Recipes": [
         {
-            "Pure Powder Reagent": 20,
-            "Clear Liquid Reagent": 20
+            "Clear Liquid Reagent": 20,
+            "Pure Powder Reagent": 20
         }
     ],
-    "Time to Produce": 8,
-    "Quantity Produced": 2.5
+    "Time to Produce": 8.0
 }

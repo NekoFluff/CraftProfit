@@ -1,13 +1,13 @@
 {
     "Name": "Plywood Hardener",
+    "Quantity Produced": 1.4633333333333334,
     "Recipes": [
         {
-            "Pure Powder Reagent": 1,
-            "Fir Sap": 4,
             "Bloody Tree Knot": 3,
+            "Fir Sap": 4,
+            "Pure Powder Reagent": 1,
             "Trace of the Earth": 3
         }
     ],
-    "Time to Produce": 8,
-    "Quantity Produced": 2.5
+    "Time to Produce": 6.0
 }
