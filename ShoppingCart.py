@@ -39,7 +39,10 @@ class ShoppingCart:
                     ingredient_time = ingredient_item.time_to_produce/ingredient_item.quantity_produced * quantity
                 time_to_craft += ingredient_time
                 ingredient_price += price
-                print("{:35} x {:8} {:10} Silver {:8.2f} minutes".format(ingredient, quantity, price, ingredient_time/60))
+                if ingredient_time != 0:
+                    print("{:35} x {:8} {:10} Silver {:8.2f} minutes".format(ingredient, quantity, price, ingredient_time/60))
+                else:
+                    print("{:35} x {:8} {:10} Silver".format(ingredient, quantity, price))
 
             shopping_cart_total += ingredient_price
             print('{:57}  Ingredient Total'.format(ingredient_price))
@@ -51,7 +54,7 @@ class ShoppingCart:
         time_to_craft += recipe_time
 
 
-        print("{:57.2f} minutes to craft {}".format(recipe_time/60, recipe_item.name))
+        print("{:57.2f}  Minutes to Craft {} x {}".format(recipe_time/60, self.cart[0].end_product_count, recipe_item.name))
         print("{:57.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
         print("{:57}  Shopping Cart Total".format(shopping_cart_total))
         market_price = self.item_price_manager.get_market_price_for_item(self.cart[0].end_product)

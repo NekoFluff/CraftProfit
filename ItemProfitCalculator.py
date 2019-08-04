@@ -119,7 +119,7 @@ class ItemProfitCalculator():
         return total_price, total_time, best_action
 
     def get_optimal_per_sec_craft_cost_for_item(self, item: Item) -> (int, float, str):
-        optimal_craft_item = self.optimal_craft[item.name]
+        optimal_craft_item = self.optimal_per_sec_craft[item.name]
         total_price = 0
         total_time = 0.0
         best_action = "Market Buy"
@@ -135,22 +135,25 @@ class ItemProfitCalculator():
         else:
             recipe = item.recipes[0]
             for (ingredient, quantity) in recipe.get_ingredients():
-                lowest_cost, time_cost, best_action = self.get_optimal_per_sec_craft_cost_for_item(item.item_manager.items[ingredient])
+                lowest_cost, time_cost, ingredient_best_action = self.get_optimal_per_sec_craft_cost_for_item(item.item_manager.items[ingredient])
                 ingredient_market_price = self.item_price_manager.get_market_price_for_item(ingredient)
 
-                if best_action != 'Market Buy': 
+                if ingredient_best_action != 'Market Buy': 
                     # If you end up crafting the item, make sure it doesn't negatively impact your profit per second
                     # It may be the case that buying the item off the market will increase your profit per second
                     # But if crafting the item increases your profit per second, then craft it
                     ingredient_profit_per_second = (ingredient_market_price * POST_TAX_PERCENT - lowest_cost) / time_cost
                     if ingredient_profit_per_second < market_craft_cost/market_craft_time:
-                        best_action = 'Market Buy'
+                        ingredient_best_action = 'Market Buy'
                         time_cost = 0
                         lowest_cost = ingredient_market_price 
+                        self.optimal_per_sec_craft[ingredient]['Cost'] = lowest_cost
+                        self.optimal_per_sec_craft[ingredient]['Time'] = time_cost
+                        self.optimal_per_sec_craft[ingredient]['Action'] = ingredient_best_action
                 
                 # Compute the total minimum cost
                 total_price += quantity * lowest_cost
-                if best_action != "Market Buy":
+                if ingredient_best_action != "Market Buy":
                     total_time += quantity * time_cost# Time cost for each ingredient crafted
                 # if (item.name == "Pure Iron Crystal"):
                     # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, lowest_cost, quantity, quantity * lowest_cost, total_price))
@@ -177,9 +180,15 @@ class ItemProfitCalculator():
 
     def get_optimal_action_for_item(self, item):
         action = "Market Buy"
-        print(item.name, self.optimal_craft[item.name])
-        if "Action" in self.optimal_craft[item.name]:
-            action = self.optimal_craft[item.name]['Action']
+        optimal_per_sec_enabled = False
+        dict = self.optimal_per_sec_craft
+        if not optimal_per_sec_enabled:
+            dict = self.optimal_craft
+
+        print(item.name, dict[item.name])
+        if "Action" in dict[item.name]:
+            action = dict[item.name]['Action']
+        
         return action
     
     def read_filter_ingredients_json(self):
