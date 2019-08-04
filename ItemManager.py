@@ -29,6 +29,9 @@ class ItemManager:
         self.item_profit_calculator.calculate_optimal_craft_costs(self.items)
         print('-'*120)
 
+        self.item_profit_calculator.calculate_optimal_per_sec_craft_costs(self.items)
+        print('-'*120)
+
 
 if __name__ == "__main__":
     print("Testing ItemManager using all available recipes.")

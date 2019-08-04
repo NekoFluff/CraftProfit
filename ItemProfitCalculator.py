@@ -11,6 +11,7 @@ class ItemProfitCalculator():
     market_craft = defaultdict(lambda: {})
     hand_craft = defaultdict(lambda: {})
     optimal_craft = defaultdict(lambda: {})
+    optimal_per_sec_craft = defaultdict(lambda: {})
     item_included_in_output = defaultdict(lambda: True)
 
     __instance = None
@@ -117,6 +118,63 @@ class ItemProfitCalculator():
         self.optimal_craft[item.name]['Action'] = best_action
         return total_price, total_time, best_action
 
+    def get_optimal_per_sec_craft_cost_for_item(self, item: Item) -> (int, float, str):
+        optimal_craft_item = self.optimal_craft[item.name]
+        total_price = 0
+        total_time = 0.0
+        best_action = "Market Buy"
+        item_market_price = self.item_price_manager.get_market_price_for_item(item.name)
+        market_craft_cost, market_craft_time = self.get_market_craft_cost_for_item(item)
+
+
+        if 'Cost' in optimal_craft_item:
+            total_price, total_time, best_action = optimal_craft_item['Cost'], optimal_craft_item['Time'], optimal_craft_item['Action']
+        # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market. 
+        elif len(item.recipes) == 0: 
+            total_price, total_time, best_action = item_market_price, 0, "Market Buy"
+        else:
+            recipe = item.recipes[0]
+            for (ingredient, quantity) in recipe.get_ingredients():
+                lowest_cost, time_cost, best_action = self.get_optimal_per_sec_craft_cost_for_item(item.item_manager.items[ingredient])
+                ingredient_market_price = self.item_price_manager.get_market_price_for_item(ingredient)
+
+                if best_action != 'Market Buy': 
+                    # If you end up crafting the item, make sure it doesn't negatively impact your profit per second
+                    # It may be the case that buying the item off the market will increase your profit per second
+                    # But if crafting the item increases your profit per second, then craft it
+                    ingredient_profit_per_second = (ingredient_market_price * POST_TAX_PERCENT - lowest_cost) / time_cost
+                    if ingredient_profit_per_second < market_craft_cost/market_craft_time:
+                        best_action = 'Market Buy'
+                        time_cost = 0
+                        lowest_cost = ingredient_market_price 
+                
+                # Compute the total minimum cost
+                total_price += quantity * lowest_cost
+                if best_action != "Market Buy":
+                    total_time += quantity * time_cost# Time cost for each ingredient crafted
+                # if (item.name == "Pure Iron Crystal"):
+                    # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, lowest_cost, quantity, quantity * lowest_cost, total_price))
+                    # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, time_cost, quantity, quantity * time_cost, total_time))
+                
+            market_price = self.item_price_manager.get_market_price_for_item(item.name)
+            total_price = total_price / item.quantity_produced # Division to get price per item
+
+            if market_price <= total_price:  # If it is cheaper to buy it than to make it yourself
+                total_price = market_price
+                best_action = "Market Buy"
+                total_time = 0
+            else:
+                best_action = "Craft"
+                total_time += item.time_to_produce # How much time in seconds to produce this item
+            # if (item.name == "Ship License: Fishing Boat"):
+                # exit(1)
+            total_time /= item.quantity_produced
+
+        self.optimal_per_sec_craft[item.name]['Cost'] = total_price
+        self.optimal_per_sec_craft[item.name]['Time'] = total_time
+        self.optimal_per_sec_craft[item.name]['Action'] = best_action
+        return total_price, total_time, best_action
+
     def get_optimal_action_for_item(self, item):
         action = "Market Buy"
         print(item.name, self.optimal_craft[item.name])
@@ -141,17 +199,21 @@ class ItemProfitCalculator():
 
     def apply_filter_to_item(self, item: Item):
         included = True
+        recursive = self.filter_ingredients_json['Recursive']
         if self.filter_applied[item.name] == True:
             included = self.item_included_in_output[item.name]
 
         elif self.item_included_in_output[item.name] == False:
             included = False
-        else:
+        elif not recursive:
+            included = self.update_is_item_included_in_output(item)
+        elif recursive:
             recipe = item.get_optimal_recipe()
             if recipe is not None:
                 for (ingredient, _) in recipe.get_ingredients():
-                    if self.apply_filter_to_item(item.item_manager.items[ingredient]) == False:
+                    if not self.apply_filter_to_item(item.item_manager.items[ingredient]):
                         included = False
+
 
         self.filter_applied[item.name] = True
         self.item_included_in_output[item.name] = included
@@ -167,7 +229,7 @@ class ItemProfitCalculator():
                     self.item_included_in_output[item.name] = False
                     return False
 
-                if ingredient in self.filter_ingredients:
+                elif ingredient in self.filter_ingredients:
                     self.item_included_in_output[item.name] = False
                     return False
 
@@ -197,7 +259,7 @@ class ItemProfitCalculator():
             profit_ratio = float(profit) / float(market_craft_cost) 
             profit_per_sec = 0 if market_craft_time == 0 else profit/market_craft_time
             profit_per_hour = profit_per_sec * 3600
-            profits.append((item, market_price, market_craft_cost, profit, profit_ratio, market_craft_time, profit_per_hour))
+            profits.append((item.name, market_price, market_craft_cost, profit, profit_ratio, market_craft_time, profit_per_hour))
 
         profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Market Price", "Market Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
         profits_dataframe.to_csv(r'.\Profit\market_craft_profit_values.csv', index=False)
@@ -249,4 +311,27 @@ class ItemProfitCalculator():
         profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Course of Action", "Market Price", "Cheapest Buy/Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
         profits_dataframe.to_csv(r'.\Profit\optimal_profit_values.csv', index=False)
         print('Profits data written to ' + r'.\Profit\optimal_profit_values.csv')
+
+    def calculate_optimal_per_sec_craft_costs(self, items):
+        profits = []
+
+        for item in items.values():
+            self.get_optimal_per_sec_craft_cost_for_item(item)
+            
+            if not self.item_included_in_output[item.name]:
+                continue
+
+            cheapest_price, total_time, best_action = self.optimal_per_sec_craft[item.name]['Cost'],  self.optimal_per_sec_craft[item.name]['Time'], self.optimal_per_sec_craft[item.name]['Action']
+            market_price = self.item_price_manager.get_market_price_for_item(item.name)
+
+            # Profit calculations
+            profit = (market_price * POST_TAX_PERCENT)- cheapest_price
+            profit_ratio = float(profit) / float(cheapest_price) 
+            profit_per_sec = 0 if total_time == 0 else profit/total_time
+            profit_per_hour = profit_per_sec * 3600
+            profits.append((item.name, best_action, market_price, cheapest_price, profit, profit_ratio, total_time, profit_per_hour))
+
+        profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Course of Action", "Market Price", "Cheapest Buy/Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
+        profits_dataframe.to_csv(r'.\Profit\optimal_per_sec_profit_values.csv', index=False)
+        print('Profits data written to ' + r'.\Profit\optimal_per_sec_profit_values.csv')
             
