@@ -434,9 +434,8 @@
         "Quantity:": 4
     },
     "Pure Iron Crystal": {
-        "Last Updated": "2019-08-01 01:07:09.351218",
-        "Market Price": 140000,
-        "Quantity:": 3979
+        "Last Updated": "2019-08-04 08:24:21.368818",
+        "Market Price": 191000
     },
     "Pure Powder Reagent": {
         "Last Updated": "2019-07-31 22:57:54.488056",
@@ -482,6 +481,30 @@
         "Last Updated": "2019-08-01 01:11:05.260446",
         "Market Price": 20,
         "Quantity:": 999999999
+    },
+    "Shining Fluid Collector": {
+        "Last Updated": "2019-08-04 08:13:28.725968",
+        "Market Price": 181000
+    },
+    "Shining Steel Butcher Knife": {
+        "Last Updated": "2019-08-04 08:13:41.916017",
+        "Market Price": 162000
+    },
+    "Shining Steel Hoe": {
+        "Last Updated": "2019-08-04 08:13:47.805658",
+        "Market Price": 46000
+    },
+    "Shining Steel Lumbering Axe": {
+        "Last Updated": "2019-08-04 08:14:24.874592",
+        "Market Price": 41200
+    },
+    "Shining Steel Pickaxe": {
+        "Last Updated": "2019-08-04 08:04:40.198837",
+        "Market Price": 9000
+    },
+    "Shining Steel Tanning Knife": {
+        "Last Updated": "2019-08-04 08:14:33.912904",
+        "Market Price": 240000
     },
     "Ship License: Fishing Boat": {
         "Last Updated": "2019-08-01 20:30:22.269397",
@@ -529,9 +552,8 @@
         "Quantity:": 416
     },
     "Sturdy Ash Plywood": {
-        "Last Updated": "2019-07-31 22:59:07.388415",
-        "Market Price": 239000,
-        "Quantity:": 214
+        "Last Updated": "2019-08-04 07:45:49.597494",
+        "Market Price": 244000
     },
     "Sturdy Birch Plywood": {
         "Last Updated": "2019-08-01 00:07:38.583046",

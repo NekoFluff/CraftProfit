@@ -1,11 +1,12 @@
 {
+    "Last Updated": "2019-08-04 08:24:21.386738",
     "Name": "Pure Iron Crystal",
+    "Quantity Produced": 1.875,
     "Recipes": [
         {
             "Iron Ingot": 3,
             "Metal Solvent": 2
         }
     ],
-    "Time to Produce": 6,
-    "Quantity Produced": 2.5
+    "Time to Produce": 6.0
 }

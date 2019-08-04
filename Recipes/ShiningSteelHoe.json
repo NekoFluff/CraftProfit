@@ -1,0 +1,13 @@
+{    
+    "Name": "Shining Steel Hoe",
+    "Recipes": [
+        {
+            "Steel": 2,
+            "Maple Timber": 1,
+            "Pure Iron Crystal": 1,
+            "Black Stone Powder": 5
+        }
+    ],
+    "Time to Produce": 1800,
+    "Quantity Produced": 1
+}

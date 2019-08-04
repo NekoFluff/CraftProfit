@@ -3,11 +3,13 @@ import json
 from Item import Item
 from ItemProfitCalculator import ItemProfitCalculator
 
-# Loads all items in the Recipes folder. 
+# Loads all items in the Recipes folder.
 # Entry point for calculations costs for each item
+
+
 class ItemManager:
     items = {}
-    
+
     def __init__(self):
         for filename in os.listdir('Recipes'):
             path = 'Recipes/' + filename
@@ -16,7 +18,7 @@ class ItemManager:
                 item_json = json.load(json_file)
                 new_item = Item(item_json, item_manager=self)
                 self.items[new_item.name] = new_item
-                
+
         self.item_profit_calculator = ItemProfitCalculator(self.items)
 
     def perform_profit_calculations(self):
@@ -29,7 +31,8 @@ class ItemManager:
         self.item_profit_calculator.calculate_optimal_craft_costs(self.items)
         print('-'*120)
 
-        self.item_profit_calculator.calculate_optimal_per_sec_craft_costs(self.items)
+        self.item_profit_calculator.calculate_optimal_per_sec_craft_costs(
+            self.items)
         print('-'*120)
 
 

@@ -1,11 +1,12 @@
 {
+    "Last Updated": "2019-08-04 07:45:49.615416",
     "Name": "Sturdy Ash Plywood",
+    "Quantity Produced": 2.0,
     "Recipes": [
         {
             "Ash Plywood": 10,
             "Plywood Hardener": 3
         }
     ],
-    "Time to Produce": 6,
-    "Quantity Produced": 2.5
+    "Time to Produce": 6.0
 }

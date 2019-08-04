@@ -1,0 +1,14 @@
+{    
+    "Name": "Shining Steel Butcher Knife",
+    "Recipes": [
+        {
+            "Steel": 1,
+            "Maple Timber": 1,
+            "Pure Iron Crystal": 1,
+            "Black Stone Powder": 4,
+            "Fine Hard Hide": 1
+        }
+    ],
+    "Time to Produce": 1800,
+    "Quantity Produced": 1
+}

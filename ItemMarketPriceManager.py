@@ -33,11 +33,11 @@ class ItemMarketPriceManager:
         market_price = input('What is the price for {}?:\t'.format(item_name))
         # count = input('How many {} are there?:\t'.format(item_name))
         self.update_item_market_price(item_name, market_price)
-    
+
     def update_item_market_price(self, item_name: str, market_price: int):
         self.market_prices[item_name] = {
-            'Market Price': int(market_price), 
-            # 'Quantity:': int(count), 
+            'Market Price': int(market_price),
+            # 'Quantity:': int(count),
             'Last Updated': datetime.now().__str__()
         }
         self.save_market_prices()
@@ -47,7 +47,6 @@ class ItemMarketPriceManager:
             if ask_user:
                 self.ask_user_for_market_price(item_name)
             else:
-                raise Exception('There is no market price for {}'.format(item_name))
+                raise Exception(
+                    'There is no market price for {}'.format(item_name))
         return self.market_prices[item_name]['Market Price']
-    
-    

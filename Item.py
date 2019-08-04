@@ -1,3 +1,4 @@
+from datetime import datetime
 from RecipeList import RecipeList
 
 
@@ -12,7 +13,7 @@ class Item:
 
     def load_json(self, json: dict):
         self.set_name(json['Name'])
-        
+
         # If there are recipes for this item, add them to the recipes list
         if 'Recipes' in json:
             for recipe in json['Recipes']:
@@ -21,7 +22,8 @@ class Item:
                 quantity_produced = 1
                 if 'Quantity Produced' in json:
                     quantity_produced = json['Quantity Produced']
-                self.add_recipe(RecipeList(json['Name'], quantity_produced, recipe))
+                self.add_recipe(RecipeList(
+                    json['Name'], quantity_produced, recipe))
 
         if 'Time to Produce' in json:
             self.time_to_produce = float(json['Time to Produce'])
@@ -56,8 +58,10 @@ class Item:
         result['Recipes'] = [recipe.to_dict() for recipe in self.recipes]
         result['Time to Produce'] = self.time_to_produce
         result['Quantity Produced'] = self.quantity_produced
+        result['Last Updated'] = datetime.now().__str__()
 
         return result
+
 
 if __name__ == "__main__":
     print("Running test using Item4.")
@@ -66,4 +70,4 @@ if __name__ == "__main__":
         item_json = json.load(json_file)
         Item(item_json)
 
-    print("Item4 loaded successfully.")    
+    print("Item4 loaded successfully.")
