@@ -200,12 +200,13 @@ class ItemProfitCalculator():
         self.optimal_per_sec_craft[item.name]['Action'] = best_action
         return total_price, total_time, best_action
 
-    def get_optimal_action_for_item(self, item):
+    def get_optimal_action_for_item(self, item: Item):
         action = "Market Buy"
         optimal_per_sec_enabled = True
-        dict = self.optimal_per_sec_craft
-        if not optimal_per_sec_enabled:
-            dict = self.optimal_craft
+        dict = self.optimal_craft
+        if optimal_per_sec_enabled:
+            self.get_optimal_per_sec_craft_cost_for_item(item)
+            dict = self.optimal_per_sec_craft
 
         print(item.name, dict[item.name])
         if "Action" in dict[item.name]:
