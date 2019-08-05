@@ -1,0 +1,10 @@
+{
+    "Name": "Polished Stone",
+    "Quantity Produced": 2.5,
+    "Recipes": [
+        {
+            "Rough Stone": 10
+        }
+    ],
+    "Time to Produce": 6.0
+}

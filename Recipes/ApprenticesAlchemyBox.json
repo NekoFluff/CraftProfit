@@ -1,4 +1,5 @@
 {
+    "Last Updated": "2019-08-04 08:55:40.757665",
     "Name": "Apprentice's Alchemy Box",
     "Quantity Produced": 1.1,
     "Recipes": [
@@ -7,5 +8,7 @@
             "Pure Powder Reagent": 20
         }
     ],
-    "Time to Produce": 6.0
+    "Time to Produce": 6.0,
+    "Action:": "Imperial Alchemy",
+    "Taxed": false
 }

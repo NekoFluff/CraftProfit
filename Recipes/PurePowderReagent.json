@@ -8,6 +8,7 @@
             "Weeds": 1
         }
     ],
-    "Time to Produce": 8,
-    "Quantity Produced": 2.5
+    "Time to Produce": 10,
+    "Quantity Produced": 2.5,
+    "Action": "Alchemy"
 }

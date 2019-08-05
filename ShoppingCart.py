@@ -51,7 +51,7 @@ class ShoppingCart:
                         ingredient, price/quantity, quantity, price))
 
             shopping_cart_total += total_ingredients_price
-            print('{:77.0}  Ingredient Total'.format(total_ingredients_price))
+            print('{:77.0f}  Ingredient Total'.format(total_ingredients_price))
             print()
 
         recipe_item = self.item_manager.items[self.cart[0].end_product]
@@ -99,6 +99,7 @@ class ShoppingCart:
             (count*market_price*POST_TAX_PERCENT - shopping_cart_total)/(shopping_cart_total)))
         print("{:77.2f}  Actual Profit (Silver/Hour)".format((count*market_price *
                                                               POST_TAX_PERCENT - shopping_cart_total)/(time_to_craft/60/60)))
+
         craft_ratio = count / \
             (self.cart[0].end_product_count/recipe_item.quantity_produced)
         print(
@@ -121,8 +122,11 @@ class ShoppingCart:
                 num_ingredient_needed = max(quantity_per_ingredient, math.ceil(
                     num_ingredient_needed/item.quantity_produced))
                 if (num_ingredient_needed % int(quantity_per_ingredient) != 0):
-                    print("Padding: {} - {}", int(quantity_per_ingredient), num_ingredient_needed % int(quantity_per_ingredient))
-                    num_ingredient_needed = num_ingredient_needed + int(quantity_per_ingredient) - num_ingredient_needed % int(quantity_per_ingredient)
+                    print("Padding: {} - {}", int(quantity_per_ingredient),
+                          num_ingredient_needed % int(quantity_per_ingredient))
+                    num_ingredient_needed = num_ingredient_needed + \
+                        int(quantity_per_ingredient) - \
+                        num_ingredient_needed % int(quantity_per_ingredient)
 
                 optimal_item_action = self.item_profit_calculator.get_optimal_action_for_item(
                     ingredient_item)

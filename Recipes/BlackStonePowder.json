@@ -6,6 +6,7 @@
         }
     ],
     "Time to Produce": 6,
-    "Quantity Produced": 2.5
+    "Quantity Produced": 2.5,
+    "Action": "Grinding"
     
 }

@@ -15,7 +15,7 @@
         "Quantity:": 48
     },
     "Apprentice's Alchemy Box": {
-        "Last Updated": "2019-08-02 23:57:52.623741",
+        "Last Updated": "2019-08-04 08:55:40.731738",
         "Market Price": 180000
     },
     "Ash Plank": {
@@ -415,8 +415,12 @@
         "Quantity:": 2747
     },
     "Plywood Hardener": {
-        "Last Updated": "2019-08-02 23:43:43.403931",
+        "Last Updated": "2019-08-04 09:44:55.000341",
         "Market Price": 84500
+    },
+    "Polished Stone": {
+        "Last Updated": "2019-08-04 09:15:42.025371",
+        "Market Price": 17100
     },
     "Powder of Darkness": {
         "Last Updated": "2019-08-02 19:02:15.150138",
@@ -434,8 +438,8 @@
         "Quantity:": 4
     },
     "Pure Iron Crystal": {
-        "Last Updated": "2019-08-04 08:24:21.368818",
-        "Market Price": 191000
+        "Last Updated": "2019-08-04 22:21:43.049414",
+        "Market Price": 203000
     },
     "Pure Powder Reagent": {
         "Last Updated": "2019-07-31 22:57:54.488056",

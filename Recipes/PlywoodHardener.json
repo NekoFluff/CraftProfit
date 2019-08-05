@@ -1,4 +1,6 @@
 {
+    "Action": "Alchemy",
+    "Last Updated": "2019-08-04 09:44:55.016610",
     "Name": "Plywood Hardener",
     "Quantity Produced": 1.4633333333333334,
     "Recipes": [
@@ -9,5 +11,5 @@
             "Trace of the Earth": 3
         }
     ],
-    "Time to Produce": 6.0
+    "Time to Produce": 10.0
 }
