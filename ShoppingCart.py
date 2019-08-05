@@ -52,6 +52,10 @@ class ShoppingCart:
 
             shopping_cart_total += total_ingredients_price
             print('{:77.0f}  Ingredient Total'.format(total_ingredients_price))
+            recipe_price = self.item_price_manager.get_market_price_for_item(recipe.end_product)
+            cost_of_ingredients_for_single_item = (total_ingredients_price/recipe.end_product_count)
+            print('Market Price: {:,.2f}, Crafting Price: {:,.2f} (You save {:,.2f} silver per item made, not including sub ingredients)'.format(
+                recipe_price, cost_of_ingredients_for_single_item, recipe_price - cost_of_ingredients_for_single_item))
             print()
 
         recipe_item = self.item_manager.items[self.cart[0].end_product]

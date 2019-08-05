@@ -162,7 +162,9 @@ class ItemProfitCalculator():
                     # But if crafting the item increases your profit per second, then craft it
                     ingredient_profit_per_second = (
                         ingredient_market_price * POST_TAX_PERCENT - lowest_cost) / time_cost
-                    if ingredient_profit_per_second < market_craft_cost/market_craft_time:
+                    recipe_profit_per_sec = (
+                        item_market_price * POST_TAX_PERCENT - market_craft_cost) / market_craft_time
+                    if ingredient_profit_per_second < recipe_profit_per_sec:
                         ingredient_best_action = 'Market Buy'
                         time_cost = 0
                         lowest_cost = ingredient_market_price
