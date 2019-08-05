@@ -109,6 +109,9 @@ class ShoppingCart:
         recipe_item.update_quantity_produced(craft_ratio)
 
     def add_item_to_cart(self, item: Item, shopping_cart_quantity: int):
+        self.item_profit_calculator.optimal_per_sec_craft.clear()
+        self.item_profit_calculator.get_optimal_per_sec_craft_cost_for_item(item)
+
         recipe = item.get_optimal_recipe()
         new_recipe = RecipeList(item.name, shopping_cart_quantity)
         self.add_recipe_to_cart(new_recipe)

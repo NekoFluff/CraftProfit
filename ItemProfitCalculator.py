@@ -205,7 +205,6 @@ class ItemProfitCalculator():
         optimal_per_sec_enabled = True
         dict = self.optimal_craft
         if optimal_per_sec_enabled:
-            self.get_optimal_per_sec_craft_cost_for_item(item)
             dict = self.optimal_per_sec_craft
 
         print(item.name, dict[item.name])
@@ -284,8 +283,8 @@ class ItemProfitCalculator():
             market_craft_time = self.market_craft[item.name]['Time']
             market_price = self.item_price_manager.get_market_price_for_item(
                 item_name=item.name)
-            print('{:25} || Cost to Craft using Market bought materials: {:15} || Price on Market: {:10} || Profit: {:8}'.format(
-                item.name, market_craft_cost, market_price, market_price-market_craft_cost))
+            # print('{:25} || Cost to Craft using Market bought materials: {:15} || Price on Market: {:10} || Profit: {:8}'.format(
+                # item.name, market_craft_cost, market_price, market_price-market_craft_cost))
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT) - market_craft_cost
@@ -314,8 +313,8 @@ class ItemProfitCalculator():
             hand_craft_time = self.hand_craft[item.name]['Time']
             market_price = self.item_price_manager.get_market_price_for_item(
                 item.name)
-            print('{:25} || Cost to Craft by Hand: {:15} || Price on Market: {:10} || Profit: {:8}'.format(
-                item.name, hand_craft_cost, market_price, market_price-hand_craft_cost))
+            # print('{:25} || Cost to Craft by Hand: {:15} || Price on Market: {:10} || Profit: {:8}'.format(
+                # item.name, hand_craft_cost, market_price, market_price-hand_craft_cost))
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT) - hand_craft_cost
