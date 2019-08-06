@@ -44,10 +44,10 @@ class ShoppingCart:
                 time_to_craft += ingredient_time
                 total_ingredients_price += price
                 if ingredient_time != 0:
-                    print("{:33} {:10.0f} Silver   x {:8} = {:10}  Silver {:8.2f} minutes".format(
+                    print("{:33} {:10,.0f} Silver   x {:8,} = {:10,}  Silver {:8.2f} minutes".format(
                         ingredient, price/quantity, quantity, price, ingredient_time/60))
                 else:
-                    print("{:33} {:10.0f} Silver   x {:8} = {:10}  Silver".format(
+                    print("{:33} {:10,.0f} Silver   x {:8,} = {:10,}  Silver".format(
                         ingredient, price/quantity, quantity, price))
 
             shopping_cart_total += total_ingredients_price
@@ -64,50 +64,51 @@ class ShoppingCart:
             recipe_item.quantity_produced * self.cart[0].end_product_count
         time_to_craft += recipe_time
 
-        print("{:77.2f}  Minutes to Craft {} x {}".format(
+        print("{:77,.2f}  Seconds to Craft 1 x {}".format(recipe_time/self.cart[0].end_product_count, recipe_item.name))
+        print("{:77,.2f}  Minutes to Craft {} x {}".format(
             recipe_time/60, self.cart[0].end_product_count, recipe_item.name))
-        print("{:77.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
-        print("{:77.0f}  Shopping Cart Total".format(shopping_cart_total))
+        print("{:77,.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
+        print("{:77,.0f}  Shopping Cart Total".format(shopping_cart_total))
         market_price = self.item_price_manager.get_market_price_for_item(
             self.cart[0].end_product)
         market_price_total = market_price * self.cart[0].end_product_count
-        print("{:77.0f}  Market Sell Price (Pre Tax)".format(market_price_total))
+        print("{:77,.0f}  Market Sell Price (Pre Tax)".format(market_price_total))
         market_price_total = market_price_total * POST_TAX_PERCENT
-        print("{:77.0f}  Market Sell Price (After Tax)".format(market_price_total))
-        print("{:77.0f}  Profit".format(
+        print("{:77,.0f}  Market Sell Price (After Tax)".format(market_price_total))
+        print("{:77,.0f}  Profit".format(
             market_price_total - shopping_cart_total))
-        print("{:77.2f}  Profit Margin".format(
+        print("{:77,.2f}  Profit Margin".format(
             (market_price_total - shopping_cart_total)/shopping_cart_total))
 
         print()
-        print("{:77}  Market Sell Price (Per Item)".format(market_price))
-        print("{:77}  Market Sell Price (Per Item, After Tax)".format(
+        print("{:77,}  Market Sell Price (Per Item)".format(market_price))
+        print("{:77,}  Market Sell Price (Per Item, After Tax)".format(
             market_price * POST_TAX_PERCENT))
-        print("{:77}  Silver Spent (Per Item)".format(
+        print("{:77,}  Silver Spent (Per Item)".format(
             shopping_cart_total/self.cart[0].end_product_count))
-        print("{:77}  Profit (Per Item)".format(market_price *
+        print("{:77,}  Profit (Per Item)".format(market_price *
                                                 POST_TAX_PERCENT - shopping_cart_total/self.cart[0].end_product_count))
 
         print()
 
-        print("{:77.2f}  Profit (Silver/Hour)".format((market_price_total -
+        print("{:77,.2f}  Profit (Silver/Hour)".format((market_price_total -
                                                        shopping_cart_total)/(time_to_craft/60/60)))
 
         print('-'*120)
 
         count = int(input('How many did you actually make?\t'))
         market_price = int(input('How much are you selling it for?\t'))
-        print("{:77.2f}  Actual Profit (After Tax)".format(
+        print("{:77,.2f}  Actual Profit (After Tax)".format(
             count*market_price*POST_TAX_PERCENT - shopping_cart_total))
-        print("{:77.2f}  Actual Profit Margin".format(
+        print("{:77,.2f}  Actual Profit Margin".format(
             (count*market_price*POST_TAX_PERCENT - shopping_cart_total)/(shopping_cart_total)))
-        print("{:77.2f}  Actual Profit (Silver/Hour)".format((count*market_price *
+        print("{:77,.2f}  Actual Profit (Silver/Hour)".format((count*market_price *
                                                               POST_TAX_PERCENT - shopping_cart_total)/(time_to_craft/60/60)))
 
         craft_ratio = count / \
             (self.cart[0].end_product_count/recipe_item.quantity_produced)
         print(
-            "{:77.2f}  Actual Craft Ratio (Generally/Expected 2.5 Craft Ratio)".format(craft_ratio))
+            "{:77,.2f}  Actual Craft Ratio (Generally/Expected 2.5 Craft Ratio)".format(craft_ratio))
         self.item_price_manager.update_item_market_price(
             recipe_item.name, market_price)
         recipe_item.update_quantity_produced(craft_ratio)

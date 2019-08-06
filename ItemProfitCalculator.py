@@ -37,7 +37,7 @@ class ItemProfitCalculator():
         if 'Cost' in market_craft_item:
             total_cost, total_time = market_craft_item['Cost'],  market_craft_item['Time']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market.
-        elif len(item.recipes) == 0:
+        elif len(item.recipes) == 0 or self.item_included_in_output[item.name] == False:
             total_cost, total_time = self.item_price_manager.get_market_price_for_item(
                 item.name), 0.0
         else:
@@ -64,7 +64,7 @@ class ItemProfitCalculator():
         if 'Cost' in hand_craft_item:
             total_cost, total_time = hand_craft_item['Cost'], hand_craft_item['Time']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market.
-        elif len(item.recipes) == 0:
+        elif len(item.recipes) == 0 or self.item_included_in_output[item.name] == False:
             total_cost, total_time = self.item_price_manager.get_market_price_for_item(
                 item.name), 0.0
         else:
@@ -94,7 +94,7 @@ class ItemProfitCalculator():
             total_price, total_time, best_action = optimal_craft_item[
                 'Cost'], optimal_craft_item['Time'], optimal_craft_item['Action']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market.
-        elif len(item.recipes) == 0:
+        elif len(item.recipes) == 0 or self.item_included_in_output[item.name] == False:
             total_price, total_time, best_action = self.item_price_manager.get_market_price_for_item(
                 item.name), 0, "Market Buy"
         else:
@@ -146,7 +146,7 @@ class ItemProfitCalculator():
             total_price, total_time, best_action = optimal_craft_item[
                 'Cost'], optimal_craft_item['Time'], optimal_craft_item['Action']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market.
-        elif len(item.recipes) == 0:
+        elif len(item.recipes) == 0 or self.item_included_in_output[item.name] == False:
             total_price, total_time, best_action = item_market_price, 0, "Market Buy"
         else:
             recipe = item.recipes[0]
