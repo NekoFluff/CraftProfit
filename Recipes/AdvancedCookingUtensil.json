@@ -1,0 +1,13 @@
+{
+    "Name": "Advanced Cooking Utensil",
+    "Quantity Produced": 1,
+    "Recipes": [
+        {
+            "Polished Stone": 20,
+            "Usable Scantling": 5,
+            "Melted Iron Shard": 20,
+            "Black Stone Powder": 14
+        }
+    ],
+    "Time to Produce": 3600.0
+}

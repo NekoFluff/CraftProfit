@@ -1,0 +1,14 @@
+{
+    "Name": "Meat Stew",
+    "Recipes": [
+        {
+            "Pork": 5,
+            "Wheat Flour": 2,
+            "Cooking Wine": 2,
+            "Mineral Water": 3
+        }
+    ],
+    "Time to Produce": 10,
+    "Quantity Produced": 2.5,
+    "Action": "Cooking"
+}

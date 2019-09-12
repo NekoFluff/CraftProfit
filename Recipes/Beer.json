@@ -1,14 +1,15 @@
 {
+    "Action": "Cooking",
+    "Last Updated": "2019-09-07 19:13:08.812676",
     "Name": "Beer",
+    "Quantity Produced": 2.66,
     "Recipes": [
         {
-            "Wheat": 5,
-            "Sugar": 1,
             "Leavening Agent": 2,
-            "Mineral Water": 6
+            "Mineral Water": 6,
+            "Sugar": 1,
+            "Wheat": 5
         }
     ],
-    "Time to Produce": 10,
-    "Quantity Produced": 2.5,
-    "Action": "Cooking"
+    "Time to Produce": 10.0
 }

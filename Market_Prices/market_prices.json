@@ -14,6 +14,10 @@
         "Market Price": 1090,
         "Quantity:": 48
     },
+    "Advanced Cooking Utensil": {
+        "Last Updated": "2019-09-10 14:36:26.581710",
+        "Market Price": 1020000
+    },
     "Apprentice's Alchemy Box": {
         "Last Updated": "2019-08-04 08:55:40.731738",
         "Market Price": 180000
@@ -39,8 +43,8 @@
         "Quantity:": 63585
     },
     "Beer": {
-        "Last Updated": "2019-08-02 22:59:39.016632",
-        "Market Price": 1970
+        "Last Updated": "2019-09-10 12:56:54.443405",
+        "Market Price": 1350
     },
     "Birch Plank": {
         "Last Updated": "2019-07-31 22:32:42.058577",
@@ -63,9 +67,8 @@
         "Quantity:": 37876
     },
     "Bloody Tree Knot": {
-        "Last Updated": "2019-07-31 22:57:17.259899",
-        "Market Price": 3850,
-        "Quantity:": 138349
+        "Last Updated": "2019-09-07 20:25:56.642878",
+        "Market Price": 5800
     },
     "Blue Whale Tendon": {
         "Last Updated": "2019-08-02 18:47:44.508596",
@@ -73,9 +76,8 @@
         "Quantity:": 387
     },
     "Bottle of River Water": {
-        "Last Updated": "2019-07-31 22:57:30.639289",
-        "Market Price": 4500,
-        "Quantity:": 47228
+        "Last Updated": "2019-09-07 20:21:05.451796",
+        "Market Price": 6000
     },
     "Bottle of Sea Water": {
         "Last Updated": "2019-08-01 01:10:06.744293",
@@ -103,9 +105,8 @@
         "Quantity:": 29720
     },
     "Clear Liquid Reagent": {
-        "Last Updated": "2019-08-01 01:05:19.187786",
-        "Market Price": 3650,
-        "Quantity:": 75115
+        "Last Updated": "2019-09-10 12:37:59.955077",
+        "Market Price": 4480
     },
     "Clown's Blood": {
         "Last Updated": "2019-08-02 19:02:39.915681",
@@ -116,6 +117,10 @@
         "Last Updated": "2019-08-01 00:29:39.576091",
         "Market Price": 790,
         "Quantity:": 60219
+    },
+    "Cooking Wine": {
+        "Last Updated": "2019-09-07 20:16:30.608224",
+        "Market Price": 40
     },
     "Copper Ingot": {
         "Last Updated": "2019-08-01 01:05:44.139134",
@@ -162,9 +167,8 @@
         "Quantity:": 40174
     },
     "Fir Sap": {
-        "Last Updated": "2019-07-31 22:57:44.656611",
-        "Market Price": 3530,
-        "Quantity:": 13927
+        "Last Updated": "2019-09-07 20:26:09.838291",
+        "Market Price": 3460
     },
     "Fir Timber": {
         "Last Updated": "2019-07-31 22:26:00.950283",
@@ -212,14 +216,12 @@
         "Quantity:": 1316
     },
     "Iron Ingot": {
-        "Last Updated": "2019-08-01 00:40:36.114310",
-        "Market Price": 8500,
-        "Quantity:": 13348
+        "Last Updated": "2019-09-07 18:02:28.850206",
+        "Market Price": 8500
     },
     "Iron Ore": {
-        "Last Updated": "2019-08-01 00:31:19.128663",
-        "Market Price": 428,
-        "Quantity:": 149393
+        "Last Updated": "2019-09-07 18:03:03.159011",
+        "Market Price": 530
     },
     "Item 1": {
         "Last Updated": "2019-08-02 12:18:16.488456",
@@ -314,15 +316,18 @@
         "Market Price": 483,
         "Quantity:": 526
     },
+    "Meat Stew": {
+        "Last Updated": "2019-09-07 20:17:00.543442",
+        "Market Price": 9400
+    },
     "Melted Copper Shard": {
         "Last Updated": "2019-08-01 01:05:09.887808",
         "Market Price": 1160,
         "Quantity:": 29891
     },
     "Melted Iron Shard": {
-        "Last Updated": "2019-08-01 00:40:24.895297",
-        "Market Price": 2680,
-        "Quantity:": 72567
+        "Last Updated": "2019-09-07 18:03:17.529837",
+        "Market Price": 2200
     },
     "Melted Lead Shard": {
         "Last Updated": "2019-08-01 17:03:50.697025",
@@ -340,8 +345,8 @@
         "Quantity:": 24715
     },
     "Metal Solvent": {
-        "Last Updated": "2019-08-04 23:01:27.619923",
-        "Market Price": 111000
+        "Last Updated": "2019-09-07 18:19:33.766100",
+        "Market Price": 118000
     },
     "Mineral Water": {
         "Last Updated": "2019-08-02 22:59:30.105439",
@@ -413,12 +418,16 @@
         "Quantity:": 2747
     },
     "Plywood Hardener": {
-        "Last Updated": "2019-08-04 09:44:55.000341",
-        "Market Price": 84500
+        "Last Updated": "2019-09-07 20:24:37.890504",
+        "Market Price": 138000
     },
     "Polished Stone": {
         "Last Updated": "2019-08-04 09:15:42.025371",
         "Market Price": 17100
+    },
+    "Pork": {
+        "Last Updated": "2019-09-07 20:16:45.850839",
+        "Market Price": 8000
     },
     "Powder of Darkness": {
         "Last Updated": "2019-08-02 19:02:15.150138",
@@ -435,13 +444,12 @@
         "Market Price": 172000
     },
     "Pure Iron Crystal": {
-        "Last Updated": "2019-08-05 13:59:57.831923",
-        "Market Price": 192000
+        "Last Updated": "2019-09-07 21:13:22.537556",
+        "Market Price": 193000
     },
     "Pure Powder Reagent": {
-        "Last Updated": "2019-07-31 22:57:54.488056",
-        "Market Price": 3850,
-        "Quantity:": 22252
+        "Last Updated": "2019-09-10 12:38:11.828080",
+        "Market Price": 3340
     },
     "Pure Tin Crystal": {
         "Last Updated": "2019-08-05 07:11:02.239133",
@@ -452,9 +460,8 @@
         "Market Price": 111000
     },
     "Purified Water": {
-        "Last Updated": "2019-07-31 22:58:32.387157",
-        "Market Price": 2920,
-        "Quantity:": 34845
+        "Last Updated": "2019-09-07 20:19:28.454461",
+        "Market Price": 4600
     },
     "Resplendent Emerald": {
         "Last Updated": "2019-08-01 00:30:09.937644",
@@ -609,9 +616,8 @@
         "Quantity:": 999999999
     },
     "Sunrise Herb": {
-        "Last Updated": "2019-08-01 01:11:28.620928",
-        "Market Price": 199,
-        "Quantity:": 14053
+        "Last Updated": "2019-09-07 20:20:20.139923",
+        "Market Price": 223
     },
     "Thuja Plank": {
         "Last Updated": "2019-07-31 22:34:19.920943",
@@ -653,14 +659,12 @@
         "Market Price": 62000
     },
     "Trace of Savagery": {
-        "Last Updated": "2019-08-01 01:05:32.962340",
-        "Market Price": 15800,
-        "Quantity:": 1893
+        "Last Updated": "2019-09-07 18:18:45.851049",
+        "Market Price": 33700
     },
     "Trace of the Earth": {
-        "Last Updated": "2019-08-02 19:48:18.850322",
-        "Market Price": 17000,
-        "Quantity:": 1000
+        "Last Updated": "2019-09-07 20:26:46.753093",
+        "Market Price": 39800
     },
     "Usable Scantling": {
         "Last Updated": "2019-08-01 20:30:01.235631",
@@ -673,9 +677,8 @@
         "Quantity:": 61735
     },
     "Weeds": {
-        "Last Updated": "2019-07-31 22:58:45.329030",
-        "Market Price": 3720,
-        "Quantity:": 136
+        "Last Updated": "2019-09-07 20:20:05.115900",
+        "Market Price": 3530
     },
     "Whale Tendon Elixir": {
         "Last Updated": "2019-08-02 19:03:00.029864",
@@ -688,8 +691,12 @@
         "Quantity:": 0
     },
     "Wheat": {
-        "Last Updated": "2019-08-02 22:58:50.487340",
-        "Market Price": 400
+        "Last Updated": "2019-09-07 19:56:21.254525",
+        "Market Price": 920
+    },
+    "Wheat Flour": {
+        "Last Updated": "2019-09-07 20:16:53.116967",
+        "Market Price": 1110
     },
     "White Cedar Plank": {
         "Last Updated": "2019-07-31 22:34:27.890677",
