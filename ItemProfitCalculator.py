@@ -155,19 +155,75 @@ class ItemProfitCalculator():
                     item.item_manager.items[ingredient])
                 ingredient_market_price = self.item_price_manager.get_market_price_for_item(
                     ingredient)
+            
+            # NEW
+            # combination_count = 2 ** len(recipe.ingredients)
+            # combinations = [] # 2D array
+            # for possibility in range(combination_count):
+            #     format_str = '{0:0'+str(len(recipe.ingredients))+'b}'
+            #     combinations.append([int(x) for x in list(format_str.format(possibility))])
+
+            # print('Combinations')
+            # print(combinations)
+
+            # for combination in combinations:
+            #     total_price = 0
+            #     total_time = 0
+            #     for i in range(len(combination)):
+            #         (ingredient, quantity) = recipe.ingredients[i]
+            #         if (combination[i] == 0): # 0 is craft ingredient and 1 is buy ingredient
+            #             item_price, time_cost, _ = self.get_optimal_per_sec_craft_cost_for_item(
+            #             item.item_manager.items[ingredient])
+            #             total_price += item_price * quantity
+            #             total_time += total_time * quantity
+            #         else:
+            #             item_price = self.item_price_manager.get_market_price_for_item(
+            #             ingredient)
+            #             total_price += item_price
+
+            #     # Craft the items using the ingredients
+            #     market_price = self.item_price_manager.get_market_price_for_item(
+            #         item.name)
+                    
+            #     # Division to get price per item
+            #     total_price = total_price / item.quantity_produced
+
+            #     if market_price <= total_price:  # If it is cheaper to buy it than to make it yourself
+            #         total_price = market_price
+            #         best_action = "Market Buy"
+            #         total_time = 0
+            #     else:
+            #         best_action = "Craft"
+            #         # How much time in seconds to produce this item
+            #         total_time += item.time_to_produce
+
+            #     total_time /= item.quantity_produced
+
+            #     # Calculate profit per second
+            #     pps = total_price / total_time
+
+            #     # See if it beats any previous values
+            #     if pps > old_pss:
+
+            #     # Store path... by updating ingredients as well at item's Cost Time and Action
+            # self.optimal_per_sec_craft[item.name]['Cost'] = total_price
+            # self.optimal_per_sec_craft[item.name]['Time'] = total_time
+            # self.optimal_per_sec_craft[item.name]['Action'] = best_action
+            # return total_price, total_time, best_action
+            # END NEW
 
                 if ingredient_best_action != 'Market Buy':
-                    # If you end up crafting the item, make sure it doesn't negatively impact your profit per second
-                    # It may be the case that buying the item off the market will increase your profit per second
-                    # But if crafting the item increases your profit per second, then craft it
-                    ingredient_profit_per_second = (
+                    # If you end up crafting the ingredients, make sure it doesn't negatively impact your profit per second
+                    # It may be the case that buying the ingredients off the market will increase your profit per second
+                    # But if crafting the ingredients increases your profit per second, then craft it
+                    ingredient_profit_per_second = ( # Profit/sec for crafting ingredient
                         ingredient_market_price * POST_TAX_PERCENT - lowest_cost) / time_cost
-                    recipe_profit_per_sec = (
+                    recipe_profit_per_sec = ( # Profit/sec for buying all ingredients. Crafting. Selling.
                         item_market_price * POST_TAX_PERCENT - market_craft_cost) / market_craft_time
                     if ingredient_profit_per_second < recipe_profit_per_sec:
                         ingredient_best_action = 'Market Buy'
                         time_cost = 0
-                        lowest_cost = ingredient_market_price
+                        lowest_cost = ingredient_market_price # Lowest cost become price on market
                         self.optimal_per_sec_craft[ingredient]['Cost'] = lowest_cost
                         self.optimal_per_sec_craft[ingredient]['Time'] = time_cost
                         self.optimal_per_sec_craft[ingredient]['Action'] = ingredient_best_action

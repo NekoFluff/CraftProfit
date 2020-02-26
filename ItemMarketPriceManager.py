@@ -70,7 +70,7 @@ class ItemMarketPriceManager:
             else:
                 raise Exception(
                     'There is no market price for {}'.format(item_name))
-        elif 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=1):
+        elif 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=6):
             from ItemMarketPriceUpdater import ItemMarketPriceUpdater
             updater = ItemMarketPriceUpdater()
             updater.update_item(item_name)
