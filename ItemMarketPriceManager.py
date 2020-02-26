@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+import datetime
 
 
 class ItemMarketPriceManager:
@@ -20,6 +20,7 @@ class ItemMarketPriceManager:
         try:
             with open('Market_Prices/market_prices.json', 'r') as json_file:
                 self.market_prices = json.load(json_file)
+
         except Exception as ex:
             print('Unable to load market_prices.json. Error: {}'.format(ex))
 
@@ -38,7 +39,18 @@ class ItemMarketPriceManager:
         self.market_prices[item_name] = {
             'Market Price': int(market_price),
             # 'Quantity:': int(count),
-            'Last Updated': datetime.now().__str__()
+            # 'Last Updated': datetime.datetime.now().__str__()
+        }
+        self.save_market_prices()
+
+    def update_item(self, item_json):
+        print("XXX", item_json)
+        self.market_prices[item_json["name"]] = {
+            'Market Price': item_json["pricePerOne"],
+            'Quantity': item_json["count"],
+            'Last Updated': datetime.datetime.now().__str__(),
+            'ID': item_json["mainKey"],
+            'Total Trade Count': item_json["totalTradeCount"]
         }
         self.save_market_prices()
 
@@ -49,4 +61,9 @@ class ItemMarketPriceManager:
             else:
                 raise Exception(
                     'There is no market price for {}'.format(item_name))
+        elif datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Updated'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=1):
+            from ItemMarketPriceUpdater import ItemMarketPriceUpdater
+            updater = ItemMarketPriceUpdater()
+            updater.update_item(item_name)
+
         return self.market_prices[item_name]['Market Price']

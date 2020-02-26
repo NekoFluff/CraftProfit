@@ -39,8 +39,11 @@
         "Quantity:": 63585
     },
     "Beer": {
-        "Last Updated": "2019-08-02 22:59:39.016632",
-        "Market Price": 1970
+        "ID": 9213,
+        "Last Updated": "2020-02-26 02:44:11.539423",
+        "Market Price": 905,
+        "Quantity": 3001,
+        "Total Trade Count": 1375259029
     },
     "Birch Plank": {
         "Last Updated": "2019-07-31 22:32:42.058577",
@@ -63,14 +66,18 @@
         "Quantity:": 37876
     },
     "Bloody Tree Knot": {
-        "Last Updated": "2019-07-31 22:57:17.259899",
+        "ID": 5005,
+        "Last Updated": "2020-02-26 02:40:57.442443",
         "Market Price": 3850,
-        "Quantity:": 138349
+        "Quantity": 398518,
+        "Total Trade Count": 58431387
     },
     "Blue Whale Tendon": {
-        "Last Updated": "2019-08-02 18:47:44.508596",
-        "Market Price": 4940000,
-        "Quantity:": 387
+        "ID": 9729,
+        "Last Updated": "2020-02-26 02:40:57.358648",
+        "Market Price": 1860000,
+        "Quantity": 108,
+        "Total Trade Count": 147095
     },
     "Bottle of River Water": {
         "Last Updated": "2019-07-31 22:57:30.639289",
