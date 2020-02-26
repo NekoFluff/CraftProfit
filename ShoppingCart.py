@@ -33,7 +33,7 @@ class ShoppingCart:
                 ingredient_time = 0.0
                 if ingredient in self.item_price_manager.market_prices:
                     price = self.item_price_manager.get_market_price_for_item(
-                        ingredient) * quantity
+                        ingredient, True) * quantity
                 else:  # We are crafting instead of buying
                     ingredient_item = self.item_manager.items[ingredient[:-12]]
 
@@ -52,7 +52,7 @@ class ShoppingCart:
 
             shopping_cart_total += total_ingredients_price
             print('{:77.0f}  Ingredient Total'.format(total_ingredients_price))
-            recipe_price = self.item_price_manager.get_market_price_for_item(recipe.end_product)
+            recipe_price = self.item_price_manager.get_market_price_for_item(recipe.end_product, True)
             cost_of_ingredients_for_single_item = (total_ingredients_price/recipe.end_product_count)
             print('Market Price: {:,.2f}, Crafting Price: {:,.2f} (You save {:,.2f} silver per item made, not including sub ingredients)'.format(
                 recipe_price, cost_of_ingredients_for_single_item, recipe_price - cost_of_ingredients_for_single_item))
@@ -70,15 +70,19 @@ class ShoppingCart:
         print("{:77,.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
         print("{:77,.0f}  Shopping Cart Total".format(shopping_cart_total))
         market_price = self.item_price_manager.get_market_price_for_item(
-            self.cart[0].end_product)
+            self.cart[0].end_product, True)
         market_price_total = market_price * self.cart[0].end_product_count
         print("{:77,.0f}  Market Sell Price (Pre Tax)".format(market_price_total))
         market_price_total = market_price_total * POST_TAX_PERCENT
         print("{:77,.0f}  Market Sell Price (After Tax)".format(market_price_total))
         print("{:77,.0f}  Profit".format(
             market_price_total - shopping_cart_total))
-        print("{:77,.2f}  Profit Margin".format(
-            (market_price_total - shopping_cart_total)/shopping_cart_total))
+        
+        if shopping_cart_total > 0:
+            print("{:77,.2f}  Profit Margin".format(
+                (market_price_total - shopping_cart_total)/shopping_cart_total))
+        else:
+            print("{:77,.2f}  Profit Margin".format(float('inf')))
 
         print()
         print("{:77,}  Market Sell Price (Per Item)".format(market_price))
@@ -91,8 +95,11 @@ class ShoppingCart:
 
         print()
 
-        print("{:77,.2f}  Profit (Silver/Hour)".format((market_price_total -
+        if time_to_craft > 0:
+            print("{:77,.2f}  Profit (Silver/Hour)".format((market_price_total -
                                                        shopping_cart_total)/(time_to_craft/60/60)))
+        else:
+            print("{:77,.2f}  Profit (Silver/Hour)".format(float('inf')))
 
         print('-'*120)
 
@@ -114,7 +121,6 @@ class ShoppingCart:
         recipe_item.update_quantity_produced(craft_ratio)
 
     def add_item_to_cart(self, item: Item, shopping_cart_quantity: int):
-        self.item_profit_calculator.optimal_per_sec_craft.clear()
         self.item_profit_calculator.get_optimal_per_sec_craft_cost_for_item(item)
 
         recipe = item.get_optimal_recipe()
@@ -130,8 +136,7 @@ class ShoppingCart:
                 num_ingredient_needed = max(quantity_per_ingredient, math.ceil(
                     num_ingredient_needed/item.quantity_produced))
                 if (num_ingredient_needed % int(quantity_per_ingredient) != 0):
-                    print("Padding: {} - {}", int(quantity_per_ingredient),
-                          num_ingredient_needed % int(quantity_per_ingredient))
+                    print("Buy additional ingredients for padding: [{} Per Recipe] [{} Additional]".format(int(quantity_per_ingredient), num_ingredient_needed % int(quantity_per_ingredient)))
                     num_ingredient_needed = num_ingredient_needed + \
                         int(quantity_per_ingredient) - \
                         num_ingredient_needed % int(quantity_per_ingredient)
@@ -156,3 +161,5 @@ class ShoppingCart:
 
     def clear_cart(self):
         self.cart.clear()
+        self.item_profit_calculator.optimal_per_sec_craft.clear()
+

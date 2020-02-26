@@ -224,6 +224,8 @@ class ItemProfitCalculator():
                         ingredient_best_action = 'Market Buy'
                         time_cost = 0
                         lowest_cost = ingredient_market_price # Lowest cost become price on market
+
+                        # Change from crafting to market buy...
                         self.optimal_per_sec_craft[ingredient]['Cost'] = lowest_cost
                         self.optimal_per_sec_craft[ingredient]['Time'] = time_cost
                         self.optimal_per_sec_craft[ingredient]['Action'] = ingredient_best_action
@@ -424,7 +426,6 @@ class ItemProfitCalculator():
         for item in items.values():
             self.optimal_per_sec_craft.clear()
             self.get_optimal_per_sec_craft_cost_for_item(item)
-
             if not self.item_included_in_output[item.name]:
                 continue
 

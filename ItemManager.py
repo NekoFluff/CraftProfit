@@ -33,6 +33,7 @@ class ItemManager:
 
         self.item_profit_calculator.calculate_optimal_per_sec_craft_costs(
             self.items)
+            
         print('-'*120)
 
 
