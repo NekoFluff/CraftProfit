@@ -76,3 +76,6 @@ class ItemMarketPriceManager:
             updater.update_item(item_name)
 
         return self.market_prices[item_name]['Market Price']
+    
+    def get_last_update_for_item(self, item_name: str) -> str:
+        return self.market_prices[item_name]['Last Updated']

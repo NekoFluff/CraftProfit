@@ -438,11 +438,12 @@ class ItemProfitCalculator():
             profit_ratio = float(profit) / float(cheapest_price)
             profit_per_sec = 0 if total_time == 0 else profit/total_time
             profit_per_hour = profit_per_sec * 3600
+            last_updated = self.item_price_manager.get_last_update_for_item(item.name)
             profits.append((item.name, best_action, market_price, cheapest_price,
-                            profit, profit_ratio, total_time, profit_per_hour))
+                            profit, profit_ratio, total_time, profit_per_hour, last_updated))
 
         profits_dataframe = pd.DataFrame(profits, columns=["Item Name", "Course of Action", "Market Price",
-                                                           "Cheapest Buy/Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour"])
+                                                           "Cheapest Buy/Craft Price", "Profit (Flat)", "Profit Ratio", "Total Crafting Time", "Profit Per Hour", "Last Updated"])
         profits_dataframe.to_csv(
             r'.\Profit\optimal_per_sec_profit_values.csv', index=False)
         print('Profits data written to ' +
