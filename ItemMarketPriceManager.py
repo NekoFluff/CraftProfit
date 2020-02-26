@@ -44,24 +44,33 @@ class ItemMarketPriceManager:
         self.save_market_prices()
 
     def update_item(self, item_json):
-        print("XXX", item_json)
         self.market_prices[item_json["name"]] = {
             'Market Price': item_json["pricePerOne"],
             'Quantity': item_json["count"],
             'Last Updated': datetime.datetime.now().__str__(),
             'ID': item_json["mainKey"],
-            'Total Trade Count': item_json["totalTradeCount"]
+            'Total Trade Count': item_json["totalTradeCount"],
+            'Last Update Attempt': datetime.datetime.now().__str__() 
         }
+        self.save_market_prices()
+    
+    def mark_update_attempt(self, item_name):
+        if self.market_prices[item_name] is None:
+            self.market_prices[item_name] = {}
+
+        self.market_prices[item_name]['Last Update Attempt'] = datetime.datetime.now().__str__() 
         self.save_market_prices()
 
     def get_market_price_for_item(self, item_name: str, ask_user=True) -> int:
+        # print(item_name)
+        # print(self.market_prices[item_name])
         if item_name not in self.market_prices:
             if ask_user:
                 self.ask_user_for_market_price(item_name)
             else:
                 raise Exception(
                     'There is no market price for {}'.format(item_name))
-        elif datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Updated'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=1):
+        elif 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=1):
             from ItemMarketPriceUpdater import ItemMarketPriceUpdater
             updater = ItemMarketPriceUpdater()
             updater.update_item(item_name)

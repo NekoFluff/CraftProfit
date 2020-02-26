@@ -26,6 +26,8 @@ class ItemMarketPriceUpdater:
 
     def get_item(self, item_name):
         try:
+            self.item_market_price_manager.mark_update_attempt(item_name)
+
             response = requests.get(
                 'https://omegapepega.com/na/'+item_name+'/0')
 
@@ -33,8 +35,10 @@ class ItemMarketPriceUpdater:
             response.raise_for_status()
         except HTTPError as http_err:
             logging.error(f'HTTP error occurred: {http_err}')  # Python 3.6
+
         except Exception as err:
             logging.error(f'Other error occurred: {err}')  # Python 3.6
+
         else:
             logging.debug(response.json())
             return response.json()
