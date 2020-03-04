@@ -1072,6 +1072,30 @@
         "Quantity": 637167,
         "Total Trade Count": 184278640
     },
+    "Teff": {
+        "ID": 7022,
+        "Last Update Attempt": "2020-03-04 11:37:59.485020",
+        "Last Updated": "2020-03-04 11:37:59.485020",
+        "Market Price": 640,
+        "Quantity": 20001,
+        "Total Trade Count": 88517628
+    },
+    "Teff Flour": {
+        "ID": 7106,
+        "Last Update Attempt": "2020-03-04 11:38:00.120615",
+        "Last Updated": "2020-03-04 11:38:00.120615",
+        "Market Price": 1580,
+        "Quantity": 93721,
+        "Total Trade Count": 55393597
+    },
+    "Teff Flour Dough": {
+        "ID": 7206,
+        "Last Update Attempt": "2020-03-04 11:38:00.752185",
+        "Last Updated": "2020-03-04 11:38:00.752185",
+        "Market Price": 2280,
+        "Quantity": 37797,
+        "Total Trade Count": 36033587
+    },
     "Thuja Plank": {
         "ID": 4701,
         "Last Update Attempt": "2020-03-04 11:17:40.223148",
