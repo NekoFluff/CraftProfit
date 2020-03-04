@@ -2,13 +2,13 @@
     "Name": "Potato Flour",
     "Recipes": [
         {
-            "Potato": 1
-        },
-        {
             "High-Quality Potato": 1
         },
         {
             "Special Potato": 1
+        },
+        {
+            "Potato": 1
         }
     ],
     "Time to Produce": 6,

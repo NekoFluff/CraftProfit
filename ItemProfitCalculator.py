@@ -4,6 +4,7 @@ import pandas as pd
 from collections import defaultdict
 from Item import Item
 from ItemMarketPriceManager import ItemMarketPriceManager
+from RecipeList import RecipeList
 
 POST_TAX_PERCENT = 0.845
 
@@ -22,14 +23,16 @@ class ItemProfitCalculator():
             ItemProfitCalculator.__instance = object.__new__(cls)
         return ItemProfitCalculator.__instance
 
-    def __init__(self, items: {str: Item} = None):
+    def __init__(self):
+        self.item_price_manager = ItemMarketPriceManager()
+
+    def after_init_filter(self, items: {str: Item} = None):
         if items is not None:
             self.read_filter_ingredients_json()
             self.read_other_filters()
             self.apply_filters(items)
-        self.item_price_manager = ItemMarketPriceManager()
 
-    def get_market_craft_cost_for_item(self, item: Item) -> (int, float):
+    def get_market_craft_cost_for_item(self, item: Item, recipe: RecipeList) -> (int, float):
         market_craft_item = self.market_craft[item.name]
         total_cost = 0
         total_time = 0.0
@@ -41,7 +44,6 @@ class ItemProfitCalculator():
             total_cost, total_time = self.item_price_manager.get_market_price_for_item(
                 item.name), 0.0
         else:
-            recipe = item.recipes[0]
             for (ingredient, quantity) in recipe.get_ingredients():
                 total_cost += quantity * \
                     self.item_price_manager.get_market_price_for_item(
@@ -68,7 +70,7 @@ class ItemProfitCalculator():
             total_cost, total_time = self.item_price_manager.get_market_price_for_item(
                 item.name), 0.0
         else:
-            recipe = item.recipes[0]
+            recipe = item.get_optimal_recipe()
             for (ingredient, quantity) in recipe.get_ingredients():
                 subcost, subtime = self.get_hand_craft_cost_for_item(
                     item.item_manager.items[ingredient])
@@ -98,7 +100,7 @@ class ItemProfitCalculator():
             total_price, total_time, best_action = self.item_price_manager.get_market_price_for_item(
                 item.name), 0, "Market Buy"
         else:
-            recipe = item.recipes[0]
+            recipe = item.get_optimal_recipe()
             for (ingredient, quantity) in recipe.get_ingredients():
                 lowest_cost, time_cost, best_action = self.get_optimal_craft_cost_for_item(
                     item.item_manager.items[ingredient])
@@ -132,7 +134,7 @@ class ItemProfitCalculator():
         self.optimal_craft[item.name]['Action'] = best_action
         return total_price, total_time, best_action
 
-    def get_optimal_per_sec_craft_cost_for_item(self, item: Item) -> (int, float, str):
+    def get_optimal_per_sec_craft_cost_for_item(self, item: Item, recipe: RecipeList) -> (int, float, str):
         optimal_craft_item = self.optimal_per_sec_craft[item.name]
         total_price = 0
         total_time = 0.0
@@ -140,19 +142,19 @@ class ItemProfitCalculator():
         item_market_price = self.item_price_manager.get_market_price_for_item(
             item.name)
         market_craft_cost, market_craft_time = self.get_market_craft_cost_for_item(
-            item)
+            item, recipe)
 
-        if 'Cost' in optimal_craft_item:
+        if 'Cost' in optimal_craft_item and optimal_craft_item['Recipe'] == recipe:
             total_price, total_time, best_action = optimal_craft_item[
                 'Cost'], optimal_craft_item['Time'], optimal_craft_item['Action']
         # If it's a raw material (Unable to be crafted), so we pretend that we can only buy it off the market.
         elif len(item.recipes) == 0 or self.item_included_in_output[item.name] == False:
             total_price, total_time, best_action = item_market_price, 0, "Market Buy"
         else:
-            recipe = item.recipes[0]
             for (ingredient, quantity) in recipe.get_ingredients():
+                ingredient_item = item.item_manager.items[ingredient]
                 lowest_cost, time_cost, ingredient_best_action = self.get_optimal_per_sec_craft_cost_for_item(
-                    item.item_manager.items[ingredient])
+                    ingredient_item, ingredient_item.get_optimal_recipe())
                 ingredient_market_price = self.item_price_manager.get_market_price_for_item(
                     ingredient)
             
@@ -255,10 +257,13 @@ class ItemProfitCalculator():
                 # exit(1)
             total_time /= item.quantity_produced
 
-        self.optimal_per_sec_craft[item.name]['Cost'] = total_price
-        self.optimal_per_sec_craft[item.name]['Time'] = total_time
-        self.optimal_per_sec_craft[item.name]['Action'] = best_action
-        return total_price, total_time, best_action
+        if 'Recipe' not in self.optimal_per_sec_craft[item.name] or total_price < self.optimal_per_sec_craft[item.name]['Cost']:
+            self.optimal_per_sec_craft[item.name]['Cost'] = total_price
+            self.optimal_per_sec_craft[item.name]['Time'] = total_time
+            self.optimal_per_sec_craft[item.name]['Action'] = best_action
+            self.optimal_per_sec_craft[item.name]['Recipe'] = recipe
+            
+        return total_price, total_time, best_action #self.optimal_per_sec_craft[item.name]['Cost'], self.optimal_per_sec_craft[item.name]['Time'], self.optimal_per_sec_craft[item.name]['Action']
 
     def get_optimal_action_for_item(self, item: Item):
         action = "Market Buy"
@@ -334,7 +339,7 @@ class ItemProfitCalculator():
     def calculate_market_craft_costs(self, items):
         profits = []
         for item in items.values():
-            self.get_market_craft_cost_for_item(item)
+            self.get_market_craft_cost_for_item(item, item.get_optimal_recipe())
 
             if not self.item_included_in_output[item]:
                 continue
@@ -425,7 +430,7 @@ class ItemProfitCalculator():
 
         for item in items.values():
             self.optimal_per_sec_craft.clear()
-            self.get_optimal_per_sec_craft_cost_for_item(item)
+            self.get_optimal_per_sec_craft_cost_for_item(item, item.get_optimal_recipe())
             if not self.item_included_in_output[item.name]:
                 continue
 

@@ -9,6 +9,7 @@ from ItemProfitCalculator import ItemProfitCalculator
 
 class ItemManager:
     items = {}
+    item_profit_calculator = None
 
     def __init__(self):
         self.getData()
@@ -22,13 +23,13 @@ class ItemManager:
                 new_item = Item(item_json, item_manager=self)
                 self.items[new_item.name] = new_item
 
-        self.item_profit_calculator = ItemProfitCalculator(self.items)
+        self.item_profit_calculator = ItemProfitCalculator()
+        self.item_profit_calculator.after_init_filter(self.items)
 
         
     def perform_profit_calculations(self):
         self.item_profit_calculator.calculate_market_craft_costs(self.items)
         print('-'*120)
-        self.getData()
 
         self.item_profit_calculator.calculate_hand_craft_costs(self.items)
         print('-'*120)

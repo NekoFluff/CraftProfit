@@ -6,13 +6,14 @@ class Item:
     taxed = None
     craft_action = None
     time_to_produce = 0.0
+    optimal_recipe = None
     quantity_produced = 1.0
 
     def __init__(self, item_json: dict, item_manager=None):
         self.recipes = []
         self.load_json(item_json)
         self.item_manager = item_manager
-
+        
     def load_json(self, json: dict):
         self.set_name(json['Name'])
 
@@ -60,8 +61,24 @@ class Item:
         self.recipes.append(recipe)
 
     def get_optimal_recipe(self) -> RecipeList:
-        if len(self.recipes) > 0:
-            return self.recipes[0]
+        if len(self.recipes) > 0:  
+            #return self.recipes[0]
+            
+            # Run calculations
+            if self.optimal_recipe is None:
+                best_recipe = None
+                best_value = float('inf')
+                
+                for recipe in self.recipes:
+                    total_price, total_time, best_action = self.item_manager.item_profit_calculator.get_optimal_per_sec_craft_cost_for_item(self, recipe)
+                    if total_price < best_value or best_recipe is None:
+                        best_recipe = recipe
+                        best_value = total_price
+                    print('Item: ', self.name, ' | Recipe:', recipe.to_dict(), ' | Profit Per Second - Total Price:', total_price)
+
+                self.optimal_recipe = best_recipe;
+
+            return self.optimal_recipe
         else:
             return None
 

@@ -68,6 +68,27 @@
         "Quantity": 31515,
         "Total Trade Count": 658282499
     },
+    "Barley": {
+        "Last Update Attempt": "2020-03-04 13:33:48.988121",
+        "Last Updated": "2020-03-04 13:33:48.988121",
+        "Market Price": 825
+    },
+    "Barley Flour": {
+        "ID": 7102,
+        "Last Update Attempt": "2020-03-04 13:22:27.329240",
+        "Last Updated": "2020-03-04 13:22:27.329240",
+        "Market Price": 1310,
+        "Quantity": 51032,
+        "Total Trade Count": 41167717
+    },
+    "Barley Seed": {
+        "ID": 6807,
+        "Last Update Attempt": "2020-03-04 13:22:28.312570",
+        "Last Updated": "2020-03-04 13:22:28.312570",
+        "Market Price": 520,
+        "Quantity": 6,
+        "Total Trade Count": 72709
+    },
     "Beer": {
         "ID": 9213,
         "Last Update Attempt": "2020-03-04 11:10:28.041351",
@@ -355,6 +376,14 @@
         "Market Price": 17100,
         "Quantity": 645,
         "Total Trade Count": 9235166
+    },
+    "High-Quality Potato": {
+        "ID": 7008,
+        "Last Update Attempt": "2020-03-04 13:51:07.345527",
+        "Last Updated": "2020-03-04 13:51:07.345527",
+        "Market Price": 2880,
+        "Quantity": 0,
+        "Total Trade Count": 1487004
     },
     "Instant HP Potion (Medium)": {
         "ID": 514,
@@ -916,6 +945,14 @@
         "Quantity": 743752,
         "Total Trade Count": 326807622
     },
+    "Special Potato": {
+        "ID": 7013,
+        "Last Update Attempt": "2020-03-04 13:51:23.676877",
+        "Last Updated": "2020-03-04 13:51:23.676877",
+        "Market Price": 8650,
+        "Quantity": 3231,
+        "Total Trade Count": 11075950
+    },
     "Spirit's Leaf": {
         "ID": 5006,
         "Last Update Attempt": "2020-03-04 11:10:41.781327",
@@ -1270,7 +1307,7 @@
         "ID": 6009,
         "Last Update Attempt": "2020-03-04 11:10:59.328694",
         "Last Updated": "2020-03-04 11:10:59.327696",
-        "Market Price": 4430,
+        "Market Price": 999999,
         "Quantity": 6,
         "Total Trade Count": 124336
     },
