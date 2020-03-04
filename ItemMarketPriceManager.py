@@ -56,7 +56,7 @@ class ItemMarketPriceManager:
         self.save_market_prices()
     
     def mark_update_attempt(self, item_name):
-        if self.market_prices[item_name] is None:
+        if item_name not in self.market_prices:
             self.market_prices[item_name] = {}
 
         self.market_prices[item_name]['Last Update Attempt'] = datetime.datetime.now().__str__() 

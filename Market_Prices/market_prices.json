@@ -214,6 +214,19 @@
         "Quantity": 406298,
         "Total Trade Count": 1091508586
     },
+    "Corn": {
+        "Last Update Attempt": "2020-03-04 11:32:03.585761",
+        "Last Updated": "2020-03-04 11:32:03.585761",
+        "Market Price": 790
+    },
+    "Corn Flour": {
+        "ID": 7105,
+        "Last Update Attempt": "2020-03-04 11:34:05.295809",
+        "Last Updated": "2020-03-04 11:34:05.295809",
+        "Market Price": 1390,
+        "Quantity": 54879,
+        "Total Trade Count": 106786211
+    },
     "Elder Tree Plank": {
         "ID": 4673,
         "Last Update Attempt": "2020-03-04 11:10:46.427840",
