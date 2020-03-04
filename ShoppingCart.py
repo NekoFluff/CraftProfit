@@ -60,14 +60,15 @@ class ShoppingCart:
 
         recipe_item = self.item_manager.items[self.cart[0].end_product]
         # print('Optimal Craft Time for {}: {}... {}'.format(self.cart[0].end_product, recipe_item.time_to_produce/recipe_item.quantity_produced * self.cart[0].end_product_count, time_to_craft))
-        recipe_time = recipe_item.time_to_produce / \
-            recipe_item.quantity_produced * self.cart[0].end_product_count
+        recipe_time = recipe_item.time_to_produce / recipe_item.quantity_produced * self.cart[0].end_product_count
         time_to_craft += recipe_time
 
         print("{:77,.2f}  Seconds to Craft 1 x {}".format(recipe_time/self.cart[0].end_product_count, recipe_item.name))
         print("{:77,.2f}  Minutes to Craft {} x {}".format(
             recipe_time/60, self.cart[0].end_product_count, recipe_item.name))
+
         print("{:77,.2f}  Total Craft Time (Minutes)".format(time_to_craft/60))
+
         print("{:77,.0f}  Shopping Cart Total".format(shopping_cart_total))
         market_price = self.item_price_manager.get_market_price_for_item(
             self.cart[0].end_product, True)

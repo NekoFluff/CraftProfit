@@ -1,13 +1,13 @@
 {
   "Action": "Cooking",
-  "Name": "Aloe Cooking",
-  "Quantity Produced": 2.66,
+  "Name": "Aloe Cookie",
+  "Quantity Produced": 2.5,
   "Recipes": [
       {
-          "Leavening Agent": 2,
-          "Mineral Water": 6,
-          "Sugar": 1,
-          "Wheat": 5
+          "Aloe": 5,
+          "Dough": 7,
+          "Cooking Honey": 3,
+          "Sugar": 4
       }
   ],
   "Time to Produce": 10.0

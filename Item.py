@@ -39,6 +39,9 @@ class Item:
         if 'Time to Produce' in json:
             self.time_to_produce = float(json['Time to Produce'])
             self.adjust_time_to_produce_based_on_action()
+    
+        self.is_symbolic = json['Is Symbolic'] if 'Is Symbolic' in json else False
+            
 
     def adjust_time_to_produce_based_on_action(self):
         import json
@@ -46,6 +49,7 @@ class Item:
             self.time_to_produce -= self.get_time_reduction_buff('Cooking')
         elif self.craft_action == "Alchemy":
             self.time_to_produce -= self.get_time_reduction_buff('Alchemy')
+        self.time_to_produce = max(self.time_to_produce, 0)
 
     def get_time_reduction_buff(self, craft_action):
         import json

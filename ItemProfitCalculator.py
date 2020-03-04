@@ -214,7 +214,7 @@ class ItemProfitCalculator():
             # return total_price, total_time, best_action
             # END NEW
 
-                if ingredient_best_action != 'Market Buy':
+                if not item.is_symbolic and ingredient_best_action != 'Market Buy':
                     # If you end up crafting the ingredients, make sure it doesn't negatively impact your profit per second
                     # It may be the case that buying the ingredients off the market will increase your profit per second
                     # But if crafting the ingredients increases your profit per second, then craft it
@@ -245,7 +245,7 @@ class ItemProfitCalculator():
             # Division to get price per item
             total_price = total_price / item.quantity_produced
 
-            if market_price <= total_price:  # If it is cheaper to buy it than to make it yourself
+            if not item.is_symbolic and market_price <= total_price:  # If it is cheaper to buy it than to make it yourself
                 total_price = market_price
                 best_action = "Market Buy"
                 total_time = 0
@@ -412,7 +412,7 @@ class ItemProfitCalculator():
 
             # Profit calculations
             profit = (market_price * POST_TAX_PERCENT) - cheapest_price
-            profit_ratio = float(profit) / float(cheapest_price)
+            profit_ratio = float(profit) / float(cheapest_price) if cheapest_price > 0 else float('inf')
             profit_per_sec = 0 if total_time == 0 else profit/total_time
             profit_per_hour = profit_per_sec * 3600
             profits.append((item.name, best_action, market_price, cheapest_price,

@@ -1,7 +1,7 @@
 {
     "Action": "Cooking",
     "Name": "Beer",
-    "Quantity Produced": 2.66,
+    "Quantity Produced": 2.5,
     "Recipes": [
         {
             "Leavening Agent": 2,

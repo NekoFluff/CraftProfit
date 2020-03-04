@@ -37,7 +37,7 @@ class ItemMarketPriceManager:
         # count = input('How many {} are there?:\t'.format(item_name))
 
         if market_price == "" and item_name in self.market_prices:
-            return;
+            self.update_item_market_price(item_name, self.get_market_price_for_item(item_name));
         else:
             self.update_item_market_price(item_name, market_price)
 

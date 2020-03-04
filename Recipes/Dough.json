@@ -1,0 +1,30 @@
+{
+  "Action": "Cooking",
+  "Name": "Dough",
+  "Quantity Produced": 1,
+  "Recipes": [
+      {
+          "Wheat Dough": 1
+      },
+      {
+          "Barley Dough": 1
+      },
+      {
+        "Potato Dough": 1
+      },
+      {
+        "Sweet Potato Dough": 1
+      },
+      {
+        "Corn Dough": 1
+      },
+      {
+        "Teff Flour Dough": 1
+      },
+      {
+        "Freekeh Flour Dough": 1
+      }
+  ],
+  "Time to Produce": 0,
+  "Is Symbolic": true
+}
