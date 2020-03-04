@@ -1,0 +1,14 @@
+{
+  "Action": "Cooking",
+  "Name": "Aloe Cooking",
+  "Quantity Produced": 2.66,
+  "Recipes": [
+      {
+          "Leavening Agent": 2,
+          "Mineral Water": 6,
+          "Sugar": 1,
+          "Wheat": 5
+      }
+  ],
+  "Time to Produce": 10.0
+}
