@@ -11,9 +11,12 @@ class ItemManager:
     items = {}
 
     def __init__(self):
+        self.getData()
+
+    def getData(self):
         for filename in os.listdir('Recipes'):
             path = 'Recipes/' + filename
-            print(path)
+            # print(path)
             with open(path) as json_file:
                 item_json = json.load(json_file)
                 new_item = Item(item_json, item_manager=self)
@@ -21,9 +24,11 @@ class ItemManager:
 
         self.item_profit_calculator = ItemProfitCalculator(self.items)
 
+        
     def perform_profit_calculations(self):
         self.item_profit_calculator.calculate_market_craft_costs(self.items)
         print('-'*120)
+        self.getData()
 
         self.item_profit_calculator.calculate_hand_craft_costs(self.items)
         print('-'*120)
@@ -33,7 +38,6 @@ class ItemManager:
 
         self.item_profit_calculator.calculate_optimal_per_sec_craft_costs(
             self.items)
-            
         print('-'*120)
 
 

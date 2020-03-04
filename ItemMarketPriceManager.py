@@ -39,7 +39,8 @@ class ItemMarketPriceManager:
         self.market_prices[item_name] = {
             'Market Price': int(market_price),
             # 'Quantity:': int(count),
-            'Last Updated': datetime.datetime.now().__str__()
+            'Last Updated': datetime.datetime.now().__str__(),
+            'Last Update Attempt': datetime.datetime.now().__str__() 
         }
         self.save_market_prices()
 
@@ -64,16 +65,21 @@ class ItemMarketPriceManager:
     def get_market_price_for_item(self, item_name: str, ask_user=False) -> int:
         # print(item_name)
         # print(self.market_prices[item_name])
-        if item_name not in self.market_prices:
-            if ask_user:
-                self.ask_user_for_market_price(item_name)
-            else:
-                raise Exception(
-                    'There is no market price for {}'.format(item_name))
-        elif 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=12):
+        # if :
+        #     if ask_user:
+        #         self.ask_user_for_market_price(item_name)
+        #     else:
+        #         raise Exception(
+        #             'There is no market price for {}'.format(item_name))
+        
+        # Auto Update
+        if item_name not in self.market_prices or 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=12):
             from ItemMarketPriceUpdater import ItemMarketPriceUpdater
             updater = ItemMarketPriceUpdater()
-
+            if (not updater.update_item(item_name)):
+                self.ask_user_for_market_price(item_name)
+            
+        # Failed auto update
         if datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Updated'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=12):
             if (ask_user):
                 self.ask_user_for_market_price(item_name)
