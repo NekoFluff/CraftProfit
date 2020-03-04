@@ -16,4 +16,4 @@ env
 !.vscode/extensions.json
 
 # Folders
-# Profit/*
+Profit/*
