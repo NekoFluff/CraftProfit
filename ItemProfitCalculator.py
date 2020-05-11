@@ -265,7 +265,7 @@ class ItemProfitCalculator():
         if optimal_per_sec_enabled:
             dict = self.optimal_per_sec_craft
 
-        print(item.name, dict[item.name])
+        # print('Item', item.name, 'Optimal Details', dict[item.name])
         if "Action" in dict[item.name]:
             action = dict[item.name]['Action']
 

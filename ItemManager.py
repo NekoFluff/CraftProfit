@@ -13,7 +13,7 @@ class ItemManager:
     def __init__(self):
         for filename in os.listdir('Recipes'):
             path = 'Recipes/' + filename
-            print(path)
+            print('Recipes Path:', path)
             with open(path) as json_file:
                 item_json = json.load(json_file)
                 new_item = Item(item_json, item_manager=self)
