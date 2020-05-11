@@ -19,6 +19,7 @@ Type in the item you want to craft.
 Type in the number of items you want to craft.
 
 **(All outputed instructions are based on the optimal_per_sec_profit_values.csv for maximum profits)**
+
 Sample Output:
 
 ```
@@ -77,7 +78,9 @@ Optimize the total amount of money made per second for an item
 (Time is money. Sometimes buying it from the market will cost more, but it takes too long to craft by hand with minimal gain.)
 
 # Adding a Recipe
-First take a look at a sample recipe
+First, you can take a look at a sample recipe such as Beer.json
+
+**Beer.json**
 ```
 {
     "Action": "Cooking",
@@ -96,11 +99,13 @@ First take a look at a sample recipe
 }
 ```
 
-You can copy/paste the content to a new json file in the Recipes folder and change the values accordingly. Just make sure all items used in the Recipes list are also json files too. 
+You can copy/paste the content to a new json file (*e.g. NewItem.json*) in the Recipes folder and change the values accordingly. Just make sure all items used in the Recipes list are also json files too. 
 
 # Recipes with Symbolic Item Recipes
 
 Cooking recipes generally allows multiple items as a substitute for an ingredient (e.g. Dough). The Aloe Cookie recipe is an example that uses the symbolic item 'Dough' which encompasses all 7 types of dough. Feel free to create more symbolic items!
+
+**AloeCookie.json**
 ```
 {
   "Action": "Cooking",
@@ -117,6 +122,8 @@ Cooking recipes generally allows multiple items as a substitute for an ingredien
   "Time to Produce": 10.0
 }
 ```
+
+**Dough.json**
 ```
 {
   "Action": "Cooking",
