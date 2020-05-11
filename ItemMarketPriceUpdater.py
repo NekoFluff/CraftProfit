@@ -49,7 +49,9 @@ class ItemMarketPriceUpdater:
             item_json = self.get_item(item_name)
             if (item_json is not None):
                 self.item_market_price_manager.update_item(item_json)
-
+                return True
+        return False
+        
     def update_all(self):
         for recipe_filename in os.listdir('Recipes'):
             try:

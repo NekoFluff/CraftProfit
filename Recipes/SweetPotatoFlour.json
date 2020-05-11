@@ -1,0 +1,11 @@
+{
+    "Name": "Sweet Potato Flour",
+    "Recipes": [
+        {
+            "Sweet Potato": 1
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5,
+    "Action": "Grinding"
+}

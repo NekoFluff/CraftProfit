@@ -1,0 +1,14 @@
+{
+  "Action": "Cooking",
+  "Name": "Aloe Cookie",
+  "Quantity Produced": 2.5,
+  "Recipes": [
+      {
+          "Aloe": 5,
+          "Dough": 7,
+          "Cooking Honey": 3,
+          "Sugar": 4
+      }
+  ],
+  "Time to Produce": 10.0
+}

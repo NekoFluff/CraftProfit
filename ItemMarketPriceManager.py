@@ -7,6 +7,7 @@ class ItemMarketPriceManager:
     __instance = None
     market_prices = {}  # Market prices for the item
     hand_crafted_prices = {}
+    updated_item_json = False
 
     def __new__(cls):
         if ItemMarketPriceManager.__instance is None:
@@ -28,18 +29,24 @@ class ItemMarketPriceManager:
         # print('Saving market prices...')
         with open('Market_Prices/market_prices.json', 'w') as json_file:
             json.dump(self.market_prices, json_file, indent=4, sort_keys=True)
+        updated_item_json = True
         # print('Saved market prices!')
 
     def ask_user_for_market_price(self, item_name: str):
         market_price = input('What is the price for {}?:\t'.format(item_name))
         # count = input('How many {} are there?:\t'.format(item_name))
-        self.update_item_market_price(item_name, market_price)
+
+        if market_price == "" and item_name in self.market_prices:
+            self.update_item_market_price(item_name, self.get_market_price_for_item(item_name));
+        else:
+            self.update_item_market_price(item_name, market_price)
 
     def update_item_market_price(self, item_name: str, market_price: int):
         self.market_prices[item_name] = {
             'Market Price': int(market_price),
             # 'Quantity:': int(count),
-            # 'Last Updated': datetime.datetime.now().__str__()
+            'Last Updated': datetime.datetime.now().__str__(),
+            'Last Update Attempt': datetime.datetime.now().__str__() 
         }
         self.save_market_prices()
 
@@ -55,25 +62,31 @@ class ItemMarketPriceManager:
         self.save_market_prices()
     
     def mark_update_attempt(self, item_name):
-        if self.market_prices[item_name] is None:
+        if item_name not in self.market_prices:
             self.market_prices[item_name] = {}
 
         self.market_prices[item_name]['Last Update Attempt'] = datetime.datetime.now().__str__() 
         self.save_market_prices()
 
-    def get_market_price_for_item(self, item_name: str, ask_user=True) -> int:
+    def get_market_price_for_item(self, item_name: str, ask_user=False) -> int:
         # print(item_name)
         # print(self.market_prices[item_name])
-        if item_name not in self.market_prices:
-            if ask_user:
-                self.ask_user_for_market_price(item_name)
-            else:
-                raise Exception(
-                    'There is no market price for {}'.format(item_name))
-        elif 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=6):
+
+        # Auto Update
+        if item_name not in self.market_prices or 'Last Update Attempt' not in self.market_prices[item_name] or datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Update Attempt'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=12):
             from ItemMarketPriceUpdater import ItemMarketPriceUpdater
             updater = ItemMarketPriceUpdater()
-            updater.update_item(item_name)
+            if (not updater.update_item(item_name)):
+                self.ask_user_for_market_price(item_name)
+
+        # Out of Date... 
+        if 'Last Updated' in self.market_prices[item_name] and datetime.datetime.now() > datetime.datetime.strptime(self.market_prices[item_name]['Last Updated'], "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(hours=12):
+            if (ask_user):
+                self.ask_user_for_market_price(item_name)
+
+        # Market Price still invalid...
+        if 'Market Price' not in self.market_prices[item_name]:
+            self.ask_user_for_market_price(item_name)
 
         return self.market_prices[item_name]['Market Price']
     

@@ -31,6 +31,22 @@
         "Quantity": 0,
         "Total Trade Count": 1057282
     },
+    "Aloe": {
+        "ID": 7347,
+        "Last Update Attempt": "2020-05-11 10:36:30.802885",
+        "Last Updated": "2020-05-11 10:36:30.802885",
+        "Market Price": 3280,
+        "Quantity": 97563,
+        "Total Trade Count": 33859822
+    },
+    "Aloe Cookie": {
+        "ID": 9205,
+        "Last Update Attempt": "2020-05-11 10:36:23.137400",
+        "Last Updated": "2020-05-11 10:36:23.137400",
+        "Market Price": 1830,
+        "Quantity": 588,
+        "Total Trade Count": 312638
+    },
     "Apprentice's Alchemy Box": {
         "Last Update Attempt": "2020-05-11 09:50:59.538526",
         "Last Updated": "2019-08-04 08:55:40.731738",
@@ -67,6 +83,35 @@
         "Market Price": 365,
         "Quantity": 19096,
         "Total Trade Count": 744981519
+    },
+    "Barley": {
+        "Last Update Attempt": "2020-05-11 10:50:07.256538",
+        "Last Updated": "2020-05-11 10:50:07.256538",
+        "Market Price": 450
+    },
+    "Barley Dough": {
+        "ID": 7202,
+        "Last Update Attempt": "2020-05-11 10:43:47.794976",
+        "Last Updated": "2020-05-11 10:43:47.794493",
+        "Market Price": 1560,
+        "Quantity": 11843,
+        "Total Trade Count": 22933097
+    },
+    "Barley Flour": {
+        "ID": 7102,
+        "Last Update Attempt": "2020-05-11 10:43:50.529828",
+        "Last Updated": "2020-05-11 10:43:50.528833",
+        "Market Price": 1350,
+        "Quantity": 59191,
+        "Total Trade Count": 52577462
+    },
+    "Barley Seed": {
+        "ID": 6807,
+        "Last Update Attempt": "2020-05-11 10:43:54.029342",
+        "Last Updated": "2020-05-11 10:43:54.029342",
+        "Market Price": 1510,
+        "Quantity": 0,
+        "Total Trade Count": 80485
     },
     "Beer": {
         "ID": 9213,
@@ -193,6 +238,14 @@
         "Quantity": 21367,
         "Total Trade Count": 890409810
     },
+    "Cooking Honey": {
+        "ID": 7702,
+        "Last Update Attempt": "2020-05-11 10:43:45.029456",
+        "Last Updated": "2020-05-11 10:43:45.029456",
+        "Market Price": 2830,
+        "Quantity": 81515,
+        "Total Trade Count": 1079382636
+    },
     "Cooking Wine": {
         "Last Update Attempt": "2020-05-11 09:54:25.928553",
         "Last Updated": "2019-09-07 20:16:30.608224",
@@ -213,6 +266,40 @@
         "Market Price": 263,
         "Quantity": 188624,
         "Total Trade Count": 1204089042
+    },
+    "Corn": {
+        "Last Update Attempt": "2020-05-11 10:55:02.929391",
+        "Last Updated": "2020-05-11 10:55:02.929391",
+        "Market Price": 475
+    },
+    "Corn Dough": {
+        "ID": 7205,
+        "Last Update Attempt": "2020-05-11 10:53:53.484211",
+        "Last Updated": "2020-05-11 10:53:53.484211",
+        "Market Price": 1600,
+        "Quantity": 15836,
+        "Total Trade Count": 52133056
+    },
+    "Corn Flour": {
+        "ID": 7105,
+        "Last Update Attempt": "2020-05-11 10:53:57.013883",
+        "Last Updated": "2020-05-11 10:53:57.013883",
+        "Market Price": 1360,
+        "Quantity": 54896,
+        "Total Trade Count": 126437495
+    },
+    "Corn Seed": {
+        "ID": 6809,
+        "Last Update Attempt": "2020-05-11 10:53:59.956744",
+        "Last Updated": "2020-05-11 10:53:59.956744",
+        "Market Price": 3130,
+        "Quantity": 165,
+        "Total Trade Count": 35107
+    },
+    "Dough": {
+        "Last Update Attempt": "2020-05-11 10:43:42.112154",
+        "Last Updated": "2020-05-11 10:43:42.112154",
+        "Market Price": 1600
     },
     "Elder Tree Plank": {
         "ID": 4673,
@@ -315,6 +402,30 @@
         "Quantity": 556,
         "Total Trade Count": 29062
     },
+    "Freekeh": {
+        "ID": 7021,
+        "Last Update Attempt": "2020-05-11 10:55:23.639600",
+        "Last Updated": "2020-05-11 10:55:23.639600",
+        "Market Price": 1820,
+        "Quantity": 8860,
+        "Total Trade Count": 69055444
+    },
+    "Freekeh Flour": {
+        "ID": 7107,
+        "Last Update Attempt": "2020-05-11 10:55:20.160191",
+        "Last Updated": "2020-05-11 10:55:20.160191",
+        "Market Price": 705,
+        "Quantity": 12537,
+        "Total Trade Count": 3139527
+    },
+    "Freekeh Flour Dough": {
+        "ID": 7207,
+        "Last Update Attempt": "2020-05-11 10:55:16.772220",
+        "Last Updated": "2020-05-11 10:55:16.772220",
+        "Market Price": 1390,
+        "Quantity": 4018,
+        "Total Trade Count": 1230818
+    },
     "Gem Polisher": {
         "ID": 4481,
         "Last Update Attempt": "2020-05-11 09:55:56.296993",
@@ -342,6 +453,14 @@
         "Market Price": 20200,
         "Quantity": 22,
         "Total Trade Count": 9444811
+    },
+    "High-Quality Potato": {
+        "ID": 7008,
+        "Last Update Attempt": "2020-05-11 10:50:20.156582",
+        "Last Updated": "2020-05-11 10:50:20.156582",
+        "Market Price": 3360,
+        "Quantity": 1302,
+        "Total Trade Count": 1572257
     },
     "Instant HP Potion (Medium)": {
         "ID": 514,
@@ -421,10 +540,9 @@
         "Market Price": 77777777
     },
     "Item 6": {
-        "Last Update Attempt": "2020-05-11 09:56:48.037728",
-        "Last Updated": "2019-07-31 14:09:19.562326",
-        "Market Price": 2000,
-        "Quantity:": 1
+        "Last Update Attempt": "2020-05-11 10:55:40.790772",
+        "Last Updated": "2020-05-11 10:55:40.790772",
+        "Market Price": 1000
     },
     "Lead Ingot": {
         "ID": 4055,
@@ -588,8 +706,8 @@
         "Total Trade Count": 8871140
     },
     "Mineral Water": {
-        "Last Update Attempt": "2020-05-11 09:51:45.048580",
-        "Last Updated": "2019-08-02 22:59:30.105439",
+        "Last Update Attempt": "2020-05-11 10:56:05.650896",
+        "Last Updated": "2020-05-11 10:56:05.650896",
         "Market Price": 30
     },
     "Moss Tree Plank": {
@@ -718,6 +836,27 @@
         "Quantity": 0,
         "Total Trade Count": 24676006
     },
+    "Potato": {
+        "Last Update Attempt": "2020-05-11 10:51:26.192393",
+        "Last Updated": "2020-05-11 10:51:26.188405",
+        "Market Price": 400
+    },
+    "Potato Dough": {
+        "ID": 7203,
+        "Last Update Attempt": "2020-05-11 10:50:11.129604",
+        "Last Updated": "2020-05-11 10:50:11.129604",
+        "Market Price": 1660,
+        "Quantity": 50044,
+        "Total Trade Count": 90360696
+    },
+    "Potato Flour": {
+        "ID": 7103,
+        "Last Update Attempt": "2020-05-11 10:50:15.535770",
+        "Last Updated": "2020-05-11 10:50:15.535770",
+        "Market Price": 1340,
+        "Quantity": 55586,
+        "Total Trade Count": 215251890
+    },
     "Powder of Darkness": {
         "Last Update Attempt": "2020-05-11 09:54:08.022537",
         "Last Updated": "2019-08-02 19:02:15.150138",
@@ -818,6 +957,22 @@
         "Market Price": 20,
         "Quantity:": 999999999
     },
+    "Seed Potato": {
+        "ID": 6806,
+        "Last Update Attempt": "2020-05-11 10:50:28.873096",
+        "Last Updated": "2020-05-11 10:50:28.873096",
+        "Market Price": 3600,
+        "Quantity": 2,
+        "Total Trade Count": 79319
+    },
+    "Seed Sweet Potato": {
+        "ID": 6810,
+        "Last Update Attempt": "2020-05-11 10:51:37.898634",
+        "Last Updated": "2020-05-11 10:51:37.897580",
+        "Market Price": 488,
+        "Quantity": 152,
+        "Total Trade Count": 181964
+    },
     "Shining Fluid Collector": {
         "ID": 16112,
         "Last Update Attempt": "2020-05-11 09:59:39.797952",
@@ -881,6 +1036,14 @@
         "Market Price": 217,
         "Quantity": 513645,
         "Total Trade Count": 364635933
+    },
+    "Special Potato": {
+        "ID": 7013,
+        "Last Update Attempt": "2020-05-11 10:50:25.868873",
+        "Last Updated": "2020-05-11 10:50:25.868873",
+        "Market Price": 8950,
+        "Quantity": 5925,
+        "Total Trade Count": 11595376
     },
     "Spirit's Leaf": {
         "ID": 5006,
@@ -1025,10 +1188,9 @@
         "Total Trade Count": 74887
     },
     "Sugar": {
-        "Last Update Attempt": "2020-05-11 09:51:51.849660",
-        "Last Updated": "2019-07-31 22:58:07.569305",
-        "Market Price": 20,
-        "Quantity:": 999999999
+        "Last Update Attempt": "2020-05-11 10:56:03.810592",
+        "Last Updated": "2020-05-11 10:56:03.810592",
+        "Market Price": 20
     },
     "Sunrise Herb": {
         "ID": 5401,
@@ -1037,6 +1199,51 @@
         "Market Price": 189,
         "Quantity": 454710,
         "Total Trade Count": 216893722
+    },
+    "Sweet Potato": {
+        "Last Update Attempt": "2020-05-11 10:53:48.519190",
+        "Last Updated": "2020-05-11 10:53:48.519190",
+        "Market Price": 500
+    },
+    "Sweet Potato Dough": {
+        "ID": 7204,
+        "Last Update Attempt": "2020-05-11 10:51:30.440396",
+        "Last Updated": "2020-05-11 10:51:30.440396",
+        "Market Price": 1650,
+        "Quantity": 3980,
+        "Total Trade Count": 11959859
+    },
+    "Sweet Potato Flour": {
+        "ID": 7104,
+        "Last Update Attempt": "2020-05-11 10:51:34.275383",
+        "Last Updated": "2020-05-11 10:51:34.275383",
+        "Market Price": 1430,
+        "Quantity": 28099,
+        "Total Trade Count": 22457519
+    },
+    "Teff": {
+        "ID": 7022,
+        "Last Update Attempt": "2020-05-11 10:55:13.494808",
+        "Last Updated": "2020-05-11 10:55:13.494808",
+        "Market Price": 985,
+        "Quantity": 26708,
+        "Total Trade Count": 131038290
+    },
+    "Teff Flour": {
+        "ID": 7106,
+        "Last Update Attempt": "2020-05-11 10:55:10.178278",
+        "Last Updated": "2020-05-11 10:55:10.178278",
+        "Market Price": 1540,
+        "Quantity": 169404,
+        "Total Trade Count": 86761596
+    },
+    "Teff Flour Dough": {
+        "ID": 7206,
+        "Last Update Attempt": "2020-05-11 10:55:07.669016",
+        "Last Updated": "2020-05-11 10:55:07.669016",
+        "Market Price": 1670,
+        "Quantity": 66304,
+        "Total Trade Count": 64431358
     },
     "Thuja Plank": {
         "ID": 4701,
@@ -1152,6 +1359,14 @@
         "Last Updated": "2019-09-07 19:56:21.254525",
         "Market Price": 920
     },
+    "Wheat Dough": {
+        "ID": 7201,
+        "Last Update Attempt": "2020-05-11 10:36:36.322221",
+        "Last Updated": "2020-05-11 10:36:36.322221",
+        "Market Price": 1650,
+        "Quantity": 35592,
+        "Total Trade Count": 132998653
+    },
     "Wheat Flour": {
         "ID": 7101,
         "Last Update Attempt": "2020-05-11 09:57:52.868198",
@@ -1191,6 +1406,14 @@
         "Market Price": 1000,
         "Quantity": 6083,
         "Total Trade Count": 253590740
+    },
+    "Wild Beehive": {
+        "ID": 7701,
+        "Last Update Attempt": "2020-05-11 10:55:26.809189",
+        "Last Updated": "2020-05-11 10:55:26.809189",
+        "Market Price": 25000,
+        "Quantity": 0,
+        "Total Trade Count": 1686068
     },
     "Wild Grass": {
         "ID": 5439,

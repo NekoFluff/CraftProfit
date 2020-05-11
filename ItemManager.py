@@ -9,18 +9,24 @@ from ItemProfitCalculator import ItemProfitCalculator
 
 class ItemManager:
     items = {}
+    item_profit_calculator = None
 
     def __init__(self):
+        self.getData()
+
+    def getData(self):
         for filename in os.listdir('Recipes'):
             path = 'Recipes/' + filename
-            print('Recipes Path:', path)
+            # print('Recipes Path:', path)
             with open(path) as json_file:
                 item_json = json.load(json_file)
                 new_item = Item(item_json, item_manager=self)
                 self.items[new_item.name] = new_item
 
-        self.item_profit_calculator = ItemProfitCalculator(self.items)
+        self.item_profit_calculator = ItemProfitCalculator()
+        self.item_profit_calculator.after_init_filter(self.items)
 
+        
     def perform_profit_calculations(self):
         self.item_profit_calculator.calculate_market_craft_costs(self.items)
         print('-'*120)

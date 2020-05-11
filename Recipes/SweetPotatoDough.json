@@ -1,0 +1,12 @@
+{
+    "Name": "Sweet Potato Dough",
+    "Recipes": [
+        {
+            "Sweet Potato Flour": 1,
+            "Mineral Water": 1
+        }
+    ],
+    "Time to Produce": 6,
+    "Quantity Produced": 2.5,
+    "Action": "Shaking          "
+}
