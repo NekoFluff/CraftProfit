@@ -1,0 +1,1474 @@
+{
+    "Acacia Plank": {
+        "ID": 4680,
+        "Last Update Attempt": "2020-05-11 09:49:25.065900",
+        "Last Updated": "2020-05-11 09:49:25.065900",
+        "Market Price": 3860,
+        "Quantity": 7535,
+        "Total Trade Count": 37320858
+    },
+    "Acacia Plywood": {
+        "ID": 4681,
+        "Last Update Attempt": "2020-05-11 09:49:37.428287",
+        "Last Updated": "2020-05-11 09:49:37.428287",
+        "Market Price": 17000,
+        "Quantity": 25210,
+        "Total Trade Count": 48457892
+    },
+    "Acacia Timber": {
+        "ID": 4609,
+        "Last Update Attempt": "2020-05-11 09:49:13.269171",
+        "Last Updated": "2020-05-11 09:49:13.269171",
+        "Market Price": 1560,
+        "Quantity": 203,
+        "Total Trade Count": 226418661
+    },
+    "Advanced Cooking Utensil": {
+        "ID": 3719,
+        "Last Update Attempt": "2020-05-11 09:50:35.563891",
+        "Last Updated": "2020-05-11 09:50:35.563891",
+        "Market Price": 1020000,
+        "Quantity": 0,
+        "Total Trade Count": 1057282
+    },
+    "Aloe": {
+        "ID": 7347,
+        "Last Update Attempt": "2020-05-11 10:36:30.802885",
+        "Last Updated": "2020-05-11 10:36:30.802885",
+        "Market Price": 3280,
+        "Quantity": 97563,
+        "Total Trade Count": 33859822
+    },
+    "Aloe Cookie": {
+        "ID": 9205,
+        "Last Update Attempt": "2020-05-11 10:36:23.137400",
+        "Last Updated": "2020-05-11 10:36:23.137400",
+        "Market Price": 1830,
+        "Quantity": 588,
+        "Total Trade Count": 312638
+    },
+    "Apprentice's Alchemy Box": {
+        "Last Update Attempt": "2020-05-11 09:50:59.538526",
+        "Last Updated": "2019-08-04 08:55:40.731738",
+        "Market Price": 180000
+    },
+    "Ash Plank": {
+        "ID": 4651,
+        "Last Update Attempt": "2020-05-11 09:51:25.851025",
+        "Last Updated": "2020-05-11 09:51:25.851025",
+        "Market Price": 1280,
+        "Quantity": 0,
+        "Total Trade Count": 161814627
+    },
+    "Ash Plywood": {
+        "ID": 4652,
+        "Last Update Attempt": "2020-05-11 09:51:32.639362",
+        "Last Updated": "2020-05-11 09:51:32.639362",
+        "Market Price": 8800,
+        "Quantity": 523301,
+        "Total Trade Count": 137793274
+    },
+    "Ash Sap": {
+        "ID": 5001,
+        "Last Update Attempt": "2020-05-11 09:51:38.671570",
+        "Last Updated": "2020-05-11 09:51:38.671570",
+        "Market Price": 4160,
+        "Quantity": 15559,
+        "Total Trade Count": 87978747
+    },
+    "Ash Timber": {
+        "ID": 4601,
+        "Last Update Attempt": "2020-05-11 09:51:19.800677",
+        "Last Updated": "2020-05-11 09:51:19.800677",
+        "Market Price": 365,
+        "Quantity": 19096,
+        "Total Trade Count": 744981519
+    },
+    "Barley": {
+        "Last Update Attempt": "2020-05-11 10:50:07.256538",
+        "Last Updated": "2020-05-11 10:50:07.256538",
+        "Market Price": 450
+    },
+    "Barley Dough": {
+        "ID": 7202,
+        "Last Update Attempt": "2020-05-11 10:43:47.794976",
+        "Last Updated": "2020-05-11 10:43:47.794493",
+        "Market Price": 1560,
+        "Quantity": 11843,
+        "Total Trade Count": 22933097
+    },
+    "Barley Flour": {
+        "ID": 7102,
+        "Last Update Attempt": "2020-05-11 10:43:50.529828",
+        "Last Updated": "2020-05-11 10:43:50.528833",
+        "Market Price": 1350,
+        "Quantity": 59191,
+        "Total Trade Count": 52577462
+    },
+    "Barley Seed": {
+        "ID": 6807,
+        "Last Update Attempt": "2020-05-11 10:43:54.029342",
+        "Last Updated": "2020-05-11 10:43:54.029342",
+        "Market Price": 1510,
+        "Quantity": 0,
+        "Total Trade Count": 80485
+    },
+    "Beer": {
+        "ID": 9213,
+        "Last Update Attempt": "2020-05-11 09:52:13.304504",
+        "Last Updated": "2020-05-11 09:52:13.304504",
+        "Market Price": 1760,
+        "Quantity": 91892,
+        "Total Trade Count": 1483272263
+    },
+    "Birch Plank": {
+        "ID": 4660,
+        "Last Update Attempt": "2020-05-11 09:52:24.797171",
+        "Last Updated": "2020-05-11 09:52:24.797171",
+        "Market Price": 1770,
+        "Quantity": 0,
+        "Total Trade Count": 141617323
+    },
+    "Birch Plywood": {
+        "ID": 4661,
+        "Last Update Attempt": "2020-05-11 09:52:30.765575",
+        "Last Updated": "2020-05-11 09:52:30.765575",
+        "Market Price": 10500,
+        "Quantity": 32666,
+        "Total Trade Count": 148382753
+    },
+    "Birch Timber": {
+        "ID": 4604,
+        "Last Update Attempt": "2020-05-11 09:52:19.802135",
+        "Last Updated": "2020-05-11 09:52:19.802135",
+        "Market Price": 950,
+        "Quantity": 21384,
+        "Total Trade Count": 731068133
+    },
+    "Black Stone Powder": {
+        "ID": 4901,
+        "Last Update Attempt": "2020-05-11 09:50:25.188422",
+        "Last Updated": "2020-05-11 09:50:25.188422",
+        "Market Price": 4340,
+        "Quantity": 52295,
+        "Total Trade Count": 624761940
+    },
+    "Bloody Tree Knot": {
+        "ID": 5005,
+        "Last Update Attempt": "2020-05-11 09:52:36.496947",
+        "Last Updated": "2020-05-11 09:52:36.496947",
+        "Market Price": 3850,
+        "Quantity": 47197,
+        "Total Trade Count": 71673110
+    },
+    "Blue Whale Tendon": {
+        "ID": 9729,
+        "Last Update Attempt": "2020-05-11 09:52:41.846856",
+        "Last Updated": "2020-05-11 09:52:41.846856",
+        "Market Price": 5050000,
+        "Quantity": 66,
+        "Total Trade Count": 160633
+    },
+    "Bottle of River Water": {
+        "Last Update Attempt": "2020-05-11 09:52:41.896205",
+        "Last Updated": "2019-09-07 20:21:05.451796",
+        "Market Price": 6000
+    },
+    "Bottle of Sea Water": {
+        "ID": 6652,
+        "Last Update Attempt": "2020-05-11 09:52:56.806914",
+        "Last Updated": "2020-05-11 09:52:56.806914",
+        "Market Price": 3650,
+        "Quantity": 577,
+        "Total Trade Count": 8990962
+    },
+    "Bronze Ingot": {
+        "ID": 4067,
+        "Last Update Attempt": "2020-05-11 09:53:13.400432",
+        "Last Updated": "2020-05-11 09:53:13.400432",
+        "Market Price": 10500,
+        "Quantity": 11315,
+        "Total Trade Count": 127401293
+    },
+    "Cedar Plank": {
+        "ID": 4666,
+        "Last Update Attempt": "2020-05-11 09:53:25.306341",
+        "Last Updated": "2020-05-11 09:53:25.306341",
+        "Market Price": 3920,
+        "Quantity": 67186,
+        "Total Trade Count": 137996712
+    },
+    "Cedar Plywood": {
+        "ID": 4667,
+        "Last Update Attempt": "2020-05-11 09:53:29.887690",
+        "Last Updated": "2020-05-11 09:53:29.887690",
+        "Market Price": 13600,
+        "Quantity": 26946,
+        "Total Trade Count": 148986227
+    },
+    "Cedar Timber": {
+        "ID": 4607,
+        "Last Update Attempt": "2020-05-11 09:53:19.994979",
+        "Last Updated": "2020-05-11 09:53:19.994979",
+        "Market Price": 1440,
+        "Quantity": 6680,
+        "Total Trade Count": 725132128
+    },
+    "Clear Liquid Reagent": {
+        "ID": 5301,
+        "Last Update Attempt": "2020-05-11 09:50:46.244670",
+        "Last Updated": "2020-05-11 09:50:46.244670",
+        "Market Price": 2530,
+        "Quantity": 17298,
+        "Total Trade Count": 126663782
+    },
+    "Clown's Blood": {
+        "ID": 6353,
+        "Last Update Attempt": "2020-05-11 09:54:21.576417",
+        "Last Updated": "2020-05-11 09:54:21.576417",
+        "Market Price": 13100,
+        "Quantity": 255650,
+        "Total Trade Count": 69306607
+    },
+    "Coal": {
+        "ID": 4007,
+        "Last Update Attempt": "2020-05-11 09:54:25.892854",
+        "Last Updated": "2020-05-11 09:54:25.892656",
+        "Market Price": 1080,
+        "Quantity": 21367,
+        "Total Trade Count": 890409810
+    },
+    "Cooking Honey": {
+        "ID": 7702,
+        "Last Update Attempt": "2020-05-11 10:43:45.029456",
+        "Last Updated": "2020-05-11 10:43:45.029456",
+        "Market Price": 2830,
+        "Quantity": 81515,
+        "Total Trade Count": 1079382636
+    },
+    "Cooking Wine": {
+        "Last Update Attempt": "2020-05-11 09:54:25.928553",
+        "Last Updated": "2019-09-07 20:16:30.608224",
+        "Market Price": 40
+    },
+    "Copper Ingot": {
+        "ID": 4058,
+        "Last Update Attempt": "2020-05-11 09:54:32.039096",
+        "Last Updated": "2020-05-11 09:54:32.039096",
+        "Market Price": 8400,
+        "Quantity": 1266070,
+        "Total Trade Count": 47883443
+    },
+    "Copper Ore": {
+        "ID": 4003,
+        "Last Update Attempt": "2020-05-11 09:54:37.050954",
+        "Last Updated": "2020-05-11 09:54:37.050954",
+        "Market Price": 263,
+        "Quantity": 188624,
+        "Total Trade Count": 1204089042
+    },
+    "Corn": {
+        "Last Update Attempt": "2020-05-11 10:55:02.929391",
+        "Last Updated": "2020-05-11 10:55:02.929391",
+        "Market Price": 475
+    },
+    "Corn Dough": {
+        "ID": 7205,
+        "Last Update Attempt": "2020-05-11 10:53:53.484211",
+        "Last Updated": "2020-05-11 10:53:53.484211",
+        "Market Price": 1600,
+        "Quantity": 15836,
+        "Total Trade Count": 52133056
+    },
+    "Corn Flour": {
+        "ID": 7105,
+        "Last Update Attempt": "2020-05-11 10:53:57.013883",
+        "Last Updated": "2020-05-11 10:53:57.013883",
+        "Market Price": 1360,
+        "Quantity": 54896,
+        "Total Trade Count": 126437495
+    },
+    "Corn Seed": {
+        "ID": 6809,
+        "Last Update Attempt": "2020-05-11 10:53:59.956744",
+        "Last Updated": "2020-05-11 10:53:59.956744",
+        "Market Price": 3130,
+        "Quantity": 165,
+        "Total Trade Count": 35107
+    },
+    "Dough": {
+        "Last Update Attempt": "2020-05-11 10:43:42.112154",
+        "Last Updated": "2020-05-11 10:43:42.112154",
+        "Market Price": 1600
+    },
+    "Elder Tree Plank": {
+        "ID": 4673,
+        "Last Update Attempt": "2020-05-11 09:54:44.645418",
+        "Last Updated": "2020-05-11 09:54:44.645418",
+        "Market Price": 1730,
+        "Quantity": 4411998,
+        "Total Trade Count": 5448925
+    },
+    "Elder Tree Plywood": {
+        "ID": 4674,
+        "Last Update Attempt": "2020-05-11 09:54:47.196176",
+        "Last Updated": "2020-05-11 09:54:47.195179",
+        "Market Price": 13800,
+        "Quantity": 507418,
+        "Total Trade Count": 2987375
+    },
+    "Elder Tree Timber": {
+        "ID": 4611,
+        "Last Update Attempt": "2020-05-11 09:54:41.693811",
+        "Last Updated": "2020-05-11 09:54:41.693811",
+        "Market Price": 433,
+        "Quantity": 181079,
+        "Total Trade Count": 190751179
+    },
+    "Emerald": {
+        "Last Update Attempt": "2020-05-11 09:54:53.456576",
+        "Last Updated": "2019-08-05 00:16:25.093905",
+        "Market Price": 102000
+    },
+    "Fine Hard Hide": {
+        "ID": 6161,
+        "Last Update Attempt": "2020-05-11 09:55:09.786626",
+        "Last Updated": "2020-05-11 09:55:09.786626",
+        "Market Price": 95000,
+        "Quantity": 1754,
+        "Total Trade Count": 2577670
+    },
+    "Fir Plank": {
+        "ID": 4663,
+        "Last Update Attempt": "2020-05-11 09:55:19.342600",
+        "Last Updated": "2020-05-11 09:55:19.342600",
+        "Market Price": 3140,
+        "Quantity": 488,
+        "Total Trade Count": 109270608
+    },
+    "Fir Plywood": {
+        "ID": 4664,
+        "Last Update Attempt": "2020-05-11 09:55:27.171450",
+        "Last Updated": "2020-05-11 09:55:27.171450",
+        "Market Price": 13500,
+        "Quantity": 50282,
+        "Total Trade Count": 155435856
+    },
+    "Fir Sap": {
+        "ID": 5009,
+        "Last Update Attempt": "2020-05-11 09:55:32.460967",
+        "Last Updated": "2020-05-11 09:55:32.460967",
+        "Market Price": 1460,
+        "Quantity": 0,
+        "Total Trade Count": 176809867
+    },
+    "Fir Timber": {
+        "ID": 4606,
+        "Last Update Attempt": "2020-05-11 09:55:12.922446",
+        "Last Updated": "2020-05-11 09:55:12.922446",
+        "Market Price": 1430,
+        "Quantity": 56934,
+        "Total Trade Count": 606277905
+    },
+    "Flax": {
+        "ID": 5802,
+        "Last Update Attempt": "2020-05-11 09:55:40.556482",
+        "Last Updated": "2020-05-11 09:55:40.556482",
+        "Market Price": 970,
+        "Quantity": 0,
+        "Total Trade Count": 798897843
+    },
+    "Flax Fabric": {
+        "ID": 5856,
+        "Last Update Attempt": "2020-05-11 09:55:49.241213",
+        "Last Updated": "2020-05-11 09:55:49.241213",
+        "Market Price": 10200,
+        "Quantity": 1972578,
+        "Total Trade Count": 37004212
+    },
+    "Flax Thread": {
+        "ID": 5852,
+        "Last Update Attempt": "2020-05-11 09:55:45.271840",
+        "Last Updated": "2020-05-11 09:55:45.271840",
+        "Market Price": 2250,
+        "Quantity": 170048,
+        "Total Trade Count": 56848989
+    },
+    "Forest Emerald": {
+        "ID": 4462,
+        "Last Update Attempt": "2020-05-11 09:55:59.411123",
+        "Last Updated": "2020-05-11 09:55:59.410125",
+        "Market Price": 480000,
+        "Quantity": 556,
+        "Total Trade Count": 29062
+    },
+    "Freekeh": {
+        "ID": 7021,
+        "Last Update Attempt": "2020-05-11 10:55:23.639600",
+        "Last Updated": "2020-05-11 10:55:23.639600",
+        "Market Price": 1820,
+        "Quantity": 8860,
+        "Total Trade Count": 69055444
+    },
+    "Freekeh Flour": {
+        "ID": 7107,
+        "Last Update Attempt": "2020-05-11 10:55:20.160191",
+        "Last Updated": "2020-05-11 10:55:20.160191",
+        "Market Price": 705,
+        "Quantity": 12537,
+        "Total Trade Count": 3139527
+    },
+    "Freekeh Flour Dough": {
+        "ID": 7207,
+        "Last Update Attempt": "2020-05-11 10:55:16.772220",
+        "Last Updated": "2020-05-11 10:55:16.772220",
+        "Market Price": 1390,
+        "Quantity": 4018,
+        "Total Trade Count": 1230818
+    },
+    "Gem Polisher": {
+        "ID": 4481,
+        "Last Update Attempt": "2020-05-11 09:55:56.296993",
+        "Last Updated": "2020-05-11 09:55:56.296993",
+        "Market Price": 90000,
+        "Quantity": 1770,
+        "Total Trade Count": 1414340
+    },
+    "HP Potion (Medium)": {
+        "Last Update Attempt": "2020-05-11 09:56:12.446031",
+        "Last Updated": "2019-08-02 18:48:49.932589",
+        "Market Price": 120,
+        "Quantity:": 203498
+    },
+    "HP Potion (Small)": {
+        "Last Update Attempt": "2020-05-11 09:56:08.567241",
+        "Last Updated": "2019-08-02 18:48:04.158922",
+        "Market Price": 80,
+        "Quantity:": 999999999
+    },
+    "Hard Hide": {
+        "ID": 6153,
+        "Last Update Attempt": "2020-05-11 09:55:04.377519",
+        "Last Updated": "2020-05-11 09:55:04.377519",
+        "Market Price": 20200,
+        "Quantity": 22,
+        "Total Trade Count": 9444811
+    },
+    "High-Quality Potato": {
+        "ID": 7008,
+        "Last Update Attempt": "2020-05-11 10:50:20.156582",
+        "Last Updated": "2020-05-11 10:50:20.156582",
+        "Market Price": 3360,
+        "Quantity": 1302,
+        "Total Trade Count": 1572257
+    },
+    "Instant HP Potion (Medium)": {
+        "ID": 514,
+        "Last Update Attempt": "2020-05-11 09:56:16.108885",
+        "Last Updated": "2020-05-11 09:56:16.108885",
+        "Market Price": 336,
+        "Quantity": 0,
+        "Total Trade Count": 59603
+    },
+    "Instant HP Potion (Small)": {
+        "ID": 513,
+        "Last Update Attempt": "2020-05-11 09:56:12.421121",
+        "Last Updated": "2020-05-11 09:56:12.421121",
+        "Market Price": 134,
+        "Quantity": 0,
+        "Total Trade Count": 23043
+    },
+    "Instant MP Potion (Medium)": {
+        "ID": 516,
+        "Last Update Attempt": "2020-05-11 09:58:25.085138",
+        "Last Updated": "2020-05-11 09:58:25.085138",
+        "Market Price": 336,
+        "Quantity": 41,
+        "Total Trade Count": 23158
+    },
+    "Instant MP Potion (Small)": {
+        "ID": 515,
+        "Last Update Attempt": "2020-05-11 09:58:21.907190",
+        "Last Updated": "2020-05-11 09:58:21.907190",
+        "Market Price": 79,
+        "Quantity": 0,
+        "Total Trade Count": 3067
+    },
+    "Iron Ingot": {
+        "ID": 4052,
+        "Last Update Attempt": "2020-05-11 09:56:20.957558",
+        "Last Updated": "2020-05-11 09:56:20.957558",
+        "Market Price": 8500,
+        "Quantity": 1373054,
+        "Total Trade Count": 70019719
+    },
+    "Iron Ore": {
+        "ID": 4001,
+        "Last Update Attempt": "2020-05-11 09:56:24.820650",
+        "Last Updated": "2020-05-11 09:56:24.820650",
+        "Market Price": 510,
+        "Quantity": 24292,
+        "Total Trade Count": 1375605537
+    },
+    "Item 1": {
+        "Last Update Attempt": "2020-05-11 09:56:24.836505",
+        "Last Updated": "2019-08-02 12:18:16.488456",
+        "Market Price": 666,
+        "Quantity:": 666
+    },
+    "Item 2": {
+        "Last Update Attempt": "2020-05-11 09:56:29.044136",
+        "Last Updated": "2019-07-31 14:03:23.246992",
+        "Market Price": 2,
+        "Quantity:": 1
+    },
+    "Item 3": {
+        "Last Update Attempt": "2020-05-11 09:56:34.058569",
+        "Last Updated": "2019-07-31 14:03:23.927121",
+        "Market Price": 11,
+        "Quantity:": 1
+    },
+    "Item 4": {
+        "Last Update Attempt": "2020-05-11 09:56:38.417263",
+        "Last Updated": "2019-07-31 14:03:24.657197",
+        "Market Price": 45,
+        "Quantity:": 1
+    },
+    "Item 5": {
+        "Last Update Attempt": "2020-05-11 09:56:43.477203",
+        "Last Updated": "2019-08-02 23:25:27.706279",
+        "Market Price": 77777777
+    },
+    "Item 6": {
+        "Last Update Attempt": "2020-05-11 10:55:40.790772",
+        "Last Updated": "2020-05-11 10:55:40.790772",
+        "Market Price": 1000
+    },
+    "Lead Ingot": {
+        "ID": 4055,
+        "Last Update Attempt": "2020-05-11 09:57:02.392818",
+        "Last Updated": "2020-05-11 09:57:02.392818",
+        "Market Price": 8050,
+        "Quantity": 31614,
+        "Total Trade Count": 24179667
+    },
+    "Lead Ore": {
+        "ID": 4002,
+        "Last Update Attempt": "2020-05-11 09:57:07.625278",
+        "Last Updated": "2020-05-11 09:57:07.625278",
+        "Market Price": 1310,
+        "Quantity": 62349,
+        "Total Trade Count": 323810755
+    },
+    "Leavening Agent": {
+        "Last Update Attempt": "2020-05-11 09:51:38.699705",
+        "Last Updated": "2019-08-02 22:59:12.997542",
+        "Market Price": 20
+    },
+    "Lizard Hide": {
+        "ID": 6008,
+        "Last Update Attempt": "2020-05-11 09:57:12.958284",
+        "Last Updated": "2020-05-11 09:57:12.958284",
+        "Market Price": 8450,
+        "Quantity": 608,
+        "Total Trade Count": 6158189
+    },
+    "Log": {
+        "ID": 4605,
+        "Last Update Attempt": "2020-05-11 09:57:17.242234",
+        "Last Updated": "2020-05-11 09:57:17.242234",
+        "Market Price": 9800,
+        "Quantity": 0,
+        "Total Trade Count": 178568264
+    },
+    "Loopy Tree Plank": {
+        "ID": 4697,
+        "Last Update Attempt": "2020-05-11 09:57:25.901938",
+        "Last Updated": "2020-05-11 09:57:25.901938",
+        "Market Price": 8050,
+        "Quantity": 46715,
+        "Total Trade Count": 12039882
+    },
+    "Loopy Tree Plywood": {
+        "ID": 4698,
+        "Last Update Attempt": "2020-05-11 09:57:29.788895",
+        "Last Updated": "2020-05-11 09:57:29.788895",
+        "Market Price": 14300,
+        "Quantity": 96363,
+        "Total Trade Count": 511774
+    },
+    "Loopy Tree Timber": {
+        "ID": 4615,
+        "Last Update Attempt": "2020-05-11 09:57:21.303260",
+        "Last Updated": "2020-05-11 09:57:21.303260",
+        "Market Price": 1930,
+        "Quantity": 49171,
+        "Total Trade Count": 23201042
+    },
+    "Lump of Raw Sugar": {
+        "ID": 54003,
+        "Last Update Attempt": "2020-05-11 09:52:02.331671",
+        "Last Updated": "2020-05-11 09:52:02.331671",
+        "Market Price": 2500,
+        "Quantity": 3851,
+        "Total Trade Count": 7916793
+    },
+    "MP Potion (Medium)": {
+        "Last Update Attempt": "2020-05-11 09:58:21.935022",
+        "Last Updated": "2019-08-02 18:49:23.599983",
+        "Market Price": 120,
+        "Quantity:": 186
+    },
+    "MP Potion (Small)": {
+        "Last Update Attempt": "2020-05-11 09:58:18.631081",
+        "Last Updated": "2019-08-02 18:49:19.501902",
+        "Market Price": 48,
+        "Quantity:": 250
+    },
+    "Maple Plank": {
+        "ID": 4654,
+        "Last Update Attempt": "2020-05-11 09:57:39.409007",
+        "Last Updated": "2020-05-11 09:57:39.409007",
+        "Market Price": 2620,
+        "Quantity": 48,
+        "Total Trade Count": 177712429
+    },
+    "Maple Plywood": {
+        "ID": 4655,
+        "Last Update Attempt": "2020-05-11 09:57:44.220972",
+        "Last Updated": "2020-05-11 09:57:44.220972",
+        "Market Price": 11900,
+        "Quantity": 64953,
+        "Total Trade Count": 198865204
+    },
+    "Maple Timber": {
+        "ID": 4602,
+        "Last Update Attempt": "2020-05-11 09:57:34.358239",
+        "Last Updated": "2020-05-11 09:57:34.358239",
+        "Market Price": 1100,
+        "Quantity": 4659,
+        "Total Trade Count": 832131536
+    },
+    "Meat Stew": {
+        "ID": 9414,
+        "Last Update Attempt": "2020-05-11 09:57:55.925590",
+        "Last Updated": "2020-05-11 09:57:55.925590",
+        "Market Price": 7650,
+        "Quantity": 0,
+        "Total Trade Count": 4739145
+    },
+    "Melted Copper Shard": {
+        "ID": 4057,
+        "Last Update Attempt": "2020-05-11 09:53:03.691522",
+        "Last Updated": "2020-05-11 09:53:03.691522",
+        "Market Price": 1050,
+        "Quantity": 188346,
+        "Total Trade Count": 299856399
+    },
+    "Melted Iron Shard": {
+        "ID": 4051,
+        "Last Update Attempt": "2020-05-11 09:50:11.671715",
+        "Last Updated": "2020-05-11 09:50:11.671715",
+        "Market Price": 2400,
+        "Quantity": 55874,
+        "Total Trade Count": 418183982
+    },
+    "Melted Lead Shard": {
+        "ID": 4054,
+        "Last Update Attempt": "2020-05-11 09:56:57.455880",
+        "Last Updated": "2020-05-11 09:56:57.455880",
+        "Market Price": 1270,
+        "Quantity": 250345,
+        "Total Trade Count": 33628223
+    },
+    "Melted Tin Shard": {
+        "ID": 4060,
+        "Last Update Attempt": "2020-05-11 09:53:10.118679",
+        "Last Updated": "2020-05-11 09:53:10.118679",
+        "Market Price": 3530,
+        "Quantity": 2153,
+        "Total Trade Count": 91179299
+    },
+    "Melted Zinc Shard": {
+        "ID": 4063,
+        "Last Update Attempt": "2020-05-11 09:58:05.969826",
+        "Last Updated": "2020-05-11 09:58:05.969826",
+        "Market Price": 8400,
+        "Quantity": 0,
+        "Total Trade Count": 122592029
+    },
+    "Metal Solvent": {
+        "ID": 4076,
+        "Last Update Attempt": "2020-05-11 09:58:09.085236",
+        "Last Updated": "2020-05-11 09:58:09.085236",
+        "Market Price": 80000,
+        "Quantity": 5532,
+        "Total Trade Count": 8871140
+    },
+    "Mineral Water": {
+        "Last Update Attempt": "2020-05-11 10:56:05.650896",
+        "Last Updated": "2020-05-11 10:56:05.650896",
+        "Market Price": 30
+    },
+    "Moss Tree Plank": {
+        "ID": 4694,
+        "Last Update Attempt": "2020-05-11 09:58:15.359201",
+        "Last Updated": "2020-05-11 09:58:15.359201",
+        "Market Price": 1360,
+        "Quantity": 433837,
+        "Total Trade Count": 7263911
+    },
+    "Moss Tree Plywood": {
+        "ID": 4695,
+        "Last Update Attempt": "2020-05-11 09:58:18.604250",
+        "Last Updated": "2020-05-11 09:58:18.604250",
+        "Market Price": 13600,
+        "Quantity": 451100,
+        "Total Trade Count": 1108421
+    },
+    "Moss Tree Timber": {
+        "ID": 4614,
+        "Last Update Attempt": "2020-05-11 09:58:12.155419",
+        "Last Updated": "2020-05-11 09:58:12.155419",
+        "Market Price": 425,
+        "Quantity": 119865,
+        "Total Trade Count": 35365715
+    },
+    "Mud Crystal": {
+        "Last Update Attempt": "2020-05-11 09:58:28.050493",
+        "Last Updated": "2019-08-01 00:55:10.499989",
+        "Market Price": 5850,
+        "Quantity:": 11603
+    },
+    "Noc Ore": {
+        "ID": 4011,
+        "Last Update Attempt": "2020-05-11 09:58:33.934035",
+        "Last Updated": "2020-05-11 09:58:33.934035",
+        "Market Price": 2010,
+        "Quantity": 17931,
+        "Total Trade Count": 85804211
+    },
+    "Palm Plank": {
+        "ID": 4670,
+        "Last Update Attempt": "2020-05-11 09:58:39.892482",
+        "Last Updated": "2020-05-11 09:58:39.892482",
+        "Market Price": 1590,
+        "Quantity": 4608672,
+        "Total Trade Count": 14011663
+    },
+    "Palm Plywood": {
+        "ID": 4671,
+        "Last Update Attempt": "2020-05-11 09:58:42.638080",
+        "Last Updated": "2020-05-11 09:58:42.638080",
+        "Market Price": 12700,
+        "Quantity": 293139,
+        "Total Trade Count": 10889794
+    },
+    "Palm Timber": {
+        "ID": 4610,
+        "Last Update Attempt": "2020-05-11 09:58:36.715271",
+        "Last Updated": "2020-05-11 09:58:36.715271",
+        "Market Price": 398,
+        "Quantity": 183418,
+        "Total Trade Count": 266559665
+    },
+    "Pine Plank": {
+        "ID": 4657,
+        "Last Update Attempt": "2020-05-11 09:58:48.893151",
+        "Last Updated": "2020-05-11 09:58:48.893151",
+        "Market Price": 2110,
+        "Quantity": 41738,
+        "Total Trade Count": 70874150
+    },
+    "Pine Plywood": {
+        "ID": 4658,
+        "Last Update Attempt": "2020-05-11 09:58:51.862785",
+        "Last Updated": "2020-05-11 09:58:51.862785",
+        "Market Price": 11400,
+        "Quantity": 72586,
+        "Total Trade Count": 92780368
+    },
+    "Pine Sap": {
+        "ID": 5003,
+        "Last Update Attempt": "2020-05-11 09:58:54.929989",
+        "Last Updated": "2020-05-11 09:58:54.929989",
+        "Market Price": 4970,
+        "Quantity": 330,
+        "Total Trade Count": 88072254
+    },
+    "Pine Timber": {
+        "ID": 4603,
+        "Last Update Attempt": "2020-05-11 09:58:45.722588",
+        "Last Updated": "2020-05-11 09:58:45.722588",
+        "Market Price": 870,
+        "Quantity": 66438,
+        "Total Trade Count": 402581089
+    },
+    "Platinum Ore": {
+        "ID": 4203,
+        "Last Update Attempt": "2020-05-11 09:58:58.355153",
+        "Last Updated": "2020-05-11 09:58:58.355153",
+        "Market Price": 2410,
+        "Quantity": 342638,
+        "Total Trade Count": 56196407
+    },
+    "Plywood Hardener": {
+        "ID": 4684,
+        "Last Update Attempt": "2020-05-11 09:59:04.087685",
+        "Last Updated": "2020-05-11 09:59:04.087685",
+        "Market Price": 324000,
+        "Quantity": 3311,
+        "Total Trade Count": 4628881
+    },
+    "Polished Stone": {
+        "ID": 4068,
+        "Last Update Attempt": "2020-05-11 09:49:49.565745",
+        "Last Updated": "2020-05-11 09:49:49.565745",
+        "Market Price": 17100,
+        "Quantity": 0,
+        "Total Trade Count": 11754214
+    },
+    "Pork": {
+        "ID": 7905,
+        "Last Update Attempt": "2020-05-11 09:57:48.823038",
+        "Last Updated": "2020-05-11 09:57:48.823038",
+        "Market Price": 8050,
+        "Quantity": 0,
+        "Total Trade Count": 24676006
+    },
+    "Potato": {
+        "Last Update Attempt": "2020-05-11 10:51:26.192393",
+        "Last Updated": "2020-05-11 10:51:26.188405",
+        "Market Price": 400
+    },
+    "Potato Dough": {
+        "ID": 7203,
+        "Last Update Attempt": "2020-05-11 10:50:11.129604",
+        "Last Updated": "2020-05-11 10:50:11.129604",
+        "Market Price": 1660,
+        "Quantity": 50044,
+        "Total Trade Count": 90360696
+    },
+    "Potato Flour": {
+        "ID": 7103,
+        "Last Update Attempt": "2020-05-11 10:50:15.535770",
+        "Last Updated": "2020-05-11 10:50:15.535770",
+        "Market Price": 1340,
+        "Quantity": 55586,
+        "Total Trade Count": 215251890
+    },
+    "Powder of Darkness": {
+        "Last Update Attempt": "2020-05-11 09:54:08.022537",
+        "Last Updated": "2019-08-02 19:02:15.150138",
+        "Market Price": 1870,
+        "Quantity:": 7505095
+    },
+    "Processed Coal": {
+        "ID": 4070,
+        "Last Update Attempt": "2020-05-11 09:56:02.231221",
+        "Last Updated": "2020-05-11 09:56:02.231221",
+        "Market Price": 3620,
+        "Quantity": 10230,
+        "Total Trade Count": 12054454
+    },
+    "Pure Copper Crystal": {
+        "ID": 4059,
+        "Last Update Attempt": "2020-05-11 09:59:07.005142",
+        "Last Updated": "2020-05-11 09:59:07.005142",
+        "Market Price": 126000,
+        "Quantity": 0,
+        "Total Trade Count": 1381062
+    },
+    "Pure Iron Crystal": {
+        "ID": 4053,
+        "Last Update Attempt": "2020-05-11 09:59:10.075393",
+        "Last Updated": "2020-05-11 09:59:10.075393",
+        "Market Price": 105000,
+        "Quantity": 3340,
+        "Total Trade Count": 6076931
+    },
+    "Pure Powder Reagent": {
+        "ID": 5302,
+        "Last Update Attempt": "2020-05-11 09:50:59.496747",
+        "Last Updated": "2020-05-11 09:50:59.496747",
+        "Market Price": 2520,
+        "Quantity": 13386,
+        "Total Trade Count": 89707098
+    },
+    "Pure Tin Crystal": {
+        "ID": 4062,
+        "Last Update Attempt": "2020-05-11 09:59:21.890573",
+        "Last Updated": "2020-05-11 09:59:21.890573",
+        "Market Price": 93500,
+        "Quantity": 345,
+        "Total Trade Count": 237312
+    },
+    "Pure Zinc Crystal": {
+        "ID": 4065,
+        "Last Update Attempt": "2020-05-11 09:59:29.866522",
+        "Last Updated": "2020-05-11 09:59:29.866522",
+        "Market Price": 67500,
+        "Quantity": 184,
+        "Total Trade Count": 756340
+    },
+    "Purified Water": {
+        "ID": 6656,
+        "Last Update Attempt": "2020-05-11 09:53:55.107020",
+        "Last Updated": "2020-05-11 09:53:55.107020",
+        "Market Price": 4800,
+        "Quantity": 74566,
+        "Total Trade Count": 352417112
+    },
+    "Resplendent Emerald": {
+        "ID": 4461,
+        "Last Update Attempt": "2020-05-11 09:55:52.693522",
+        "Last Updated": "2020-05-11 09:55:52.693522",
+        "Market Price": 51000,
+        "Quantity": 4786,
+        "Total Trade Count": 406244
+    },
+    "Rough Emerald": {
+        "ID": 4404,
+        "Last Update Attempt": "2020-05-11 09:54:58.708692",
+        "Last Updated": "2020-05-11 09:54:58.708692",
+        "Market Price": 6250,
+        "Quantity": 155,
+        "Total Trade Count": 1139855
+    },
+    "Rough Mud Crystal": {
+        "ID": 4407,
+        "Last Update Attempt": "2020-05-11 09:58:30.787497",
+        "Last Updated": "2020-05-11 09:58:30.787497",
+        "Market Price": 11200,
+        "Quantity": 13660,
+        "Total Trade Count": 33988180
+    },
+    "Rough Stone": {
+        "ID": 4006,
+        "Last Update Attempt": "2020-05-11 09:59:33.252846",
+        "Last Updated": "2020-05-11 09:59:33.252846",
+        "Market Price": 3770,
+        "Quantity": 0,
+        "Total Trade Count": 65540572
+    },
+    "Salt": {
+        "Last Update Attempt": "2020-05-11 09:53:29.924484",
+        "Last Updated": "2019-08-01 01:11:05.260446",
+        "Market Price": 20,
+        "Quantity:": 999999999
+    },
+    "Seed Potato": {
+        "ID": 6806,
+        "Last Update Attempt": "2020-05-11 10:50:28.873096",
+        "Last Updated": "2020-05-11 10:50:28.873096",
+        "Market Price": 3600,
+        "Quantity": 2,
+        "Total Trade Count": 79319
+    },
+    "Seed Sweet Potato": {
+        "ID": 6810,
+        "Last Update Attempt": "2020-05-11 10:51:37.898634",
+        "Last Updated": "2020-05-11 10:51:37.897580",
+        "Market Price": 488,
+        "Quantity": 152,
+        "Total Trade Count": 181964
+    },
+    "Shining Fluid Collector": {
+        "ID": 16112,
+        "Last Update Attempt": "2020-05-11 09:59:39.797952",
+        "Last Updated": "2020-05-11 09:59:39.797952",
+        "Market Price": 200000,
+        "Quantity": 94,
+        "Total Trade Count": 157664
+    },
+    "Shining Steel Butcher Knife": {
+        "ID": 16120,
+        "Last Update Attempt": "2020-05-11 09:59:42.516785",
+        "Last Updated": "2020-05-11 09:59:42.516785",
+        "Market Price": 281000,
+        "Quantity": 321,
+        "Total Trade Count": 481613
+    },
+    "Shining Steel Hoe": {
+        "ID": 16116,
+        "Last Update Attempt": "2020-05-11 09:59:45.382599",
+        "Last Updated": "2020-05-11 09:59:45.382599",
+        "Market Price": 197000,
+        "Quantity": 251,
+        "Total Trade Count": 154056
+    },
+    "Shining Steel Lumbering Axe": {
+        "ID": 16108,
+        "Last Update Attempt": "2020-05-11 09:59:48.350691",
+        "Last Updated": "2020-05-11 09:59:48.350691",
+        "Market Price": 143000,
+        "Quantity": 256,
+        "Total Trade Count": 622905
+    },
+    "Shining Steel Pickaxe": {
+        "ID": 16128,
+        "Last Update Attempt": "2020-05-11 09:59:51.154037",
+        "Last Updated": "2020-05-11 09:59:51.154037",
+        "Market Price": 74500,
+        "Quantity": 19,
+        "Total Trade Count": 712552
+    },
+    "Shining Steel Tanning Knife": {
+        "ID": 16124,
+        "Last Update Attempt": "2020-05-11 09:59:54.743150",
+        "Last Updated": "2020-05-11 09:59:54.743150",
+        "Market Price": 92500,
+        "Quantity": 421,
+        "Total Trade Count": 189419
+    },
+    "Ship License: Fishing Boat": {
+        "ID": 49006,
+        "Last Update Attempt": "2020-05-11 09:59:58.013283",
+        "Last Updated": "2020-05-11 09:59:58.013283",
+        "Market Price": 5950000,
+        "Quantity": 17,
+        "Total Trade Count": 214941
+    },
+    "Silver Azalea": {
+        "ID": 5402,
+        "Last Update Attempt": "2020-05-11 09:59:14.109483",
+        "Last Updated": "2020-05-11 09:59:14.109483",
+        "Market Price": 217,
+        "Quantity": 513645,
+        "Total Trade Count": 364635933
+    },
+    "Special Potato": {
+        "ID": 7013,
+        "Last Update Attempt": "2020-05-11 10:50:25.868873",
+        "Last Updated": "2020-05-11 10:50:25.868873",
+        "Market Price": 8950,
+        "Quantity": 5925,
+        "Total Trade Count": 11595376
+    },
+    "Spirit's Leaf": {
+        "ID": 5006,
+        "Last Update Attempt": "2020-05-11 09:54:16.099176",
+        "Last Updated": "2020-05-11 09:54:16.099176",
+        "Market Price": 2250,
+        "Quantity": 7245,
+        "Total Trade Count": 73814194
+    },
+    "Steel": {
+        "Last Update Attempt": "2020-05-11 09:59:33.288177",
+        "Last Updated": "2019-08-01 00:40:47.673397",
+        "Market Price": 8000,
+        "Quantity:": 95986
+    },
+    "Steel Taritas Armor": {
+        "ID": 14102,
+        "Last Update Attempt": "2020-05-11 10:00:00.732954",
+        "Last Updated": "2020-05-11 10:00:00.732954",
+        "Market Price": 306000,
+        "Quantity": 0,
+        "Total Trade Count": 305951
+    },
+    "Steel Taritas Gloves": {
+        "ID": 14103,
+        "Last Update Attempt": "2020-05-11 10:00:04.416245",
+        "Last Updated": "2020-05-11 10:00:04.416245",
+        "Market Price": 220000,
+        "Quantity": 0,
+        "Total Trade Count": 149401
+    },
+    "Steel Taritas Helmet": {
+        "ID": 14101,
+        "Last Update Attempt": "2020-05-11 10:00:07.532837",
+        "Last Updated": "2020-05-11 10:00:07.532837",
+        "Market Price": 265000,
+        "Quantity": 6,
+        "Total Trade Count": 180931
+    },
+    "Steel Taritas Shoes": {
+        "ID": 14104,
+        "Last Update Attempt": "2020-05-11 10:00:10.712564",
+        "Last Updated": "2020-05-11 10:00:10.712564",
+        "Market Price": 224000,
+        "Quantity": 14,
+        "Total Trade Count": 184136
+    },
+    "Sturdy Acacia Plywood": {
+        "ID": 4682,
+        "Last Update Attempt": "2020-05-11 10:00:13.682667",
+        "Last Updated": "2020-05-11 10:00:13.682667",
+        "Market Price": 268000,
+        "Quantity": 16,
+        "Total Trade Count": 62712
+    },
+    "Sturdy Ash Plywood": {
+        "ID": 4653,
+        "Last Update Attempt": "2020-05-11 10:00:16.798849",
+        "Last Updated": "2020-05-11 10:00:16.798849",
+        "Market Price": 447000,
+        "Quantity": 752,
+        "Total Trade Count": 271040
+    },
+    "Sturdy Birch Plywood": {
+        "ID": 4662,
+        "Last Update Attempt": "2020-05-11 10:00:19.858240",
+        "Last Updated": "2020-05-11 10:00:19.858240",
+        "Market Price": 466000,
+        "Quantity": 0,
+        "Total Trade Count": 175171
+    },
+    "Sturdy Cedar Plywood": {
+        "ID": 4668,
+        "Last Update Attempt": "2020-05-11 10:00:23.553821",
+        "Last Updated": "2020-05-11 10:00:23.553821",
+        "Market Price": 109000,
+        "Quantity": 39,
+        "Total Trade Count": 60509
+    },
+    "Sturdy Elder Tree Plywood": {
+        "ID": 4675,
+        "Last Update Attempt": "2020-05-11 10:00:26.521171",
+        "Last Updated": "2020-05-11 10:00:26.521171",
+        "Market Price": 465000,
+        "Quantity": 275,
+        "Total Trade Count": 45263
+    },
+    "Sturdy Fir Plywood": {
+        "ID": 4665,
+        "Last Update Attempt": "2020-05-11 10:00:30.206313",
+        "Last Updated": "2020-05-11 10:00:30.206313",
+        "Market Price": 155000,
+        "Quantity": 0,
+        "Total Trade Count": 190824
+    },
+    "Sturdy Loopy Tree Plywood": {
+        "ID": 4699,
+        "Last Update Attempt": "2020-05-11 10:00:33.581203",
+        "Last Updated": "2020-05-11 10:00:33.581203",
+        "Market Price": 595000,
+        "Quantity": 77,
+        "Total Trade Count": 35386
+    },
+    "Sturdy Maple Plywood": {
+        "ID": 4656,
+        "Last Update Attempt": "2020-05-11 10:00:37.367462",
+        "Last Updated": "2020-05-11 10:00:37.367462",
+        "Market Price": 530000,
+        "Quantity": 915,
+        "Total Trade Count": 130678
+    },
+    "Sturdy Moss Tree Plywood": {
+        "ID": 4696,
+        "Last Update Attempt": "2020-05-11 10:00:40.420056",
+        "Last Updated": "2020-05-11 10:00:40.420056",
+        "Market Price": 418000,
+        "Quantity": 791,
+        "Total Trade Count": 17006
+    },
+    "Sturdy Palm Plywood": {
+        "ID": 4672,
+        "Last Update Attempt": "2020-05-11 10:00:43.884389",
+        "Last Updated": "2020-05-11 10:00:43.884389",
+        "Market Price": 510000,
+        "Quantity": 583,
+        "Total Trade Count": 93133
+    },
+    "Sturdy Pine Plywood": {
+        "ID": 4659,
+        "Last Update Attempt": "2020-05-11 10:00:47.574036",
+        "Last Updated": "2020-05-11 10:00:47.574036",
+        "Market Price": 490000,
+        "Quantity": 95,
+        "Total Trade Count": 384562
+    },
+    "Sturdy Thuja Plywood": {
+        "ID": 4703,
+        "Last Update Attempt": "2020-05-11 10:00:54.212160",
+        "Last Updated": "2020-05-11 10:00:54.212160",
+        "Market Price": 590000,
+        "Quantity": 1282,
+        "Total Trade Count": 74887
+    },
+    "Sugar": {
+        "Last Update Attempt": "2020-05-11 10:56:03.810592",
+        "Last Updated": "2020-05-11 10:56:03.810592",
+        "Market Price": 20
+    },
+    "Sunrise Herb": {
+        "ID": 5401,
+        "Last Update Attempt": "2020-05-11 09:53:48.992344",
+        "Last Updated": "2020-05-11 09:53:48.992344",
+        "Market Price": 189,
+        "Quantity": 454710,
+        "Total Trade Count": 216893722
+    },
+    "Sweet Potato": {
+        "Last Update Attempt": "2020-05-11 10:53:48.519190",
+        "Last Updated": "2020-05-11 10:53:48.519190",
+        "Market Price": 500
+    },
+    "Sweet Potato Dough": {
+        "ID": 7204,
+        "Last Update Attempt": "2020-05-11 10:51:30.440396",
+        "Last Updated": "2020-05-11 10:51:30.440396",
+        "Market Price": 1650,
+        "Quantity": 3980,
+        "Total Trade Count": 11959859
+    },
+    "Sweet Potato Flour": {
+        "ID": 7104,
+        "Last Update Attempt": "2020-05-11 10:51:34.275383",
+        "Last Updated": "2020-05-11 10:51:34.275383",
+        "Market Price": 1430,
+        "Quantity": 28099,
+        "Total Trade Count": 22457519
+    },
+    "Teff": {
+        "ID": 7022,
+        "Last Update Attempt": "2020-05-11 10:55:13.494808",
+        "Last Updated": "2020-05-11 10:55:13.494808",
+        "Market Price": 985,
+        "Quantity": 26708,
+        "Total Trade Count": 131038290
+    },
+    "Teff Flour": {
+        "ID": 7106,
+        "Last Update Attempt": "2020-05-11 10:55:10.178278",
+        "Last Updated": "2020-05-11 10:55:10.178278",
+        "Market Price": 1540,
+        "Quantity": 169404,
+        "Total Trade Count": 86761596
+    },
+    "Teff Flour Dough": {
+        "ID": 7206,
+        "Last Update Attempt": "2020-05-11 10:55:07.669016",
+        "Last Updated": "2020-05-11 10:55:07.669016",
+        "Market Price": 1670,
+        "Quantity": 66304,
+        "Total Trade Count": 64431358
+    },
+    "Thuja Plank": {
+        "ID": 4701,
+        "Last Update Attempt": "2020-05-11 10:01:02.833261",
+        "Last Updated": "2020-05-11 10:01:02.833261",
+        "Market Price": 1810,
+        "Quantity": 90066,
+        "Total Trade Count": 1417836
+    },
+    "Thuja Plywood": {
+        "ID": 4702,
+        "Last Update Attempt": "2020-05-11 10:00:51.183838",
+        "Last Updated": "2020-05-11 10:00:51.183838",
+        "Market Price": 14700,
+        "Quantity": 87103,
+        "Total Trade Count": 424417
+    },
+    "Thuja Timber": {
+        "ID": 4616,
+        "Last Update Attempt": "2020-05-11 10:00:57.981279",
+        "Last Updated": "2020-05-11 10:00:57.981279",
+        "Market Price": 480,
+        "Quantity": 51570,
+        "Total Trade Count": 9711400
+    },
+    "Tin Ingot": {
+        "ID": 4061,
+        "Last Update Attempt": "2020-05-11 09:59:17.648936",
+        "Last Updated": "2020-05-11 09:59:17.648936",
+        "Market Price": 8500,
+        "Quantity": 692408,
+        "Total Trade Count": 9664174
+    },
+    "Tin Ore": {
+        "ID": 4004,
+        "Last Update Attempt": "2020-05-11 09:57:58.896831",
+        "Last Updated": "2020-05-11 09:57:58.896831",
+        "Market Price": 1670,
+        "Quantity": 51363,
+        "Total Trade Count": 448723320
+    },
+    "Titanium Ore": {
+        "ID": 4009,
+        "Last Update Attempt": "2020-05-11 10:01:06.124062",
+        "Last Updated": "2020-05-11 10:01:06.124062",
+        "Market Price": 2740,
+        "Quantity": 1667,
+        "Total Trade Count": 57438185
+    },
+    "Trace of Forest": {
+        "Last Update Attempt": "2020-05-11 10:01:06.151550",
+        "Last Updated": "2019-08-01 00:32:59.540211",
+        "Market Price": 27100,
+        "Quantity:": 6510
+    },
+    "Trace of Origin": {
+        "Last Update Attempt": "2020-05-11 09:56:02.260309",
+        "Last Updated": "2019-08-05 00:19:12.781139",
+        "Market Price": 62000
+    },
+    "Trace of Savagery": {
+        "Last Update Attempt": "2020-05-11 10:01:09.460429",
+        "Last Updated": "2019-09-07 18:18:45.851049",
+        "Market Price": 33700
+    },
+    "Trace of the Earth": {
+        "Last Update Attempt": "2020-05-11 09:58:58.385116",
+        "Last Updated": "2019-09-07 20:26:46.753093",
+        "Market Price": 39800
+    },
+    "Usable Scantling": {
+        "ID": 4669,
+        "Last Update Attempt": "2020-05-11 09:50:00.411017",
+        "Last Updated": "2020-05-11 09:50:00.411017",
+        "Market Price": 32800,
+        "Quantity": 0,
+        "Total Trade Count": 12594319
+    },
+    "Vanadium Ore": {
+        "ID": 4008,
+        "Last Update Attempt": "2020-05-11 10:01:17.075943",
+        "Last Updated": "2020-05-11 10:01:17.075943",
+        "Market Price": 2800,
+        "Quantity": 20049,
+        "Total Trade Count": 54296532
+    },
+    "Weeds": {
+        "ID": 5600,
+        "Last Update Attempt": "2020-05-11 09:54:01.849700",
+        "Last Updated": "2020-05-11 09:54:01.849700",
+        "Market Price": 840,
+        "Quantity": 22341,
+        "Total Trade Count": 209003388
+    },
+    "Whale Tendon Elixir": {
+        "ID": 732,
+        "Last Update Attempt": "2020-05-11 10:01:21.281301",
+        "Last Updated": "2020-05-11 10:01:21.281301",
+        "Market Price": 1290000,
+        "Quantity": 400,
+        "Total Trade Count": 357029
+    },
+    "Whale Tendon Potion": {
+        "ID": 575,
+        "Last Update Attempt": "2020-05-11 10:01:28.026203",
+        "Last Updated": "2020-05-11 10:01:28.026203",
+        "Market Price": 645000,
+        "Quantity": 1374,
+        "Total Trade Count": 1251022
+    },
+    "Wheat": {
+        "Last Update Attempt": "2020-05-11 09:52:02.356895",
+        "Last Updated": "2019-09-07 19:56:21.254525",
+        "Market Price": 920
+    },
+    "Wheat Dough": {
+        "ID": 7201,
+        "Last Update Attempt": "2020-05-11 10:36:36.322221",
+        "Last Updated": "2020-05-11 10:36:36.322221",
+        "Market Price": 1650,
+        "Quantity": 35592,
+        "Total Trade Count": 132998653
+    },
+    "Wheat Flour": {
+        "ID": 7101,
+        "Last Update Attempt": "2020-05-11 09:57:52.868198",
+        "Last Updated": "2020-05-11 09:57:52.868198",
+        "Market Price": 1500,
+        "Quantity": 106967,
+        "Total Trade Count": 286416517
+    },
+    "Wheat Seed": {
+        "ID": 6808,
+        "Last Update Attempt": "2020-05-11 09:52:07.636069",
+        "Last Updated": "2020-05-11 09:52:07.636069",
+        "Market Price": 3300,
+        "Quantity": 0,
+        "Total Trade Count": 354082
+    },
+    "White Cedar Plank": {
+        "ID": 4676,
+        "Last Update Attempt": "2020-05-11 10:01:35.799676",
+        "Last Updated": "2020-05-11 10:01:35.799676",
+        "Market Price": 2050,
+        "Quantity": 11540,
+        "Total Trade Count": 41945240
+    },
+    "White Cedar Plywood": {
+        "ID": 4677,
+        "Last Update Attempt": "2020-05-11 10:01:40.457171",
+        "Last Updated": "2020-05-11 10:01:40.457171",
+        "Market Price": 12600,
+        "Quantity": 77614,
+        "Total Trade Count": 45177129
+    },
+    "White Cedar Timber": {
+        "ID": 4608,
+        "Last Update Attempt": "2020-05-11 10:01:32.013270",
+        "Last Updated": "2020-05-11 10:01:32.013270",
+        "Market Price": 1000,
+        "Quantity": 6083,
+        "Total Trade Count": 253590740
+    },
+    "Wild Beehive": {
+        "ID": 7701,
+        "Last Update Attempt": "2020-05-11 10:55:26.809189",
+        "Last Updated": "2020-05-11 10:55:26.809189",
+        "Market Price": 25000,
+        "Quantity": 0,
+        "Total Trade Count": 1686068
+    },
+    "Wild Grass": {
+        "ID": 5439,
+        "Last Update Attempt": "2020-05-11 10:01:43.200341",
+        "Last Updated": "2020-05-11 10:01:43.200341",
+        "Market Price": 1000,
+        "Quantity": 33703,
+        "Total Trade Count": 94696241
+    },
+    "Wolf Blood": {
+        "ID": 6214,
+        "Last Update Attempt": "2020-05-11 09:54:08.003715",
+        "Last Updated": "2020-05-11 09:54:08.003715",
+        "Market Price": 2640,
+        "Quantity": 24803,
+        "Total Trade Count": 92562795
+    },
+    "Worm Hide": {
+        "ID": 6009,
+        "Last Update Attempt": "2020-05-11 09:56:08.536759",
+        "Last Updated": "2020-05-11 09:56:08.536759",
+        "Market Price": 7250,
+        "Quantity": 298,
+        "Total Trade Count": 152289
+    },
+    "Yak Hide": {
+        "ID": 6027,
+        "Last Update Attempt": "2020-05-11 10:01:46.648509",
+        "Last Updated": "2020-05-11 10:01:46.648509",
+        "Market Price": 8100,
+        "Quantity": 22174,
+        "Total Trade Count": 873707
+    },
+    "Zinc Ingot": {
+        "ID": 4064,
+        "Last Update Attempt": "2020-05-11 09:59:26.039900",
+        "Last Updated": "2020-05-11 09:59:26.039900",
+        "Market Price": 47300,
+        "Quantity": 61553,
+        "Total Trade Count": 30176438
+    },
+    "Zinc Ore": {
+        "ID": 4005,
+        "Last Update Attempt": "2020-05-11 09:58:03.090456",
+        "Last Updated": "2020-05-11 09:58:03.090456",
+        "Market Price": 4540,
+        "Quantity": 76907,
+        "Total Trade Count": 520430721
+    },
+    "[Party] Elixir of Steel Defense": {
+        "ID": 654,
+        "Last Update Attempt": "2020-05-11 09:59:36.825390",
+        "Last Updated": "2020-05-11 09:59:36.825390",
+        "Market Price": 125000,
+        "Quantity": 0,
+        "Total Trade Count": 249707
+    }
+}
