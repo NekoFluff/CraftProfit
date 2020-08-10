@@ -240,10 +240,15 @@ class ItemProfitCalculator():
                     # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, lowest_cost, quantity, quantity * lowest_cost, total_price))
                     # print("{:20} {:20} {:20} {:20} {:20}".format(ingredient, time_cost, quantity, quantity * time_cost, total_time))
 
-            market_price = self.item_price_manager.get_market_price_for_item(
-                item.name)
+            
             # Division to get price per item
             total_price = total_price / item.quantity_produced
+            # If it's symbolic, then there is 0 loss. Market price is craft price...
+
+            market_price = self.item_price_manager.get_market_price_for_item(item.name) if not item.is_symbolic else total_price
+            if item.is_symbolic and self.item_price_manager.get_market_price_for_item(item.name) != market_price:
+                self.item_price_manager.update_item_market_price(item.name, market_price)
+                
 
             if not item.is_symbolic and market_price <= total_price:  # If it is cheaper to buy it than to make it yourself
                 total_price = market_price

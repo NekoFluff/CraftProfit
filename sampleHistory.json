@@ -1,0 +1,15 @@
+{
+  "_id": {
+      "$oid": "5f15dc19ceb9cc0b119474b2"
+  },
+  "Name": "Item 1",
+  "Prices": [{
+      "Market Price": 777,
+      "Timestamp": {
+          "$date": "1997-04-13T07:00:00.000Z"
+      },
+      "Quantity": 600,
+      "Total Trade Count": 1000000
+  }],
+  "ID": 777
+}

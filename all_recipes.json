@@ -1,0 +1,1517 @@
+[
+    {
+        "Action": "Chopping",
+        "Name": "Acacia Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Acacia Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Acacia Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Acacia Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Acacia Timber"
+    },
+    {
+        "Name": "Advanced Cooking Utensil",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 14,
+                "Melted Iron Shard": 20,
+                "Polished Stone": 20,
+                "Usable Scantling": 5
+            }
+        ],
+        "Time to Produce": 3600.0
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Aloe"
+    },
+    {
+        "Action": "Cooking",
+        "Name": "Aloe Cookie",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Aloe": 5,
+                "Cooking Honey": 3,
+                "Dough": 7,
+                "Sugar": 4
+            }
+        ],
+        "Time to Produce": 10.0
+    },
+    {
+        "Action:": "Imperial Alchemy",
+        "Name": "Apprentice's Alchemy Box",
+        "Quantity Produced": 1.1,
+        "Recipes": [
+            {
+                "Clear Liquid Reagent": 20,
+                "Pure Powder Reagent": 20
+            }
+        ],
+        "Taxed": false,
+        "Time to Produce": 6.0
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Ash Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Ash Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Ash Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Ash Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Ash Sap"
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Ash Timber"
+    },
+    {
+        "Name": "Barley"
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Barley Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Barley Flour": 1,
+                "Mineral Water": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Barley Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Barley": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Cooking",
+        "Name": "Beer",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Leavening Agent": 2,
+                "Mineral Water": 6,
+                "Sugar": 1,
+                "Wheat": 5
+            }
+        ],
+        "Time to Produce": 10.0
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Birch Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Birch Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Birch Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Birch Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Birch Timber"
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Black Stone Powder",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Rough Stone": 2
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Bloody Tree Knot"
+    },
+    {
+        "Name": "Blue Whale Tendon"
+    },
+    {
+        "Name": "Bottle of River Water",
+        "Time to Produce": 12
+    },
+    {
+        "Name": "Bottle of Sea Water"
+    },
+    {
+        "Action": "Heating",
+        "Name": "Bronze Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Copper Shard": 5,
+                "Melted Tin Shard": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Chopping",
+        "Name": "Cedar Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Cedar Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Cedar Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Cedar Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Cedar Timber"
+    },
+    {
+        "Action": "Alchemy",
+        "Name": "Clear Liquid Reagent",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Purified Water": 1,
+                "Salt": 1,
+                "Sunrise Herb": 1,
+                "Weeds": 1
+            }
+        ],
+        "Time to Produce": 10
+    },
+    {
+        "Name": "Clown's Blood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Clear Liquid Reagent": 1,
+                "Powder of Darkness": 1,
+                "Spirit's Leaf": 1,
+                "Wolf Blood": 2
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Coal"
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Cooking Honey",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Wild Beehive": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Cooking Wine"
+    },
+    {
+        "Name": "Copper Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Copper Shard": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Copper Ore"
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Corn"
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Corn Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Corn Flour": 1,
+                "Mineral Water": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Corn Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Corn": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Cooking",
+        "Is Symbolic": true,
+        "Name": "Dough",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Wheat Dough": 1
+            },
+            {
+                "Barley Dough": 1
+            },
+            {
+                "Potato Dough": 1
+            },
+            {
+                "Sweet Potato Dough": 1
+            },
+            {
+                "Corn Dough": 1
+            },
+            {
+                "Teff Flour Dough": 1
+            },
+            {
+                "Freekeh Flour Dough": 1
+            }
+        ],
+        "Time to Produce": 0
+    },
+    {
+        "Name": "Elder Tree Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Elder Tree Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Elder Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Elder Tree Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Elder Tree Timber"
+    },
+    {
+        "Name": "Emerald",
+        "Quantity Produced": 2.513333333333333,
+        "Recipes": [
+            {
+                "Rough Emerald": 5
+            }
+        ],
+        "Time to Produce": 6.0
+    },
+    {
+        "Name": "Fine Hard Hide",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Hard Hide": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Fir Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Fir Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Fir Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Fir Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Fir Sap"
+    },
+    {
+        "Name": "Fir Timber"
+    },
+    {
+        "Name": "Flax"
+    },
+    {
+        "Name": "Flax Fabric",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Flax Thread": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Flax Thread",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Flax": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Forest Emerald",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Gem Polisher": 3,
+                "Resplendent Emerald": 7
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Freekeh"
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Freekeh Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Freekeh": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Freekeh Flour Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Freekeh Flour": 1,
+                "Mineral Water": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Gem Polisher",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Processed Coal": 4,
+                "Pure Powder Reagent": 1,
+                "Purified Water": 6,
+                "Trace of Origin": 2
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Hard Hide",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Worm Hide": 5
+            },
+            {
+                "Lizard Hide": 5
+            },
+            {
+                "Yak Hide": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Gathering",
+        "Name": "High-Quality Potato"
+    },
+    {
+        "Name": "HP Potion (Medium)",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "HP Potion (Small)": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "HP Potion (Small)"
+    },
+    {
+        "Name": "Iron Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Iron Shard": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Iron Ore"
+    },
+    {
+        "Name": "Item 1"
+    },
+    {
+        "Name": "Item 2"
+    },
+    {
+        "Name": "Item 3"
+    },
+    {
+        "Name": "Item 4",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Item 1": 1,
+                "Item 2": 2,
+                "Item 3": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Item 5",
+        "Quantity Produced": 100.0,
+        "Recipes": [
+            {
+                "Item 1": 2,
+                "Item 2": 4,
+                "Item 3": 6
+            }
+        ],
+        "Time to Produce": 6.0
+    },
+    {
+        "Name": "Item 6",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Item 4": 1,
+                "Item 5": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Lead Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Lead Shard": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Lead Ore"
+    },
+    {
+        "Name": "Leavening Agent"
+    },
+    {
+        "Name": "Lizard Hide"
+    },
+    {
+        "Name": "Log"
+    },
+    {
+        "Name": "Loopy Tree Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Loopy Tree Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Loopy Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Loopy Tree Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Loopy Tree Timber"
+    },
+    {
+        "Name": "Maple Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Maple Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Maple Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Maple Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Maple Timber"
+    },
+    {
+        "Action": "Cooking",
+        "Name": "Meat Stew",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Cooking Wine": 2,
+                "Mineral Water": 3,
+                "Pork": 5,
+                "Wheat Flour": 2
+            }
+        ],
+        "Time to Produce": 10
+    },
+    {
+        "Name": "Melted Copper Shard",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Copper Ore": 5
+            }
+        ],
+        "Time to Produce": 9
+    },
+    {
+        "Name": "Melted Iron Shard",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Iron Ore": 5
+            }
+        ],
+        "Time to Produce": 9
+    },
+    {
+        "Name": "Melted Lead Shard",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Lead Ore": 5
+            }
+        ],
+        "Time to Produce": 9
+    },
+    {
+        "Name": "Melted Tin Shard",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Tin Ore": 5
+            }
+        ],
+        "Time to Produce": 9
+    },
+    {
+        "Name": "Melted Zinc Shard",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Zinc Ore": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Metal Solvent",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Clear Liquid Reagent": 1,
+                "Melted Iron Shard": 3,
+                "Rough Stone": 4,
+                "Trace of Savagery": 2
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Mineral Water"
+    },
+    {
+        "Name": "Moss Tree Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Moss Tree Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Moss Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Moss Tree Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Moss Tree Timber"
+    },
+    {
+        "Name": "MP Potion (Medium)",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "MP Potion (Small)": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "MP Potion (Small)"
+    },
+    {
+        "Name": "Mud Crystal",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Rough Mud Crystal": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Noc Ore"
+    },
+    {
+        "Name": "Palm Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Palm Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Palm Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Palm Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Palm Timber"
+    },
+    {
+        "Name": "Pine Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Pine Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Pine Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Pine Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Pine Sap"
+    },
+    {
+        "Name": "Pine Timber"
+    },
+    {
+        "Name": "Platinum Ore"
+    },
+    {
+        "Action": "Alchemy",
+        "Name": "Plywood Hardener",
+        "Quantity Produced": 1.4633333333333334,
+        "Recipes": [
+            {
+                "Bloody Tree Knot": 3,
+                "Fir Sap": 4,
+                "Pure Powder Reagent": 1,
+                "Trace of the Earth": 3
+            }
+        ],
+        "Time to Produce": 10.0
+    },
+    {
+        "Name": "Polished Stone",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Rough Stone": 10
+            }
+        ],
+        "Time to Produce": 6.0
+    },
+    {
+        "Action": "Butchering",
+        "Name": "Pork",
+        "Quantity Produced": 2.5,
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Potato"
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Potato Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Mineral Water": 1,
+                "Potato Flour": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Potato Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "High-Quality Potato": 1
+            },
+            {
+                "Special Potato": 1
+            },
+            {
+                "Potato": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Powder of Darkness"
+    },
+    {
+        "Name": "Processed Coal",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Coal": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Pure Copper Crystal",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Copper Ingot": 3,
+                "Metal Solvent": 2
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Pure Iron Crystal",
+        "Quantity Produced": 1.9851975811309088,
+        "Recipes": [
+            {
+                "Iron Ingot": 3,
+                "Metal Solvent": 2
+            }
+        ],
+        "Time to Produce": 6.0
+    },
+    {
+        "Action": "Alchemy",
+        "Name": "Pure Powder Reagent",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Purified Water": 1,
+                "Silver Azalea": 1,
+                "Sugar": 1,
+                "Weeds": 1
+            }
+        ],
+        "Time to Produce": 10
+    },
+    {
+        "Name": "Pure Tin Crystal",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Metal Solvent": 2,
+                "Tin Ingot": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Pure Zinc Crystal",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Metal Solvent": 2,
+                "Zinc Ingot": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Purified Water",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Bottle of River Water": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Resplendent Emerald",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Emerald": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Rough Emerald"
+    },
+    {
+        "Name": "Rough Mud Crystal"
+    },
+    {
+        "Name": "Rough Stone"
+    },
+    {
+        "Name": "Salt"
+    },
+    {
+        "Name": "Shining Fluid Collector",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 5,
+                "Pure Iron Crystal": 1,
+                "Steel": 2
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Shining Steel Butcher Knife",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 4,
+                "Fine Hard Hide": 1,
+                "Maple Timber": 1,
+                "Pure Iron Crystal": 1,
+                "Steel": 1
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Shining Steel Hoe",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 5,
+                "Maple Timber": 1,
+                "Pure Iron Crystal": 1,
+                "Steel": 2
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Shining Steel Lumbering Axe",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 5,
+                "Maple Timber": 1,
+                "Pure Iron Crystal": 1,
+                "Steel": 3
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Shining Steel Pickaxe",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 5,
+                "Maple Timber": 1,
+                "Pure Iron Crystal": 1,
+                "Steel": 1
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Shining Steel Tanning Knife",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 5,
+                "Fine Hard Hide": 1,
+                "Maple Timber": 1,
+                "Pure Iron Crystal": 1,
+                "Steel": 1
+            }
+        ],
+        "Time to Produce": 1800
+    },
+    {
+        "Name": "Ship License: Fishing Boat",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Birch Plywood": 50,
+                "Black Stone Powder": 30,
+                "Bronze Ingot": 25,
+                "Flax Fabric": 16,
+                "Pine Sap": 30,
+                "Usable Scantling": 25
+            }
+        ],
+        "Time to Produce": 90000
+    },
+    {
+        "Name": "Silver Azalea"
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Special Potato"
+    },
+    {
+        "Name": "Spirit's Leaf"
+    },
+    {
+        "Name": "Steel",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Coal": 5,
+                "Melted Iron Shard": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Steel Taritas Armor",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 10,
+                "Fine Hard Hide": 3,
+                "Mud Crystal": 3,
+                "Steel": 14
+            }
+        ],
+        "Time to Produce": 60
+    },
+    {
+        "Name": "Steel Taritas Gloves",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 10,
+                "Fine Hard Hide": 5,
+                "Mud Crystal": 3,
+                "Steel": 5
+            }
+        ],
+        "Time to Produce": 60
+    },
+    {
+        "Name": "Steel Taritas Helmet",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 10,
+                "Fine Hard Hide": 1,
+                "Mud Crystal": 3,
+                "Steel": 6
+            }
+        ],
+        "Time to Produce": 60
+    },
+    {
+        "Name": "Steel Taritas Shoes",
+        "Quantity Produced": 1,
+        "Recipes": [
+            {
+                "Black Stone Powder": 10,
+                "Fine Hard Hide": 2,
+                "Mud Crystal": 3,
+                "Steel": 8
+            }
+        ],
+        "Time to Produce": 60
+    },
+    {
+        "Name": "Sturdy Acacia Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Acacia Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Ash Plywood",
+        "Quantity Produced": 2.0,
+        "Recipes": [
+            {
+                "Ash Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6.0
+    },
+    {
+        "Name": "Sturdy Birch Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Birch Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Cedar Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Cedar Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Elder Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Elder Tree Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Fir Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Fir Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Loopy Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Loopy Tree Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Maple Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Maple Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Moss Tree Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Moss Tree Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Palm Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Palm Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Pine Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Pine Plywood": 10,
+                "Plywood Hardener": 3
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sturdy Thuja Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Plywood Hardener": 3,
+                "Thuja Plywood": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Sugar"
+    },
+    {
+        "Name": "Sunrise Herb"
+    },
+    {
+        "Action": "Gathering",
+        "Name": "Sweet Potato"
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Sweet Potato Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Mineral Water": 1,
+                "Sweet Potato Flour": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Sweet Potato Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Sweet Potato": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Teff"
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Teff Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Teff": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Teff Flour Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Mineral Water": 1,
+                "Teff Flour": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Thuja Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Thuja Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Thuja Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Thuja Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Thuja Timber"
+    },
+    {
+        "Name": "Tin Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Tin Shard": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Tin Ore"
+    },
+    {
+        "Name": "Titanium Ore"
+    },
+    {
+        "Name": "Trace of Forest"
+    },
+    {
+        "Name": "Trace of Origin"
+    },
+    {
+        "Name": "Trace of Savagery"
+    },
+    {
+        "Name": "Trace of the Earth"
+    },
+    {
+        "Name": "Usable Scantling",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Log": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Vanadium Ore"
+    },
+    {
+        "Name": "Weeds"
+    },
+    {
+        "Name": "Whale Tendon Elixir",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Ash Sap": 12,
+                "Blue Whale Tendon": 1,
+                "Clear Liquid Reagent": 2,
+                "Clown's Blood": 1,
+                "Purified Water": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Whale Tendon Potion",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Blue Whale Tendon": 1,
+                "HP Potion (Medium)": 3,
+                "MP Potion (Medium)": 3,
+                "Purified Water": 8
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Wheat"
+    },
+    {
+        "Action": "Shaking          ",
+        "Name": "Wheat Dough",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Mineral Water": 1,
+                "Wheat Flour": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Action": "Grinding",
+        "Name": "Wheat Flour",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Wheat": 1
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "White Cedar Plank",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "White Cedar Timber": 5
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "White Cedar Plywood",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "White Cedar Plank": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "White Cedar Timber"
+    },
+    {
+        "Name": "Wild Beehive"
+    },
+    {
+        "Name": "Wild Grass"
+    },
+    {
+        "Name": "Wolf Blood"
+    },
+    {
+        "Name": "Worm Hide"
+    },
+    {
+        "Name": "Yak Hide"
+    },
+    {
+        "Name": "Zinc Ingot",
+        "Quantity Produced": 2.5,
+        "Recipes": [
+            {
+                "Melted Zinc Shard": 10
+            }
+        ],
+        "Time to Produce": 6
+    },
+    {
+        "Name": "Zinc Ore"
+    }
+]
