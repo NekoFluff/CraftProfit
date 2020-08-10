@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "C:\\Users\\Alex\\Anaconda3\\python.exe",
+=======
+    "python.pythonPath": "c:\\Users\\alexn\\Projects\\CraftProfit\\env\\Scripts\\python.exe",
+>>>>>>> 477245a32fca773e62e243f784c313322057a915
     "python.linting.pylintEnabled": true,
     "python.linting.pycodestyleEnabled": false,
     "python.linting.enabled": true,

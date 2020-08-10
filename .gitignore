@@ -10,7 +10,7 @@ env
 
 # vscode
 .vscode/*
-!.vscode/settings.json
+.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -18,3 +18,5 @@ env
 # Folders
 Profit/*
 Orders/*
+
+Market_Prices
