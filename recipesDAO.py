@@ -31,3 +31,61 @@ class RecipesDAO:
         new_list = list(map(replace_wrapper, item_data_arr))
         self.recipes.bulk_write(new_list)
     
+    def deleteBaseIngredients(self):
+        self.recipes.delete_many({'Action': 'Gather/Purchase'})
+    
+    def insertBaseIngredients(self):
+        result = self.recipes.aggregate([
+            {
+                '$unwind': {
+                    'path': '$Recipe', 
+                    'includeArrayIndex': 'index', 
+                    'preserveNullAndEmptyArrays': True
+                }
+            }, {
+                '$project': {
+                    'Name': '$Recipe.Item Name'
+                }
+            }, {
+                '$group': {
+                    '_id': '$Name'
+                }
+            }, {
+                '$lookup': {
+                    'from': 'recipes', 
+                    'localField': '_id', 
+                    'foreignField': 'Name', 
+                    'as': 'All Recipes'
+                }
+            }, {
+                '$addFields': {
+                    'moreThanZero': {
+                        '$gt': [
+                            {
+                                '$size': '$All Recipes'
+                            }, 0
+                        ]
+                    }
+                }
+            }, {
+                '$match': {
+                    'moreThanZero': False
+                }
+            }, {
+                '$project': {
+                    '_id': 1
+                }
+            }
+        ])
+
+        data_arr = [{
+            'Name': x['_id'],
+            'Action': 'Gather/Purchase',
+            # 'Recipe': [],
+            # 'Quantity Produced': 1,
+            # 'Time to Produce': 0
+        } for x in result]
+        print(data_arr)
+
+        # Finally update the data on the backend
+        self.insertMany(data_arr)
