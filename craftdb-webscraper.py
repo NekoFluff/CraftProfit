@@ -84,7 +84,7 @@ if __name__ == "__main__":
       if len(parsed_item_name) > 0:
         parsed_item_name = parsed_item_name[0].strip()
       else:
-        parsed_item_name = text
+        parsed_item_name = text.strip()
 
       amount = re.findall(r'\d+$', text)
       if (len(amount) > 0):
@@ -116,7 +116,7 @@ if __name__ == "__main__":
       if len(parsed_text) > 0:
         parsed_text = parsed_text[0].strip()
       else:
-        parsed_text = text
+        parsed_text = text.strip()
 
       values = [int(s) for s in re.findall(r'\d+', text)]
       if len(values) == 0:

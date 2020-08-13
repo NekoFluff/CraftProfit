@@ -9,8 +9,8 @@ if __name__ == "__main__":
   from dotenv import load_dotenv
   load_dotenv()
 
-  URL = "https://www.invenglobal.com/blackdesertonline/recipe/cooking"
-  # URL = "https://www.invenglobal.com/blackdesertonline/recipe/alchemy"
+  # URL = "https://www.invenglobal.com/blackdesertonline/recipe/cooking"
+  URL = "https://www.invenglobal.com/blackdesertonline/recipe/alchemy"
 
   page = requests.get(URL)
   soup = BeautifulSoup(page.content, 'html.parser')
@@ -49,7 +49,7 @@ if __name__ == "__main__":
       if len(parsed_item_name) > 0:
         parsed_item_name = parsed_item_name[0].strip()
       else:
-        parsed_item_name = text
+        parsed_item_name = text.strip()
 
       amount = re.findall(r'\d+$', text)
       if (len(amount) > 0):
@@ -77,7 +77,7 @@ if __name__ == "__main__":
       if len(parsed_text) > 0:
         parsed_text = parsed_text[0].strip()
       else:
-        parsed_text = text
+        parsed_text = text.strip()
 
       values = [int(s) for s in re.findall(r'\d+', text)]
       if len(values) == 0:
@@ -110,4 +110,4 @@ if __name__ == "__main__":
   # Finally update the data on the backend
   from recipesDAO import RecipesDAO
   rDAO = RecipesDAO(os.getenv('BDO_DB_URI'), os.getenv('BDO_NS'))
-  # rDAO.insertMany(data_arr)
+  rDAO.insertMany(data_arr)

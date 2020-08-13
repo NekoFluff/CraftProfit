@@ -40,13 +40,14 @@ if __name__ == "__main__":
     mpUpdater = ItemMarketPriceUpdater()
     for idx, item_name in enumerate(allNames):
         if (item_name in already_failed): continue
+        print('-'*50)
         print('Recipes #', idx, '/', len(allNames), ":", item_name)
         
         data = mpUpdater.get_item(item_name)
         # print('data', data)
         now = datetime.datetime.now()
 
-        if (data != None):
+        if (data != None and data['name'] == item_name):
             formatted_data = {
                 'Name': data['name'],
                 'ID': data['mainKey'],
