@@ -37,19 +37,19 @@ if __name__ == "__main__":
       parsed_item_name = re.findall(r'^.+(?=x\s\d+)', text)
       substitute_ingredient = re.findall(r'\(.+\)$', text)
 
+      if len(parsed_item_name) > 0:
+        parsed_item_name = parsed_item_name[0].strip()
+      else:
+        parsed_item_name = text.strip()
+
       if len(substitute_ingredient) > 0:
-        substitute_ingredient = substitute_ingredient[0][1:-1]
+        substitute_ingredient = substitute_ingredient[0][1:-1].strip()
         parsed_item_name = substitute_ingredient
         print(substitute_ingredient)
 
       else:
         substitute_ingredient = None
 
-
-      if len(parsed_item_name) > 0:
-        parsed_item_name = parsed_item_name[0].strip()
-      else:
-        parsed_item_name = text.strip()
 
       amount = re.findall(r'\d+$', text)
       if (len(amount) > 0):
@@ -98,6 +98,10 @@ if __name__ == "__main__":
         'Action': method, 
         'Recipe': materials_arr
       }
+
+      # if data['Name'] == 'Beehive Cookie':
+      #   print(data)
+
       if (notGuaranteed):
         data['Not Guaranteed'] = True
 
