@@ -1,4 +1,4 @@
-from pymongo import MongoClient, InsertOne
+from pymongo import MongoClient, InsertOne, DeleteOne
 # https://pymongo.readthedocs.io/en/stable/examples/bulk.html (Bulk Writes)
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html (Aggregation)
 # https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.update_many
@@ -30,6 +30,14 @@ class RecipesDAO:
 
         new_list = list(map(replace_wrapper, item_data_arr))
         self.recipes.bulk_write(new_list)
+
+    def deleteIngredients(self, ingredient_names_arr):
+        def replace_wrapper(item_data):
+            return DeleteOne(item_data)
+
+        new_list = list(map(replace_wrapper, ingredient_names_arr))
+        result = self.recipes.bulk_write(new_list, ordered=False)
+        pprint.pprint(result)
     
     def deleteBaseIngredients(self):
         self.recipes.delete_many({'Action': 'Gather/Purchase'})

@@ -30,32 +30,32 @@ if __name__ == "__main__":
   # URL = "https://www.invenglobal.com/blackdesertonline/craft/Weapon%20Workshop?crafttype=Gear"
 
   #-----------------------------------------------------------
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Ceramics%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Mill?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Workbench?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Furniture%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Horse%20Gear%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Refinery?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Ship%20Part%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Shipyard?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Siege%20Weapon%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Tool%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Part%20Workshop?crafttype=Life"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Ceramics%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Mill?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Workbench?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Furniture%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Horse%20Gear%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Refinery?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Ship%20Part%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Shipyard?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Siege%20Weapon%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Tool%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Part%20Workshop?crafttype=Life"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Workshop?crafttype=Life"
 
   #---------------------------------------------------------
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Crops%20Factory?crafttype=Process"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Fish%20Factory?crafttype=Process"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Mineral%20Workbench?crafttype=Process"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Mushroom%20Factory?crafttype=Process"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Crops%20Factory?crafttype=Process"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Fish%20Factory?crafttype=Process"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Mineral%20Workbench?crafttype=Process"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Mushroom%20Factory?crafttype=Process"
   URL = "https://www.invenglobal.com/blackdesertonline/craft/Wood%20Workbench?crafttype=Process"
 
   #---------------------------------------------------------
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Elephant%20Nursery?crafttype=Guild"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Craft?crafttype=Guild"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Shipyard?crafttype=Guild"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Trade%20Packing?crafttype=Guild"
-  URL = "https://www.invenglobal.com/blackdesertonline/craft/Mount%20Part%20Workshop?crafttype=Guild"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Elephant%20Nursery?crafttype=Guild"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Craft?crafttype=Guild"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Shipyard?crafttype=Guild"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Trade%20Packing?crafttype=Guild"
+  # URL = "https://www.invenglobal.com/blackdesertonline/craft/Mount%20Part%20Workshop?crafttype=Guild"
 
   page = requests.get(URL)
   soup = BeautifulSoup(page.content, 'html.parser')
@@ -76,6 +76,7 @@ if __name__ == "__main__":
     # Materials
     materials = materials.find_all('li')
     materials_arr = []
+    onlyTakeFirstMaterial = True # Set to true for the chopping page. False for all others
     for m in materials:
       text = m.find('span').text
       # print('Material:', text)
@@ -96,6 +97,9 @@ if __name__ == "__main__":
         'Item Name': parsed_item_name,
         'Amount': int(amount)
       })
+
+      if onlyTakeFirstMaterial:
+        break
 
 
     # Method of crafting
@@ -146,4 +150,8 @@ if __name__ == "__main__":
   # Finally update the data on the backend
   from recipesDAO import RecipesDAO
   rDAO = RecipesDAO(os.getenv('BDO_DB_URI'), os.getenv('BDO_NS'))
+  # deleteMe = [{'Name': d['Name']} for d in data_arr]
+  deleteMe = [{'Name': d['Name'], 'Action': d['Action'], 'Time to Produce': d['Time to Produce']} for d in data_arr]
+  print('Delete:', deleteMe)
+  rDAO.deleteIngredients(deleteMe)
   rDAO.insertMany(data_arr)

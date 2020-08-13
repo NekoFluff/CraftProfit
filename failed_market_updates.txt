@@ -2,7 +2,7 @@
 Sunfish
 Checkerboard Wrasse
 Design: Orwen's Travel Wear - Tamer
-[Guild] Hekaru’s Process
+[Guild] Hekaruï¿½s Process
 [Sorceress] Calpheon Noble Outfit
 [Ranger] Ahon Kirus Outfit
 Magic Crystal of Infinity - Critical
@@ -42,7 +42,7 @@ Design: Garnier Troupe - Tamer
 Design: Garnier Troupe - Maehwa
 Design: Calpheon Noble Suit - Warrior
 [Valkyrie] Delphe Knights Costume
-[Guild] Restoration of Cadry’s Forbidden Book
+[Guild] Restoration of Cadryï¿½s Forbidden Book
 Apprentice's Boiled Egg Cooking Box
 Design: Valencia Travel Wear (Musa)
 [Dark Knight] Delphe Knights Costume
@@ -80,7 +80,7 @@ Design: Shroud Knights Armor (Sorceress)
 [Kunoichi] Orwen Travel Outfit
 Black Essence: Hystria
 Mudskipper
-[Maehwa] Jarette’s Armor Costume
+[Maehwa] Jaretteï¿½s Armor Costume
 Artisan's Cheese Gratin Cooking Box
 [Warrior] Serendian Blacksmith Outfit
 Black Crystal Fragment
@@ -88,7 +88,7 @@ Black Crystal Fragment
 Terrapin
 Fourfinger Threadfin
 Maomao
-Master’s Elixir of Assassination Alchemy Box
+Masterï¿½s Elixir of Assassination Alchemy Box
 Black Essence: Cobelinus
 Cherry Salmon
 Design: Delphe Knights Costume - Tamer
@@ -103,8 +103,8 @@ Design: Calpheon Noble Dress - Kunoichi
 Trout
 Design: Serendian Soldier - Musa
 [Warrior] Serendian Soldier Outfit
-[Witch] Jarette’s Armor Costume
-[Ranger] Jarette’s Armor Costume
+[Witch] Jaretteï¿½s Armor Costume
+[Ranger] Jaretteï¿½s Armor Costume
 Wagon Horse
 Silver-Stripe Round Herring
 Magical Fragment
@@ -112,7 +112,7 @@ Magical Fragment
 [Guild] Breezy Crystal
 Surfperch
 Filefish
-Strong Griffon’s Elixir
+Strong Griffonï¿½s Elixir
 Horn Fish
 Swiri
 [Valkyrie] Orwen Travel Outfit
@@ -126,7 +126,7 @@ Design: Calpheon Noble Dress - Dark Knight
 Skipjack
 Fine Fancy Fur
 Design: Serendian Blacksmith - Dark Knight
-[Tamer] Jarette’s Armor Costume
+[Tamer] Jaretteï¿½s Armor Costume
 Jellyfish
 Design: Delphe Knights Costume - Maehwa
 Design: Delphe Knights Costume - Kunoichi
@@ -165,7 +165,7 @@ Design: Serendian Formal (Berserker)
 Design: Jordine Casual - Warrior
 [Guild] Clearance Permit
 Salmon
-Master’s Elixir of Penetration Alchemy Box
+Masterï¿½s Elixir of Penetration Alchemy Box
 Gold Ingot 1000G
 Angler
 Krea Horn Bow of Destruction
@@ -188,7 +188,7 @@ Design: Serendia Blacksmith - Tamer
 Design: Terrmian Casual (Witch)
 Design: Jarette's Armor - Ranger
 Artisan's Elixir of Carnage Alchemy Box
-[Sorceress] Jarette’s Armor Costume
+[Sorceress] Jaretteï¿½s Armor Costume
 Design: Garnier Troupe - Ranger
 Striped Catfish
 Design: Serendian Formal (Musa)
@@ -294,7 +294,7 @@ Design: Ahon Kirus Armor (Maehwa)
 Round Herring
 Design: Shroud Knights Armor (Ninja)
 [Valkyrie] Serendian Blacksmith Outfit
-Griffon’s Elixir
+Griffonï¿½s Elixir
 Perch
 Design: Garnier Troupe - Striker
 Design: Calpheon Noble Dress - Valkyrie
@@ -319,7 +319,7 @@ Mullet
 Design: Jarette's Armor - Tamer
 Amberjack
 Professional's Elixir of Demihuman Hunt Alchemy Box
-Artisan's Grim Reaper’s Elixir Alchemy Box
+Artisan's Grim Reaperï¿½s Elixir Alchemy Box
 Abalone
 [Tamer] Calpheon Noble Outfit
 Rough Healing Stone
@@ -351,14 +351,14 @@ Pacu
 Gurnard
 Design: Garnier Troupe - Witch
 Sea Bass
-[Guild] Sea Monster’s Neidan
+[Guild] Sea Monsterï¿½s Neidan
 [Berserker] Shroud Knights Outfit
 Design: Serendian Soldier Suit - Striker
 Design: Edan's Travel Wear - Wizard
 Design: Calpheon Noble Suit - Musa
 Ray
 Design: Edan's Travel Wear - Berserker
-[Valkyrie] Jarette’s Armor Costume
+[Valkyrie] Jaretteï¿½s Armor Costume
 Nibbler
 [Tamer] Orwen Travel Outfit
 Smokey Chromis
@@ -368,7 +368,7 @@ Seahorse
 Black Essence: Carmae
 Apprentice's Fried Fish Cooking Box
 Krea Staff of Temptation
-Master’s Meat Sandwich Cooking Box
+Masterï¿½s Meat Sandwich Cooking Box
 Bluegill
 Design: Serendia Blacksmith - Ranger
 Mackerel
@@ -476,7 +476,7 @@ Mutant Plant
 Design: Terrmian Casual (Kunoichi)
 Design: Shroud Knights Armor (Dark Knight)
 Beehive Cookie
-Master’s Milk Tea Cooking Box
+Masterï¿½s Milk Tea Cooking Box
 [Guild] Goddess's Tear Crystal
 Arowana
 Cuvier
@@ -503,7 +503,7 @@ Grouper
 Seed Half Eaten by a Bird
 Clownfish
 Apprentice's Elixir of Wings Alchemy Box
-[Kunoichi] Jarette’s Armor Costume
+[Kunoichi] Jaretteï¿½s Armor Costume
 Design: Calpheon Noble Dress - Tamer
 [Guild] Special Iron Ingot from Calpheon Workshop
 [Kunoichi] Garnier Troupe Outfit
@@ -538,7 +538,7 @@ Rosy Bitterling
 [Berserker] Edan Travel Outfit
 [Musa] Valencia Travel Outfit
 Moray
-[Guild] Nineshark’s Horn Fragment
+[Guild] Ninesharkï¿½s Horn Fragment
 Scorpion Fish
 [Wizard] Calpheon Noble Outfit
 Shellfish
@@ -548,20 +548,16 @@ Design: Shroud Knights Armor (Warrior)
 Design: Calpheon Noble Suit - Wizard
 Design: Serendian Formal (Warrior)
 Olive Oil
-Griffon’s Claw
+Griffonï¿½s Claw
 Base Sauce
 Ardan's Broken Jewel III
 Ardan's Broken Jewel I
-A
 Ardan's Broken Jewel II
 Pumpkin
 Fish Filet Salad
 Magic Crystal of Infinity - Extraction
 Golden-Thread
-G
 Fish Fillet Chip
-S
-B
 Askasha's Broken Magic Weapon II
 Grain Flour
 Seafood
@@ -593,3 +589,23 @@ Blood Type 5
 Blood Type 2
 Blood Type 4
 Chicken
+[Guild] Nineshark’s Horn Fragment
+[Kunoichi] Jarette’s Armor Costume
+Master’s Milk Tea Cooking Box
+[Guild] Sea Monster’s Neidan
+Master’s Meat Sandwich Cooking Box
+[Valkyrie] Jarette’s Armor Costume
+Griffon’s Claw
+Artisan's Grim Reaper’s Elixir Alchemy Box
+Griffon’s Elixir
+Reptile Meat
+[Sorceress] Jarette’s Armor Costume
+Master’s Elixir of Penetration Alchemy Box
+Strong Griffon’s Elixir
+[Tamer] Jarette’s Armor Costume
+Master’s Elixir of Assassination Alchemy Box
+[Maehwa] Jarette’s Armor Costume
+[Ranger] Jarette’s Armor Costume
+[Witch] Jarette’s Armor Costume
+[Guild] Restoration of Cadry’s Forbidden Book
+[Guild] Hekaru’s Process
