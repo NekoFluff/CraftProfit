@@ -6,6 +6,7 @@ from requests.exceptions import HTTPError
 import threading
 import logging
 import time
+import re
 
 
 class ItemMarketPriceUpdater:
@@ -26,10 +27,23 @@ class ItemMarketPriceUpdater:
 
     def get_item(self, item_name):
         try:
-            self.item_market_price_manager.mark_update_attempt(item_name)
+            # self.item_market_price_manager.mark_update_attempt(item_name)
 
-            response = requests.get(
-                'https://omegapepega.com/na/'+item_name+'/0')
+            possible_items = requests.get('https://bddatabase.net/ac.php?l=us&term=' + item_name)
+            possible_items = json.loads(possible_items.content)
+            item_id = None
+            for item in possible_items:
+                if (item['name'] == item_name): # perfect match
+                    item_id = re.findall(r'\d+', item['link'])[0]
+                    print('Item Match', item_id)
+                    break
+
+            if (item_id is not None):
+                response = requests.get(
+                    'https://omegapepega.com/na/'+item_id+'/0')
+            else:
+                response = requests.get(
+                    'https://omegapepega.com/na/'+item_name+'/0')
 
             # If the response was successful, no Exception will be raised
             response.raise_for_status()
