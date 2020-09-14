@@ -9,56 +9,64 @@ if __name__ == "__main__":
   from dotenv import load_dotenv
   load_dotenv()
 
+  onlyTakeFirstMaterial = True # Set to true for the chopping page. False for all others
+  onlyTakeFirstProduct = True # Set to true for the chopping page. False for all others
+
   URLs = [
-
+    # Set onlyTakeFirstMaterial to true for the chopping page. False for all others 
+    # Set onlyTakeFirstProduct to true for the chopping page. False for all others
     "https://www.invenglobal.com/blackdesertonline/craft/Chopping?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Drying?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Filtering?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Grinding?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Heating?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Alchemy%20Packaging?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Cuisine%20Packaging?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Shaking?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Simple%20Alchemy?crafttype=Product",
-    "https://www.invenglobal.com/blackdesertonline/craft/Simple%20Cooking?crafttype=Product",
-
-  #---------------------------------------------------
-    "https://www.invenglobal.com/blackdesertonline/craft/Armor%20Workshop?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Carpentry%20Workshop?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Jeweler?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Jeweler?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Handcraft%20Workshop?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Manos%20Jeweler?crafttype=Gear",
-    "https://www.invenglobal.com/blackdesertonline/craft/Weapon%20Workshop?crafttype=Gear",
-
-  #-----------------------------------------------------------
-    "https://www.invenglobal.com/blackdesertonline/craft/Ceramics%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Mill?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Workbench?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Furniture%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Horse%20Gear%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Refinery?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Ship%20Part%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Shipyard?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Siege%20Weapon%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Tool%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Part%20Workshop?crafttype=Life",
-    "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Workshop?crafttype=Life",
-
-  #---------------------------------------------------------
-    "https://www.invenglobal.com/blackdesertonline/craft/Crops%20Factory?crafttype=Process",
-    "https://www.invenglobal.com/blackdesertonline/craft/Fish%20Factory?crafttype=Process",
-    "https://www.invenglobal.com/blackdesertonline/craft/Mineral%20Workbench?crafttype=Process",
-    "https://www.invenglobal.com/blackdesertonline/craft/Mushroom%20Factory?crafttype=Process",
-    "https://www.invenglobal.com/blackdesertonline/craft/Wood%20Workbench?crafttype=Process",
-
-  #---------------------------------------------------------
-    "https://www.invenglobal.com/blackdesertonline/craft/Elephant%20Nursery?crafttype=Guild",
-    "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Craft?crafttype=Guild",
-    "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Shipyard?crafttype=Guild",
-    "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Trade%20Packing?crafttype=Guild",
-    "https://www.invenglobal.com/blackdesertonline/craft/Mount%20Part%20Workshop?crafttype=Guild"
   ]
+
+  # URLs = [
+
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Drying?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Filtering?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Grinding?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Heating?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Alchemy%20Packaging?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Cuisine%20Packaging?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Shaking?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Simple%20Alchemy?crafttype=Product",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Simple%20Cooking?crafttype=Product",
+
+  # #---------------------------------------------------
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Armor%20Workshop?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Carpentry%20Workshop?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Jeweler?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Jeweler?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Handcraft%20Workshop?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Manos%20Jeweler?crafttype=Gear",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Weapon%20Workshop?crafttype=Gear",
+
+  # #-----------------------------------------------------------
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Ceramics%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Mill?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Costume%20Workbench?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Furniture%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Horse%20Gear%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Refinery?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Ship%20Part%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Shipyard?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Siege%20Weapon%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Tool%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Part%20Workshop?crafttype=Life",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Wagon%20Workshop?crafttype=Life",
+
+  # #---------------------------------------------------------
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Crops%20Factory?crafttype=Process",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Fish%20Factory?crafttype=Process",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Mineral%20Workbench?crafttype=Process",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Mushroom%20Factory?crafttype=Process",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Wood%20Workbench?crafttype=Process",
+
+  # #---------------------------------------------------------
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Elephant%20Nursery?crafttype=Guild",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Craft?crafttype=Guild",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Guild%20Shipyard?crafttype=Guild",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Imperial%20Trade%20Packing?crafttype=Guild",
+  #   "https://www.invenglobal.com/blackdesertonline/craft/Mount%20Part%20Workshop?crafttype=Guild"
+  # ]
 
   for URL in URLs:
     page = requests.get(URL)
@@ -85,7 +93,6 @@ if __name__ == "__main__":
       # Materials
       materials = materials.find_all('li')
       materials_arr = []
-      onlyTakeFirstMaterial = True # Set to true for the chopping page. False for all others
       for m in materials:
         text = m.find('span').text
         # print('Material:', text)
@@ -122,7 +129,6 @@ if __name__ == "__main__":
       # Products
       products = products.find_all('li')
       products_arr = []
-      onlyTakeFirstProduct = True # Set to true for the chopping page. False for all others
 
       for p in products:
         text = p.find('span').text

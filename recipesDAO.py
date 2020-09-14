@@ -1,9 +1,10 @@
-from pymongo import MongoClient, InsertOne, DeleteMany
+from pymongo import MongoClient, InsertOne, DeleteMany, ReplaceOne, UpdateMany
 # https://pymongo.readthedocs.io/en/stable/examples/bulk.html (Bulk Writes)
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html (Aggregation)
 # https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.update_many
 import datetime
 import pprint
+import re
 
 class RecipesDAO:
     items = {}
@@ -17,12 +18,42 @@ class RecipesDAO:
     def getData(self):
         print('[TODO] Retrieving data... ')
 
-    # def update(self, item_data):
-    #     _filter = {
-    #         'Name': item_data['Name']
-    #     }
+    def deleteBadImages(self):
+        _filter = {'Image': re.compile(r"know")}
+        update = {
+            '$unset': {"Image": True}
+        }
+
+        self.recipes.bulk_write([UpdateMany(_filter, update)])
+
+    def replaceRecipes(self, recipes):
+        def update_wrapper(replacement):
+            _filter = {
+                'Name': replacement['Name'],
+                'Action': replacement['Action'],
+            }
+            return ReplaceOne(_filter, replacement)
+
+        new_list = list(map(update_wrapper, recipes))
+        self.recipes.bulk_write(new_list)
+        print('Replaced recipes:', recipes)
         
     #     self.recipes.replace_one(_filter, item_data, upsert=True)
+    def getRecipesWithMissingImage(self):
+        aggregation = [
+            {
+                '$match': {
+                    'Image': {
+                        '$exists': False
+                    },
+                    'Action': {
+                        '$not': re.compile(r"^Symbolic")
+                    }
+                }
+            }
+        ]
+        result = self.recipes.aggregate(aggregation)
+        return result
 
     def insertMany(self, item_data_arr):
         def replace_wrapper(item_data):
